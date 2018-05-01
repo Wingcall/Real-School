@@ -33,9 +33,9 @@ Partial Class MainMenu
         Me.lblPlay.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlay.Location = New System.Drawing.Point(156, 72)
         Me.lblPlay.Name = "lblPlay"
-        Me.lblPlay.Size = New System.Drawing.Size(108, 55)
+        Me.lblPlay.Size = New System.Drawing.Size(119, 55)
         Me.lblPlay.TabIndex = 0
-        Me.lblPlay.Text = "Play"
+        Me.lblPlay.Text = "Play!"
         '
         'lblAbout
         '
@@ -74,7 +74,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.lblAbout)
         Me.Controls.Add(Me.lblPlay)
         Me.Name = "MainMenu"
-        Me.Text = "MainMenu"
+        Me.Text = "frmMainMenu"
         Me.ResumeLayout(False)
 
     End Sub
