@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MainMenu
+Partial Class frmMainMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -64,7 +64,7 @@ Partial Class MainMenu
         Me.lblExit.TabIndex = 3
         Me.lblExit.Text = "Exit"
         '
-        'MainMenu
+        'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -73,7 +73,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.lblHelp)
         Me.Controls.Add(Me.lblAbout)
         Me.Controls.Add(Me.lblPlay)
-        Me.Name = "MainMenu"
+        Me.Name = "frmMainMenu"
         Me.Text = "MainMenu"
         Me.ResumeLayout(False)
 
