@@ -32,7 +32,7 @@ Partial Class frmMain
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Cry"
+        Me.Button1.Text = "Test Button"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
