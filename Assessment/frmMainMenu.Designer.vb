@@ -30,8 +30,9 @@ Partial Class frmMainMenu
         '
         'lblPlay
         '
+        Me.lblPlay.BackColor = System.Drawing.Color.Transparent
         Me.lblPlay.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay.Location = New System.Drawing.Point(156, 72)
+        Me.lblPlay.Location = New System.Drawing.Point(322, 161)
         Me.lblPlay.Name = "lblPlay"
         Me.lblPlay.Size = New System.Drawing.Size(119, 55)
         Me.lblPlay.TabIndex = 0
@@ -39,8 +40,9 @@ Partial Class frmMainMenu
         '
         'lblAbout
         '
+        Me.lblAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblAbout.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAbout.Location = New System.Drawing.Point(156, 127)
+        Me.lblAbout.Location = New System.Drawing.Point(322, 246)
         Me.lblAbout.Name = "lblAbout"
         Me.lblAbout.Size = New System.Drawing.Size(149, 55)
         Me.lblAbout.TabIndex = 1
@@ -48,23 +50,25 @@ Partial Class frmMainMenu
         '
         'lblHelp
         '
+        Me.lblHelp.BackColor = System.Drawing.Color.Transparent
         Me.lblHelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHelp.Location = New System.Drawing.Point(156, 182)
+        Me.lblHelp.Location = New System.Drawing.Point(322, 339)
         Me.lblHelp.Name = "lblHelp"
-        Me.lblHelp.Size = New System.Drawing.Size(149, 55)
+        Me.lblHelp.Size = New System.Drawing.Size(158, 55)
         Me.lblHelp.TabIndex = 2
         Me.lblHelp.Text = "Help"
         '
         'lblExit
         '
+        Me.lblExit.BackColor = System.Drawing.Color.Transparent
         Me.lblExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExit.Location = New System.Drawing.Point(156, 237)
+        Me.lblExit.Location = New System.Drawing.Point(331, 442)
         Me.lblExit.Name = "lblExit"
-        Me.lblExit.Size = New System.Drawing.Size(149, 55)
+        Me.lblExit.Size = New System.Drawing.Size(97, 55)
         Me.lblExit.TabIndex = 3
         Me.lblExit.Text = "Exit"
         '
-        'MainMenu
+        'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -73,8 +77,9 @@ Partial Class frmMainMenu
         Me.Controls.Add(Me.lblHelp)
         Me.Controls.Add(Me.lblAbout)
         Me.Controls.Add(Me.lblPlay)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.Name = "MainMenu"
+        Me.Name = "frmMainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
         Me.ResumeLayout(False)
