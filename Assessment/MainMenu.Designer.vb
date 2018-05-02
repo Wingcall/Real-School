@@ -44,7 +44,7 @@ Partial Class frmMainMenu
         Me.lblAbout.Name = "lblAbout"
         Me.lblAbout.Size = New System.Drawing.Size(149, 55)
         Me.lblAbout.TabIndex = 1
-        Me.lblAbout.Text = "About"
+        Me.lblAbout.Text = "About!"
         '
         'lblHelp
         '
