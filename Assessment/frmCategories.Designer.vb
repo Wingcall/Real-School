@@ -58,7 +58,7 @@ Partial Class frmCategories
         Me.picBiology.BackgroundImage = Global.Assessment.My.Resources.Resources.Biology_Icon
         Me.picBiology.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picBiology.InitialImage = Nothing
-        Me.picBiology.Location = New System.Drawing.Point(12, 235)
+        Me.picBiology.Location = New System.Drawing.Point(12, 198)
         Me.picBiology.Name = "picBiology"
         Me.picBiology.Size = New System.Drawing.Size(170, 170)
         Me.picBiology.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class frmCategories
         Me.picChemistry.BackgroundImage = Global.Assessment.My.Resources.Resources.Chemistry_Icon
         Me.picChemistry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picChemistry.InitialImage = Nothing
-        Me.picChemistry.Location = New System.Drawing.Point(305, 235)
+        Me.picChemistry.Location = New System.Drawing.Point(305, 198)
         Me.picChemistry.Name = "picChemistry"
         Me.picChemistry.Size = New System.Drawing.Size(170, 170)
         Me.picChemistry.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class frmCategories
         Me.picPhysics.BackgroundImage = Global.Assessment.My.Resources.Resources.Phsyics_Icon
         Me.picPhysics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picPhysics.InitialImage = Nothing
-        Me.picPhysics.Location = New System.Drawing.Point(602, 235)
+        Me.picPhysics.Location = New System.Drawing.Point(602, 198)
         Me.picPhysics.Name = "picPhysics"
         Me.picPhysics.Size = New System.Drawing.Size(170, 170)
         Me.picPhysics.TabIndex = 5

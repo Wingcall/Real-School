@@ -9,4 +9,12 @@
     Private Sub lblExit_Click(sender As Object, e As EventArgs) Handles lblExit.Click
         End
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        frmCategories.Show()        'Testing purposes, REMOVE WHEN DONE
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        frmLogin.Show()             'testing purposes, REMOVE WHEN DONE
+    End Sub
 End Class
