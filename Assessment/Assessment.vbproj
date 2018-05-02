@@ -70,6 +70,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCategories.Designer.vb">
+      <DependentUpon>frmCategories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu.Designer.vb">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </Compile>
@@ -93,6 +105,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCategories.resx">
+      <DependentUpon>frmCategories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </EmbeddedResource>
