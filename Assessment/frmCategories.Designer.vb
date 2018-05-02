@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MainMenu
+Partial Class frmCategories
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,13 +24,15 @@ Partial Class MainMenu
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'MainMenu
+        'frmCategories
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(396, 325)
-        Me.Name = "MainMenu"
-        Me.Text = "MainMenu"
+        Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.MaximizeBox = False
+        Me.Name = "frmCategories"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Divisions of Science"
         Me.ResumeLayout(False)
 
     End Sub
