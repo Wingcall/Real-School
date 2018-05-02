@@ -5,4 +5,8 @@
         frmLogin.Show()         'Displays the Login Form
         Me.Hide()               'Hides the Main Menu Form
     End Sub
+
+    Private Sub lblExit_Click(sender As Object, e As EventArgs) Handles lblExit.Click
+        End
+    End Sub
 End Class
