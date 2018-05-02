@@ -32,7 +32,7 @@ Partial Class frmMain
         '
         Me.lblPlay.BackColor = System.Drawing.Color.Transparent
         Me.lblPlay.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay.Location = New System.Drawing.Point(291, 151)
+        Me.lblPlay.Location = New System.Drawing.Point(291, 156)
         Me.lblPlay.Name = "lblPlay"
         Me.lblPlay.Size = New System.Drawing.Size(156, 52)
         Me.lblPlay.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class frmMain
         '
         Me.lblHelp.BackColor = System.Drawing.Color.Transparent
         Me.lblHelp.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHelp.Location = New System.Drawing.Point(291, 291)
+        Me.lblHelp.Location = New System.Drawing.Point(291, 302)
         Me.lblHelp.Name = "lblHelp"
         Me.lblHelp.Size = New System.Drawing.Size(156, 52)
         Me.lblHelp.TabIndex = 1
@@ -63,7 +63,7 @@ Partial Class frmMain
         Me.lblAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblAbout.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAbout.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblAbout.Location = New System.Drawing.Point(291, 223)
+        Me.lblAbout.Location = New System.Drawing.Point(291, 228)
         Me.lblAbout.Name = "lblAbout"
         Me.lblAbout.Size = New System.Drawing.Size(211, 52)
         Me.lblAbout.TabIndex = 3
