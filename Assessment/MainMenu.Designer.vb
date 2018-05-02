@@ -68,12 +68,12 @@ Partial Class frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(445, 356)
+        Me.ClientSize = New System.Drawing.Size(784, 586)
         Me.Controls.Add(Me.lblExit)
         Me.Controls.Add(Me.lblHelp)
         Me.Controls.Add(Me.lblAbout)
         Me.Controls.Add(Me.lblPlay)
-        Me.Name = "MainMenu"
+        Me.Name = "frmMainMenu"
         Me.Text = "frmMainMenu"
         Me.ResumeLayout(False)
 
