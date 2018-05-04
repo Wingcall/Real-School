@@ -22,33 +22,97 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.lblPlay = New System.Windows.Forms.Label()
+        Me.lblHelp = New System.Windows.Forms.Label()
+        Me.lblExit = New System.Windows.Forms.Label()
+        Me.lblAbout = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'RadioButton1
+        'lblPlay
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(17, 202)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 5
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.lblPlay.BackColor = System.Drawing.Color.Transparent
+        Me.lblPlay.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlay.Location = New System.Drawing.Point(291, 156)
+        Me.lblPlay.Name = "lblPlay"
+        Me.lblPlay.Size = New System.Drawing.Size(156, 52)
+        Me.lblPlay.TabIndex = 0
+        Me.lblPlay.Text = "PLAY"
+        '
+        'lblHelp
+        '
+        Me.lblHelp.BackColor = System.Drawing.Color.Transparent
+        Me.lblHelp.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHelp.Location = New System.Drawing.Point(291, 302)
+        Me.lblHelp.Name = "lblHelp"
+        Me.lblHelp.Size = New System.Drawing.Size(156, 52)
+        Me.lblHelp.TabIndex = 1
+        Me.lblHelp.Text = "HELP"
+        '
+        'lblExit
+        '
+        Me.lblExit.BackColor = System.Drawing.Color.Transparent
+        Me.lblExit.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblExit.Location = New System.Drawing.Point(291, 375)
+        Me.lblExit.Name = "lblExit"
+        Me.lblExit.Size = New System.Drawing.Size(156, 52)
+        Me.lblExit.TabIndex = 2
+        Me.lblExit.Text = "EXIT"
+        '
+        'lblAbout
+        '
+        Me.lblAbout.BackColor = System.Drawing.Color.Transparent
+        Me.lblAbout.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAbout.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblAbout.Location = New System.Drawing.Point(291, 228)
+        Me.lblAbout.Name = "lblAbout"
+        Me.lblAbout.Size = New System.Drawing.Size(211, 52)
+        Me.lblAbout.TabIndex = 3
+        Me.lblAbout.Text = "ABOUT"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(62, 48)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(105, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "go to categories"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(62, 90)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(105, 23)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "go to login"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
-        Me.ClientSize = New System.Drawing.Size(369, 340)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.lblAbout)
+        Me.Controls.Add(Me.lblExit)
+        Me.Controls.Add(Me.lblHelp)
+        Me.Controls.Add(Me.lblPlay)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmMain"
-        Me.Text = "Main Menu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Divisions of Science"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-
+    Friend WithEvents lblPlay As System.Windows.Forms.Label
+    Friend WithEvents lblHelp As System.Windows.Forms.Label
+    Friend WithEvents lblExit As System.Windows.Forms.Label
+    Friend WithEvents lblAbout As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
