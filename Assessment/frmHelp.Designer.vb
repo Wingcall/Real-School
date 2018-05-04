@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmLogin
+Partial Class frmHelp
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,46 +22,36 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblExit = New System.Windows.Forms.Label()
-        Me.lblHome = New System.Windows.Forms.Label()
+        Me.cboHelp = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'lblExit
+        'cboHelp
         '
-        Me.lblExit.BackColor = System.Drawing.Color.Transparent
-        Me.lblExit.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExit.Location = New System.Drawing.Point(95, 9)
-        Me.lblExit.Name = "lblExit"
-        Me.lblExit.Size = New System.Drawing.Size(59, 27)
-        Me.lblExit.TabIndex = 4
-        Me.lblExit.Text = "EXIT"
+        Me.cboHelp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboHelp.FormattingEnabled = True
+        Me.cboHelp.Items.AddRange(New Object() {"Test 1", "Test 2", "Test 3", "Test 4"})
+        Me.cboHelp.Location = New System.Drawing.Point(206, 233)
+        Me.cboHelp.MaxDropDownItems = 5
+        Me.cboHelp.Name = "cboHelp"
+        Me.cboHelp.Size = New System.Drawing.Size(188, 21)
+        Me.cboHelp.TabIndex = 0
         '
-        'lblHome
-        '
-        Me.lblHome.BackColor = System.Drawing.Color.Transparent
-        Me.lblHome.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHome.Location = New System.Drawing.Point(12, 9)
-        Me.lblHome.Name = "lblHome"
-        Me.lblHome.Size = New System.Drawing.Size(77, 27)
-        Me.lblHome.TabIndex = 3
-        Me.lblHome.Text = "HOME"
-        '
-        'frmLogin
+        'frmHelp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
-        Me.Controls.Add(Me.lblExit)
-        Me.Controls.Add(Me.lblHome)
+        Me.Controls.Add(Me.cboHelp)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.HelpButton = True
         Me.MaximizeBox = False
-        Me.Name = "frmLogin"
+        Me.Name = "frmHelp"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents lblExit As System.Windows.Forms.Label
-    Friend WithEvents lblHome As System.Windows.Forms.Label
+    Friend WithEvents cboHelp As System.Windows.Forms.ComboBox
 End Class
