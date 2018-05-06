@@ -33,7 +33,7 @@ Module XML_DB
 
             'Console.WriteLine("id: " & id & " Name: " & name & " Score: " & score)
         Next 'Loop
-        printCatInfo()
+        'printCatInfo()
     End Sub
 
     Public Sub loadUserDB()
@@ -51,7 +51,7 @@ Module XML_DB
             'Console.WriteLine("id: " & id & " Name: " & name & " Score: " & score)
         Next 'Loop
 
-        printUserInfo()
+        'printUserInfo()
     End Sub
 
     Sub printUserInfo()
@@ -93,7 +93,7 @@ Module XML_DB
             XML += "</category>"
         Next
         XML += "</wordList>"
-        XML = prettyXML(XML)
+        XML = prettyXML(XML).Replace("utf-16", "utf-8")
         writeFile(wordPath, XML)
     End Sub
 
@@ -107,7 +107,7 @@ Module XML_DB
             XML += "</user>"
         Next
         XML += "</users>"
-        XML = prettyXML(XML)
+        XML = prettyXML(XML).Replace("utf-16", "utf-8")
         writeFile(userPath, XML)
     End Sub
 
@@ -120,7 +120,7 @@ Module XML_DB
     End Function
 
     Public Sub loadDB()
-        'loadWordDB()
+        loadWordDB()
         loadUserDB()
         'updateWordXML()
         'updateUserXML()
