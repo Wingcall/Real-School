@@ -23,4 +23,7 @@
         frmLogin.Show()             'testing purposes, REMOVE WHEN DONE
     End Sub
 
+    Private Sub btnGame_Click(sender As Object, e As EventArgs) Handles btnGame.Click
+        frmGame.Show()
+    End Sub
 End Class

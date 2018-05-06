@@ -28,6 +28,7 @@ Partial Class frmMain
         Me.lblAbout = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnGame = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblPlay
@@ -89,12 +90,22 @@ Partial Class frmMain
         Me.Button2.Text = "go to login"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'btnGame
+        '
+        Me.btnGame.Location = New System.Drawing.Point(62, 130)
+        Me.btnGame.Name = "btnGame"
+        Me.btnGame.Size = New System.Drawing.Size(105, 23)
+        Me.btnGame.TabIndex = 0
+        Me.btnGame.Text = "go to game"
+        Me.btnGame.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.btnGame)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblAbout)
@@ -115,4 +126,5 @@ Partial Class frmMain
     Friend WithEvents lblAbout As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnGame As System.Windows.Forms.Button
 End Class
