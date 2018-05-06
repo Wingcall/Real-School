@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<wordList>
+  <category id="0">
+    <name>Biology</name>
+    <words>
+      <word>
+        <name>Bob</name>
+        <hint>Its not Bob</hint>
+      </word>
+    </words>
+  </category>
+  <category id="1">
+    <name>Chemistry</name>
+    <words>
+      <word>
+        <name>Clint</name>
+        <hint>Its not Clint</hint>
+      </word>
+    </words>
+  </category>
+  <category id="2">
+    <name>Phsyics</name>
+    <words>
+      <word>
+        <name>Dave</name>
+        <hint>Its not Dave</hint>
+      </word>
+    </words>
+  </category>
+ </wordList>
