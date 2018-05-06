@@ -6,10 +6,10 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        sender.text = "Sub"
+        sender.text = getWord(0, 0)
     End Sub
 
     Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        loadUserDB()
+        loadDB()
     End Sub
 End Class

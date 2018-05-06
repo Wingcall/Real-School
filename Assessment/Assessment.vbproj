@@ -159,6 +159,8 @@
     <Compile Include="frmEdit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Resources\clsWordList.vb" />
+    <Compile Include="Resources\mdlExtensions.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmAbout.resx">
