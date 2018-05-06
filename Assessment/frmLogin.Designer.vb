@@ -22,29 +22,16 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblExit = New System.Windows.Forms.Label()
-        Me.lblHome = New System.Windows.Forms.Label()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.SuspendLayout()
         '
-        'lblExit
+        'UclHomeExit1
         '
-        Me.lblExit.BackColor = System.Drawing.Color.Transparent
-        Me.lblExit.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExit.Location = New System.Drawing.Point(95, 9)
-        Me.lblExit.Name = "lblExit"
-        Me.lblExit.Size = New System.Drawing.Size(59, 27)
-        Me.lblExit.TabIndex = 4
-        Me.lblExit.Text = "EXIT"
-        '
-        'lblHome
-        '
-        Me.lblHome.BackColor = System.Drawing.Color.Transparent
-        Me.lblHome.Font = New System.Drawing.Font("Palatino Linotype", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHome.Location = New System.Drawing.Point(12, 9)
-        Me.lblHome.Name = "lblHome"
-        Me.lblHome.Size = New System.Drawing.Size(77, 27)
-        Me.lblHome.TabIndex = 3
-        Me.lblHome.Text = "HOME"
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
         '
         'frmLogin
         '
@@ -52,8 +39,7 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
-        Me.Controls.Add(Me.lblExit)
-        Me.Controls.Add(Me.lblHome)
+        Me.Controls.Add(Me.UclHomeExit1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmLogin"
@@ -62,6 +48,5 @@ Partial Class frmLogin
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents lblExit As System.Windows.Forms.Label
-    Friend WithEvents lblHome As System.Windows.Forms.Label
+    Friend WithEvents UclHomeExit1 As Assessment.uclHomeExit
 End Class
