@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<users>
+  <user id="0">
+    <name>Cal</name>
+    <score>0</score>
+  </user>
+  <user id="1">
+    <name>Brandon</name>
+    <score>876</score>
+  </user>
+  <user id="2">
+    <name>New Player!</name>
+    <score>0</score>
+  </user>
+  <user id="3">
+    <name>New Player!</name>
+    <score>0</score>
+  </user>
+  <!--This is a dead User, it will not be shown or avalible due to the limit-->!>
+  <user id="4">
+    <name>New Player</name>
+    <score>0</score>
+  </user>
+</users>
