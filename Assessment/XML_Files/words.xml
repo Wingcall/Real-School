@@ -7,6 +7,14 @@
         <name>Bob</name>
         <hint>Its not Bob</hint>
       </word>
+      <word>
+        <name>Bill</name>
+        <hint>Its not Bill</hint>
+      </word>
+      <word>
+        <name>Sam</name>
+        <hint>Its not Sam</hint>
+      </word>
     </words>
   </category>
   <category id="1">

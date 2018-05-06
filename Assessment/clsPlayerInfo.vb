@@ -8,4 +8,9 @@
         name = pInfo(1)
         score = pInfo(2)
     End Sub
+
+    Public Sub del()
+        name = "New Player!"
+        score = 0
+    End Sub
 End Class

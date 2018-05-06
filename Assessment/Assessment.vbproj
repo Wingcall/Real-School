@@ -137,6 +137,7 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mdlCurrentPlayer.vb" />
     <Compile Include="mdlXML_DB.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -159,8 +160,8 @@
     <Compile Include="frmEdit.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\clsWordList.vb" />
-    <Compile Include="Resources\mdlExtensions.vb" />
+    <Compile Include="clsWordList.vb" />
+    <Compile Include="mdlExtensions.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmAbout.resx">

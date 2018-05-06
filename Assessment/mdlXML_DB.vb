@@ -6,7 +6,7 @@ Module XML_DB
 
     Private ReadOnly userLimit As Int16 = 4 'Wow, ok before you yell at me for magic numbers, this is a limit we chose to impliment.
 
-    Public userInfo(0) As Object 'This is now dynamic useing Array.add
+    Public userInfo(0) As Object 'This is now dynamic using Array.add
     Public wordLists(0) As Object
 
     Public Sub loadWordDB()
@@ -75,12 +75,72 @@ Module XML_DB
         Next
     End Sub
 
+    Public Sub updateWordXML()
+        Dim XML As String = "<wordList>"
+        For Each cat As Object In wordLists
+            XML += "<category id=" & ControlChars.Quote & cat.id & ControlChars.Quote & ">"
+            XML += "<name>" & cat.name & "</name>"
+            XML += "<words>"
+            For Each word As Object In cat.words
+                If Not word.del Then
+                    XML += "<word>"
+                    XML += "<name>" & word.word & "</name>"
+                    XML += "<hint>" & word.hint & "</hint>"
+                    XML += "</word>"
+                End If
+            Next
+            XML += "</words>"
+            XML += "</category>"
+        Next
+        XML += "</wordList>"
+        XML = prettyXML(XML)
+        writeFile(wordPath, XML)
+    End Sub
+
+    Public Sub updateUserXML()
+        userInfo(1).del()
+        Dim XML As String = "<users>"
+        For Each user As Object In userInfo
+            XML += "<user id=" & ControlChars.Quote & user.id & ControlChars.Quote & ">"
+            XML += "<name>" & user.name & "</name>"
+            XML += "<score>" & user.score & "</score>"
+            XML += "</user>"
+        Next
+        XML += "</users>"
+        XML = prettyXML(XML)
+        writeFile(userPath, XML)
+    End Sub
+
     Public Function getWord(cat As Int16, word As Integer)
-        Return wordLists(cat).words(word).word
+        Return wordLists(cat).words(word)
+    End Function
+
+    Public Function getRWord(cat As Int16)
+        Return wordLists(cat).randomWord()
     End Function
 
     Public Sub loadDB()
-        loadWordDB()
-        'loadUserDB()
+        'loadWordDB()
+        loadUserDB()
+        'updateWordXML()
+        'updateUserXML()
     End Sub
+
+    Function prettyXML(XMLString As String)
+        Dim sw As New IO.StringWriter()
+        Dim xw As New XmlTextWriter(sw)
+        xw.Formatting = Formatting.Indented
+        xw.Indentation = 4
+        Dim doc As New XmlDocument
+        doc.LoadXml(XMLString)
+        doc.Save(xw)
+        Return sw.ToString()
+    End Function
+
+    Sub writeFile(file, text)
+        Using writer As IO.StreamWriter = New IO.StreamWriter(file, False)
+            writer.Write(text)
+        End Using
+    End Sub
+
 End Module

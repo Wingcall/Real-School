@@ -17,14 +17,25 @@
             Console.WriteLine("Word: " & word.word & ", Hint: " & word.hint)
         Next
     End Sub
+
+    Public Function randomWord()
+        Dim rWord As Integer = New Random().Next(0, words.Length)
+        Return words(rWord)
+    End Function
 End Class
 
 Public Class word
     Public word As String
     Public hint As String
+    Public del As Boolean = False
+
 
     Public Sub New(wordLocal As String, hintLocal As String)
         word = wordLocal
         hint = hintLocal
+    End Sub
+
+    Public Sub delWord()
+        del = True
     End Sub
 End Class

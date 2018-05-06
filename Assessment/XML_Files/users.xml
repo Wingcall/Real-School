@@ -16,7 +16,7 @@
     <name>New Player!</name>
     <score>0</score>
   </user>
-  <!--This is a dead User, it will not be shown or avalible-->!>
+  <!--This is a dead User, it will not be shown or avalible due to the limit-->!>
   <user id="4">
     <name>New Player</name>
     <score>0</score>
