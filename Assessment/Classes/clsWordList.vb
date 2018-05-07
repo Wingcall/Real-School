@@ -1,7 +1,7 @@
 ﻿Public Class wordList
     Public id As Int16
     Public name As String
-    Public words(0) As Object
+    Public words(0) As word
 
     Public Sub New(idLocal As Int16, nameLocal As String)
         id = idLocal
@@ -14,12 +14,15 @@
 
     Public Sub printList()
         For Each word As Object In words
-            Console.WriteLine("Word: " & word.word & ", Hint: " & word.hint)
+            Dim del As String
+            If word.del Then del = ", [Deleted]" Else del = ""
+            Console.WriteLine("Word: " & word.word & ", Hint: " & word.hint & del)
         Next
     End Sub
 
     Public Function randomWord()
         Dim rWord As Integer = New Random().Next(0, words.Length)
+        If words(rWord).del Then Return randomWord()
         Return words(rWord)
     End Function
 End Class

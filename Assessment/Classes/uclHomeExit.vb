@@ -1,11 +1,13 @@
 ﻿Public Class uclHomeExit
 
-    Private Sub lblHome_Click(sender As Object, e As EventArgs) Handles lblHome.Click
+    Private Sub lblHome_Click(sender As Object, e As EventArgs) Handles lblHome.Click 'Home label clicked
         frmMain.Show() 'Show the main form
-        sender.Parent.Parent.close() 'Close the Current Form
+        Dim pForm As Form = sender.Parent.Parent 'Store the current form
+        RemoveHandler pForm.FormClosing, AddressOf formEvents.FormClosing 'Remove the custom close event for the current form
+        pForm.Close() 'Close the Current Form
     End Sub
 
-    Private Sub lblExit_Click(sender As Object, e As EventArgs) Handles lblExit.Click
-        exitGame(sender.Parent.Parent)
+    Private Sub lblExit_Click(sender As Object, e As EventArgs) Handles lblExit.Click 'Exit Label clicked
+        exitGame(sender.Parent.Parent) 'Call the exit function
     End Sub
 End Class

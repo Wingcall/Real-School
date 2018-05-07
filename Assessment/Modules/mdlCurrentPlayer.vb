@@ -1,5 +1,5 @@
 ﻿Module currentPlayer
-    Public playerID As Integer
-    Public catID As Integer
-    Public wordID As Integer
+    Public playerID As Integer = 0
+    Public catID As Integer = 0
+    Public wordID As Integer = 0
 End Module
