@@ -33,4 +33,10 @@ Module extensions
             Exit Sub
         End If
     End Sub
+
+    <Extension()>
+    Public Sub openForm(ByVal form As Form) 'Exstention to the forms
+        form.Show() 'Show the selected form
+        frmMain.Hide() 'Hide the main form
+    End Sub
 End Module
