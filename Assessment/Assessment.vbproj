@@ -101,12 +101,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsPlayerInfo.vb" />
-    <Compile Include="frmAbout.Designer.vb">
-      <DependentUpon>frmAbout.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmAbout.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmCategories.Designer.vb">
       <DependentUpon>frmCategories.vb</DependentUpon>
     </Compile>
@@ -164,9 +158,6 @@
     <Compile Include="mdlExtensions.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAbout.resx">
-      <DependentUpon>frmAbout.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCategories.resx">
       <DependentUpon>frmCategories.vb</DependentUpon>
     </EmbeddedResource>
