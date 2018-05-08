@@ -28,7 +28,9 @@ Partial Class frmEdit
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.txtWord = New System.Windows.Forms.TextBox()
         Me.cmbCat = New System.Windows.Forms.ComboBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtHint = New System.Windows.Forms.TextBox()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'UclHomeExit1
@@ -53,7 +55,7 @@ Partial Class frmEdit
         Me.btnDel.Name = "btnDel"
         Me.btnDel.Size = New System.Drawing.Size(75, 23)
         Me.btnDel.TabIndex = 9
-        Me.btnDel.Text = "Button1"
+        Me.btnDel.Text = "Delete Word"
         Me.btnDel.UseVisualStyleBackColor = True
         '
         'btnAdd
@@ -62,7 +64,7 @@ Partial Class frmEdit
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
         Me.btnAdd.TabIndex = 10
-        Me.btnAdd.Text = "Button2"
+        Me.btnAdd.Text = "Add Word"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'txtWord
@@ -81,12 +83,30 @@ Partial Class frmEdit
         Me.cmbCat.Size = New System.Drawing.Size(121, 21)
         Me.cmbCat.TabIndex = 0
         '
-        'TextBox2
+        'txtHint
         '
-        Me.TextBox2.Location = New System.Drawing.Point(265, 254)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 13
+        Me.txtHint.Location = New System.Drawing.Point(265, 254)
+        Me.txtHint.Name = "txtHint"
+        Me.txtHint.Size = New System.Drawing.Size(325, 20)
+        Me.txtHint.TabIndex = 13
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(406, 178)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.TabIndex = 14
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(406, 207)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 15
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'frmEdit
         '
@@ -94,7 +114,9 @@ Partial Class frmEdit
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.txtHint)
         Me.Controls.Add(Me.cmbCat)
         Me.Controls.Add(Me.txtWord)
         Me.Controls.Add(Me.btnAdd)
@@ -113,6 +135,8 @@ Partial Class frmEdit
     Friend WithEvents btnDel As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents txtWord As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtHint As System.Windows.Forms.TextBox
     Friend WithEvents cmbCat As System.Windows.Forms.ComboBox
+    Friend WithEvents btnUpdate As System.Windows.Forms.Button
+    Friend WithEvents btnClear As System.Windows.Forms.Button
 End Class
