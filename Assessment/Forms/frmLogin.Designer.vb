@@ -22,7 +22,6 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.rdoPlayer1 = New System.Windows.Forms.RadioButton()
         Me.rdoPlayer2 = New System.Windows.Forms.RadioButton()
         Me.rdoPlayer3 = New System.Windows.Forms.RadioButton()
@@ -31,15 +30,10 @@ Partial Class frmLogin
         Me.lblPlayer1Score = New System.Windows.Forms.Label()
         Me.lblPlayer2Score = New System.Windows.Forms.Label()
         Me.lblPlayer3Score = New System.Windows.Forms.Label()
+        Me.btnDelPlayer = New System.Windows.Forms.Button()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.btnAdd = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
         '
         'rdoPlayer1
         '
@@ -125,12 +119,40 @@ Partial Class frmLogin
         Me.lblPlayer3Score.TabIndex = 15
         Me.lblPlayer3Score.Text = "Label4"
         '
+        'btnDelPlayer
+        '
+        Me.btnDelPlayer.Location = New System.Drawing.Point(162, 296)
+        Me.btnDelPlayer.Name = "btnDelPlayer"
+        Me.btnDelPlayer.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelPlayer.TabIndex = 16
+        Me.btnDelPlayer.Text = "Delete Player"
+        Me.btnDelPlayer.UseVisualStyleBackColor = True
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Location = New System.Drawing.Point(162, 204)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.TabIndex = 17
+        Me.btnAdd.Text = "Add Player"
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.btnDelPlayer)
         Me.Controls.Add(Me.lblPlayer3Score)
         Me.Controls.Add(Me.lblPlayer2Score)
         Me.Controls.Add(Me.lblPlayer1Score)
@@ -158,4 +180,6 @@ Partial Class frmLogin
     Friend WithEvents lblPlayer1Score As System.Windows.Forms.Label
     Friend WithEvents lblPlayer2Score As System.Windows.Forms.Label
     Friend WithEvents lblPlayer3Score As System.Windows.Forms.Label
+    Friend WithEvents btnDelPlayer As System.Windows.Forms.Button
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
 End Class

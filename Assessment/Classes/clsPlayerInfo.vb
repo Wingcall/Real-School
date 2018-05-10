@@ -9,8 +9,9 @@
         score = pInfo(2)
     End Sub
 
-    Public Sub updateName(inName As String)
+    Public Sub wipePlayer(inName As String)
         name = inName
+        score = 0
     End Sub
 
     Public Sub del()
