@@ -9,6 +9,10 @@
         score = pInfo(2)
     End Sub
 
+    Public Sub updateName(inName As String)
+        name = inName
+    End Sub
+
     Public Sub del()
         name = "New Player!"
         score = 0
