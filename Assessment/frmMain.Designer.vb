@@ -28,6 +28,8 @@ Partial Class frmMain
         Me.lblAbout = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnGame = New System.Windows.Forms.Button()
+        Me.btnEdit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblPlay
@@ -36,9 +38,9 @@ Partial Class frmMain
         Me.lblPlay.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlay.Location = New System.Drawing.Point(291, 156)
         Me.lblPlay.Name = "lblPlay"
-        Me.lblPlay.Size = New System.Drawing.Size(156, 52)
+        Me.lblPlay.Size = New System.Drawing.Size(234, 72)
         Me.lblPlay.TabIndex = 0
-        Me.lblPlay.Text = "PLAY"
+        Me.lblPlay.Text = "PLAY@"
         '
         'lblHelp
         '
@@ -89,12 +91,32 @@ Partial Class frmMain
         Me.Button2.Text = "go to login"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'btnGame
+        '
+        Me.btnGame.Location = New System.Drawing.Point(62, 130)
+        Me.btnGame.Name = "btnGame"
+        Me.btnGame.Size = New System.Drawing.Size(105, 23)
+        Me.btnGame.TabIndex = 0
+        Me.btnGame.Text = "go to game"
+        Me.btnGame.UseVisualStyleBackColor = True
+        '
+        'btnEdit
+        '
+        Me.btnEdit.Location = New System.Drawing.Point(62, 171)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(105, 23)
+        Me.btnEdit.TabIndex = 6
+        Me.btnEdit.Text = "go to edit"
+        Me.btnEdit.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.btnEdit)
+        Me.Controls.Add(Me.btnGame)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblAbout)
@@ -115,4 +137,6 @@ Partial Class frmMain
     Friend WithEvents lblAbout As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnGame As System.Windows.Forms.Button
+    Friend WithEvents btnEdit As System.Windows.Forms.Button
 End Class
