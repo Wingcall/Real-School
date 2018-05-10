@@ -64,4 +64,10 @@ Public Class word
     Public Sub delWord()
         del = True
     End Sub
+
+    Public Function hyphenString(charArray As Array) As String
+        Dim hyphenStr As String = ""
+
+        Return hyphenStr
+    End Function
 End Class
