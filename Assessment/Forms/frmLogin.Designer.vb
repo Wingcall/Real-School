@@ -27,10 +27,10 @@ Partial Class frmLogin
         Me.rdoPlayer2 = New System.Windows.Forms.RadioButton()
         Me.rdoPlayer3 = New System.Windows.Forms.RadioButton()
         Me.rdoPlayer4 = New System.Windows.Forms.RadioButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblPlayer0Score = New System.Windows.Forms.Label()
+        Me.lblPlayer1Score = New System.Windows.Forms.Label()
+        Me.lblPlayer2Score = New System.Windows.Forms.Label()
+        Me.lblPlayer3Score = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'UclHomeExit1
@@ -89,41 +89,41 @@ Partial Class frmLogin
         Me.rdoPlayer4.Text = "Player 4"
         Me.rdoPlayer4.UseVisualStyleBackColor = False
         '
-        'Label1
+        'lblPlayer0Score
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(412, 204)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Label1"
+        Me.lblPlayer0Score.AutoSize = True
+        Me.lblPlayer0Score.Location = New System.Drawing.Point(412, 204)
+        Me.lblPlayer0Score.Name = "lblPlayer0Score"
+        Me.lblPlayer0Score.Size = New System.Drawing.Size(39, 13)
+        Me.lblPlayer0Score.TabIndex = 12
+        Me.lblPlayer0Score.Text = "Label1"
         '
-        'Label2
+        'lblPlayer1Score
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(412, 238)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Label2"
+        Me.lblPlayer1Score.AutoSize = True
+        Me.lblPlayer1Score.Location = New System.Drawing.Point(412, 238)
+        Me.lblPlayer1Score.Name = "lblPlayer1Score"
+        Me.lblPlayer1Score.Size = New System.Drawing.Size(39, 13)
+        Me.lblPlayer1Score.TabIndex = 13
+        Me.lblPlayer1Score.Text = "Label2"
         '
-        'Label3
+        'lblPlayer2Score
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(412, 272)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 14
-        Me.Label3.Text = "Label3"
+        Me.lblPlayer2Score.AutoSize = True
+        Me.lblPlayer2Score.Location = New System.Drawing.Point(412, 272)
+        Me.lblPlayer2Score.Name = "lblPlayer2Score"
+        Me.lblPlayer2Score.Size = New System.Drawing.Size(39, 13)
+        Me.lblPlayer2Score.TabIndex = 14
+        Me.lblPlayer2Score.Text = "Label3"
         '
-        'Label4
+        'lblPlayer3Score
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(412, 306)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 15
-        Me.Label4.Text = "Label4"
+        Me.lblPlayer3Score.AutoSize = True
+        Me.lblPlayer3Score.Location = New System.Drawing.Point(412, 306)
+        Me.lblPlayer3Score.Name = "lblPlayer3Score"
+        Me.lblPlayer3Score.Size = New System.Drawing.Size(39, 13)
+        Me.lblPlayer3Score.TabIndex = 15
+        Me.lblPlayer3Score.Text = "Label4"
         '
         'frmLogin
         '
@@ -131,10 +131,10 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblPlayer3Score)
+        Me.Controls.Add(Me.lblPlayer2Score)
+        Me.Controls.Add(Me.lblPlayer1Score)
+        Me.Controls.Add(Me.lblPlayer0Score)
         Me.Controls.Add(Me.rdoPlayer4)
         Me.Controls.Add(Me.rdoPlayer3)
         Me.Controls.Add(Me.rdoPlayer2)
@@ -154,8 +154,8 @@ Partial Class frmLogin
     Friend WithEvents rdoPlayer2 As System.Windows.Forms.RadioButton
     Friend WithEvents rdoPlayer3 As System.Windows.Forms.RadioButton
     Friend WithEvents rdoPlayer4 As System.Windows.Forms.RadioButton
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents lblPlayer0Score As System.Windows.Forms.Label
+    Friend WithEvents lblPlayer1Score As System.Windows.Forms.Label
+    Friend WithEvents lblPlayer2Score As System.Windows.Forms.Label
+    Friend WithEvents lblPlayer3Score As System.Windows.Forms.Label
 End Class
