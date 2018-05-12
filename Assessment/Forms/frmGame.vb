@@ -1,11 +1,14 @@
 ﻿Public Class frmGame
-    Dim maxGuesses As Integer = 3
+    Dim maxGuesses As Integer = 7
     Dim letterGuesses As String = ""
     Dim badGuesses As Integer
 
     Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load, btnLoadButton.Click
         loadDB()
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
+
+        picHangman.SizeMode = PictureBoxSizeMode.Normal
+        picHangman.Image = 
 
         letterGuesses = ""
         badGuesses = maxGuesses
@@ -38,10 +41,12 @@
                 MsgBox("Game Win!")
             End If
         Else
+            If badGuesses > 0 Then picHangman.Image = ilsHangmen.Images(badGuesses - 1)
             badGuesses -= 1
             If badGuesses <= 0 Then
                 pnlLetters.Enabled = False
                 MsgBox("Game Lost")
+                Exit Sub
             End If
         End If
     End Sub

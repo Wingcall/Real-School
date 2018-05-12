@@ -22,6 +22,8 @@ Partial Class frmGame
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGame))
         Me.lblHint = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
@@ -38,7 +40,6 @@ Partial Class frmGame
         Me.lblLetterF = New System.Windows.Forms.Label()
         Me.lblLetterG = New System.Windows.Forms.Label()
         Me.lblLetterH = New System.Windows.Forms.Label()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.lblLetterI = New System.Windows.Forms.Label()
         Me.lblLetterJ = New System.Windows.Forms.Label()
         Me.lblLetterK = New System.Windows.Forms.Label()
@@ -57,7 +58,11 @@ Partial Class frmGame
         Me.lblLetterX = New System.Windows.Forms.Label()
         Me.lblLetterY = New System.Windows.Forms.Label()
         Me.lblLetterZ = New System.Windows.Forms.Label()
+        Me.picHangman = New System.Windows.Forms.PictureBox()
+        Me.ilsHangmen = New System.Windows.Forms.ImageList(Me.components)
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.pnlLetters.SuspendLayout()
+        CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHint
@@ -158,7 +163,7 @@ Partial Class frmGame
         Me.pnlLetters.Controls.Add(Me.lblLetterC)
         Me.pnlLetters.Controls.Add(Me.lblLetterD)
         Me.pnlLetters.Controls.Add(Me.lblLetterA)
-        Me.pnlLetters.Location = New System.Drawing.Point(74, 223)
+        Me.pnlLetters.Location = New System.Drawing.Point(82, 280)
         Me.pnlLetters.Name = "pnlLetters"
         Me.pnlLetters.Size = New System.Drawing.Size(615, 116)
         Me.pnlLetters.TabIndex = 23
@@ -250,14 +255,6 @@ Partial Class frmGame
         Me.lblLetterH.Size = New System.Drawing.Size(36, 33)
         Me.lblLetterH.TabIndex = 30
         Me.lblLetterH.Text = "H"
-        '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
         '
         'lblLetterI
         '
@@ -457,12 +454,43 @@ Partial Class frmGame
         Me.lblLetterZ.TabIndex = 48
         Me.lblLetterZ.Text = "Z"
         '
+        'picHangman
+        '
+        Me.picHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.picHangman.InitialImage = Nothing
+        Me.picHangman.Location = New System.Drawing.Point(516, 1)
+        Me.picHangman.Name = "picHangman"
+        Me.picHangman.Size = New System.Drawing.Size(256, 256)
+        Me.picHangman.TabIndex = 49
+        Me.picHangman.TabStop = False
+        '
+        'ilsHangmen
+        '
+        Me.ilsHangmen.ImageStream = CType(resources.GetObject("ilsHangmen.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ilsHangmen.TransparentColor = System.Drawing.Color.Transparent
+        Me.ilsHangmen.Images.SetKeyName(0, "Hangman-6.png")
+        Me.ilsHangmen.Images.SetKeyName(1, "Hangman-5.png")
+        Me.ilsHangmen.Images.SetKeyName(2, "Hangman-4.png")
+        Me.ilsHangmen.Images.SetKeyName(3, "Hangman-3.png")
+        Me.ilsHangmen.Images.SetKeyName(4, "Hangman-2.png")
+        Me.ilsHangmen.Images.SetKeyName(5, "Hangman-1.png")
+        Me.ilsHangmen.Images.SetKeyName(6, "Hangman-0.png")
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picHangman)
         Me.Controls.Add(Me.pnlLetters)
         Me.Controls.Add(Me.lblHyphen)
         Me.Controls.Add(Me.btnLoadButton)
@@ -477,6 +505,7 @@ Partial Class frmGame
         Me.Text = "Divisions of Science"
         Me.pnlLetters.ResumeLayout(False)
         Me.pnlLetters.PerformLayout()
+        CType(Me.picHangman, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -516,4 +545,6 @@ Partial Class frmGame
     Friend WithEvents lblLetterK As System.Windows.Forms.Label
     Friend WithEvents lblLetterJ As System.Windows.Forms.Label
     Friend WithEvents lblLetterI As System.Windows.Forms.Label
+    Friend WithEvents picHangman As System.Windows.Forms.PictureBox
+    Friend WithEvents ilsHangmen As System.Windows.Forms.ImageList
 End Class
