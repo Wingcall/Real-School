@@ -10,7 +10,7 @@
         letterGuesses = ""
         badGuesses = maxGuesses
 
-        plrWord = New word("abFH", "cd") 'wordLists(catID).randomWord()
+        plrWord = wordLists(catID).randomWord()
         lblWord.Text = plrWord.wordVal
         lblHint.Text = plrWord.hint
         lblCat.Text = wordLists(catID).name
