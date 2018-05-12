@@ -15,7 +15,7 @@
 
     End Sub
 
-    Private Sub lblLetterS_Click(sender As Object, e As EventArgs) Handles lblLetterA.Click, lblLetterC.Click, lblLetterD.Click
+    Private Sub lblLetterS_Click(sender As Object, e As EventArgs) Handles lblLetterA.Click, lblLetterB.Click, lblLetterC.Click, lblLetterD.Click
 
     End Sub
 End Class
