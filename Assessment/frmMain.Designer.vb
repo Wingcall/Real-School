@@ -38,9 +38,9 @@ Partial Class frmMain
         Me.lblPlay.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlay.Location = New System.Drawing.Point(291, 156)
         Me.lblPlay.Name = "lblPlay"
-        Me.lblPlay.Size = New System.Drawing.Size(156, 52)
+        Me.lblPlay.Size = New System.Drawing.Size(234, 72)
         Me.lblPlay.TabIndex = 0
-        Me.lblPlay.Text = "PLAY"
+        Me.lblPlay.Text = "PLAY@"
         '
         'lblHelp
         '
