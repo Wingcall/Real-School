@@ -38,7 +38,7 @@
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
         title = "Create New Profile"    'Sets the Message Box Title
         InputBox(prompt, title)
-        userInfo(playerID).ans()
+        'userInfo(playerID).ans() 'Your ans function is eihter broken or not implimented
     End Sub
 
     Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
