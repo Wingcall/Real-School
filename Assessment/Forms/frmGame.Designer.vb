@@ -27,9 +27,13 @@ Partial Class frmGame
         Me.lblName = New System.Windows.Forms.Label()
         Me.lblWord = New System.Windows.Forms.Label()
         Me.lblCat = New System.Windows.Forms.Label()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.btnLoadButton = New System.Windows.Forms.Button()
         Me.lblHyphen = New System.Windows.Forms.Label()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.lblLetterA = New System.Windows.Forms.Label()
+        Me.lblLetterD = New System.Windows.Forms.Label()
+        Me.lblLetterC = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHint
@@ -82,14 +86,6 @@ Partial Class frmGame
         Me.lblCat.TabIndex = 12
         Me.lblCat.Text = "Cat"
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'btnLoadButton
         '
         Me.btnLoadButton.Location = New System.Drawing.Point(330, 166)
@@ -109,12 +105,68 @@ Partial Class frmGame
         Me.lblHyphen.TabIndex = 14
         Me.lblHyphen.Text = "Hyphen"
         '
-        'frmGame
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
+        '
+        'lblLetterA
+        '
+        Me.lblLetterA.AutoSize = True
+        Me.lblLetterA.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterA.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterA.Location = New System.Drawing.Point(66, 252)
+        Me.lblLetterA.Name = "lblLetterA"
+        Me.lblLetterA.Size = New System.Drawing.Size(34, 33)
+        Me.lblLetterA.TabIndex = 15
+        Me.lblLetterA.Text = "A"
+        '
+        'lblLetterD
+        '
+        Me.lblLetterD.AutoSize = True
+        Me.lblLetterD.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterD.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterD.Location = New System.Drawing.Point(168, 252)
+        Me.lblLetterD.Name = "lblLetterD"
+        Me.lblLetterD.Size = New System.Drawing.Size(36, 33)
+        Me.lblLetterD.TabIndex = 16
+        Me.lblLetterD.Text = "D"
+        '
+        'lblLetterC
+        '
+        Me.lblLetterC.AutoSize = True
+        Me.lblLetterC.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterC.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterC.Location = New System.Drawing.Point(134, 252)
+        Me.lblLetterC.Name = "lblLetterC"
+        Me.lblLetterC.Size = New System.Drawing.Size(36, 33)
+        Me.lblLetterC.TabIndex = 17
+        Me.lblLetterC.Text = "C"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(100, 252)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(34, 33)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "B"
+        '
+        'lblLetterB
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblLetterC)
+        Me.Controls.Add(Me.lblLetterD)
+        Me.Controls.Add(Me.lblLetterA)
         Me.Controls.Add(Me.lblHyphen)
         Me.Controls.Add(Me.btnLoadButton)
         Me.Controls.Add(Me.lblCat)
@@ -124,7 +176,7 @@ Partial Class frmGame
         Me.Controls.Add(Me.lblHint)
         Me.Controls.Add(Me.UclHomeExit1)
         Me.MaximizeBox = False
-        Me.Name = "frmGame"
+        Me.Name = "lblLetterB"
         Me.Text = "Divisions of Science"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -138,4 +190,8 @@ Partial Class frmGame
     Friend WithEvents lblCat As System.Windows.Forms.Label
     Friend WithEvents btnLoadButton As System.Windows.Forms.Button
     Friend WithEvents lblHyphen As System.Windows.Forms.Label
+    Friend WithEvents lblLetterA As System.Windows.Forms.Label
+    Friend WithEvents lblLetterD As System.Windows.Forms.Label
+    Friend WithEvents lblLetterC As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

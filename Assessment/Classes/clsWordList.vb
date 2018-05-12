@@ -29,34 +29,33 @@
     Function findWord(inputWord As String) As word
         Dim cWord As word = New word("BLANK", "BLANK", True)
         For Each word As word In words
-            If word.word = inputWord Then
+            If word.wordVal = inputWord Then
                 cWord = word
             End If
         Next
         Return cWord
     End Function
 
-    Function checkWordEsxits(inputWord As String) As Boolean
+    Public Function checkWordEsxits(inputWord As String) As Boolean
         For Each word As word In words
-            If word.word = inputWord And Not word.del Then
+            If word.wordVal = inputWord And Not word.del Then
                 Return True
                 Exit Function
             End If
         Next
         Return False
     End Function
-
 End Class
 
 Public Class word
-    Public word As String
+    Public wordVal As String
     Public hint As String
     Public del As Boolean = False
     Public blank As Boolean
 
 
     Public Sub New(wordLocal As String, hintLocal As String, Optional blankLocal As Boolean = False)
-        word = wordLocal
+        wordVal = wordLocal.ToUpper
         hint = hintLocal
         blank = blankLocal
     End Sub
@@ -65,9 +64,15 @@ Public Class word
         del = True
     End Sub
 
-    Public Function hyphenString(charArray As Array) As String
-        Dim hyphenStr As String = ""
-
-        Return hyphenStr
+    Public Function hyphenWord(Optional charList As String = "") As String
+        charList = charList.ToUpper
+        Dim hyphen As String = ""
+        Dim wCharArray As Char() = wordVal.ToCharArray()
+        For Each wChar As Char In wCharArray
+            If wChar <> CChar(" ") And Not charList.Contains(wChar.ToString()) Then hyphen += "-"
+            If charList.Contains(wChar.ToString()) Then hyphen += wChar.ToString
+            If wChar = CChar(" ") Then hyphen += " "
+        Next
+        Return hyphen
     End Function
 End Class
