@@ -20,7 +20,7 @@
         score = 0
     End Sub
 
-    Public Sub ans()
-        name = Str(answer)
+    Public Sub ans(answer As String)
+        name = answer
     End Sub
 End Class
