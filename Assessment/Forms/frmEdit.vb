@@ -31,7 +31,7 @@
         Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
         Dim cWord As word = cat.findWord(lstWords.SelectedItem.ToString)
 
-        txtWord.Text = cWord.wordVal
+        txtWord.Text = cWord.word
         txtHint.Text = cWord.hint
     End Sub
 
@@ -74,7 +74,7 @@
     Private Sub refWordList()
         lstWords.Items.Clear()
         For Each word As word In wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1).words
-            If Not word.del Then lstWords.Items.Add(word.wordVal)
+            If Not word.del Then lstWords.Items.Add(word.word)
         Next
     End Sub
 
@@ -90,7 +90,7 @@
             Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
             Dim word As word = cat.findWord(lstWords.SelectedItem.ToString)
             If Not cat.checkWordEsxits(txtWord.Text) Then
-                word.wordVal = txtWord.Text
+                word.word = txtWord.Text
                 word.hint = txtHint.Text
             Else
                 MsgBox("Bad, no Dupes!")

@@ -179,7 +179,6 @@ Partial Class frmLogin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents UclHomeExit1 As Assessment.uclHomeExit
