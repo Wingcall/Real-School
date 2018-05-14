@@ -51,6 +51,7 @@
 
     Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
         playerID = sender.tag
+        lblTag.Text = playerID
     End Sub
 
 End Class

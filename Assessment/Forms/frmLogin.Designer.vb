@@ -32,7 +32,8 @@ Partial Class frmLogin
         Me.lblPlayer3Score = New System.Windows.Forms.Label()
         Me.btnDelPlayer = New System.Windows.Forms.Button()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
-        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.lblTag = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'rdoPlayer1
@@ -145,12 +146,23 @@ Partial Class frmLogin
         Me.btnAdd.Text = "Add Player"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'lblTag
+        '
+        Me.lblTag.AutoSize = True
+        Me.lblTag.Location = New System.Drawing.Point(367, 108)
+        Me.lblTag.Name = "lblTag"
+        Me.lblTag.Size = New System.Drawing.Size(39, 13)
+        Me.lblTag.TabIndex = 19
+        Me.lblTag.Text = "Label1"
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.lblTag)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnDelPlayer)
         Me.Controls.Add(Me.lblPlayer3Score)
@@ -182,4 +194,6 @@ Partial Class frmLogin
     Friend WithEvents lblPlayer3Score As System.Windows.Forms.Label
     Friend WithEvents btnDelPlayer As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents btnNext As System.Windows.Forms.Button
+    Friend WithEvents lblTag As System.Windows.Forms.Label
 End Class
