@@ -31,7 +31,6 @@ Partial Class frmLogin
         Me.lblPlayer2Score = New System.Windows.Forms.Label()
         Me.lblPlayer3Score = New System.Windows.Forms.Label()
         Me.btnDelPlayer = New System.Windows.Forms.Button()
-        Me.btnAdd = New System.Windows.Forms.Button()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.lblTag = New System.Windows.Forms.Label()
@@ -123,21 +122,12 @@ Partial Class frmLogin
         '
         'btnDelPlayer
         '
-        Me.btnDelPlayer.Location = New System.Drawing.Point(196, 204)
+        Me.btnDelPlayer.Location = New System.Drawing.Point(162, 296)
         Me.btnDelPlayer.Name = "btnDelPlayer"
         Me.btnDelPlayer.Size = New System.Drawing.Size(75, 23)
         Me.btnDelPlayer.TabIndex = 16
         Me.btnDelPlayer.Text = "Delete Player"
         Me.btnDelPlayer.UseVisualStyleBackColor = True
-        '
-        'btnAdd
-        '
-        Me.btnAdd.Location = New System.Drawing.Point(74, 204)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
-        Me.btnAdd.TabIndex = 17
-        Me.btnAdd.Text = "Add Player"
-        Me.btnAdd.UseVisualStyleBackColor = True
         '
         'UclHomeExit1
         '
@@ -147,14 +137,14 @@ Partial Class frmLogin
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
-        'btnNext
+        'btnAdd
         '
-        Me.btnNext.Location = New System.Drawing.Point(507, 352)
-        Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(75, 23)
-        Me.btnNext.TabIndex = 18
-        Me.btnNext.Text = "Next"
-        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnAdd.Location = New System.Drawing.Point(162, 204)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.TabIndex = 17
+        Me.btnAdd.Text = "Add Player"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
         'lblTag
         '

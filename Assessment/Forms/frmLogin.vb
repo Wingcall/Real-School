@@ -54,9 +54,4 @@
         lblTag.Text = playerID
     End Sub
 
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        playerID = sender.tag
-        frmCategories.Show()
-        Me.Hide()
-    End Sub
 End Class
