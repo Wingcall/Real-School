@@ -78,7 +78,7 @@ Partial Class frmLogin
         'rdoPlayer4
         '
         Me.rdoPlayer4.BackColor = System.Drawing.Color.Transparent
-        Me.rdoPlayer4.Location = New System.Drawing.Point(317, 306)
+        Me.rdoPlayer4.Location = New System.Drawing.Point(317, 302)
         Me.rdoPlayer4.Name = "rdoPlayer4"
         Me.rdoPlayer4.Size = New System.Drawing.Size(89, 19)
         Me.rdoPlayer4.TabIndex = 11
@@ -117,7 +117,7 @@ Partial Class frmLogin
         'lblPlayer3Score
         '
         Me.lblPlayer3Score.AutoSize = True
-        Me.lblPlayer3Score.Location = New System.Drawing.Point(412, 306)
+        Me.lblPlayer3Score.Location = New System.Drawing.Point(412, 305)
         Me.lblPlayer3Score.Name = "lblPlayer3Score"
         Me.lblPlayer3Score.Size = New System.Drawing.Size(39, 13)
         Me.lblPlayer3Score.TabIndex = 15
