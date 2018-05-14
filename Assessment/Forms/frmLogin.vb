@@ -33,7 +33,6 @@
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim prompt As String
         Dim title As String
-        Dim answer As String
 
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
         title = "Create New Profile"    'Sets the Message Box Title
