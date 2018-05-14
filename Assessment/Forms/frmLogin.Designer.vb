@@ -31,8 +31,9 @@ Partial Class frmLogin
         Me.lblPlayer2Score = New System.Windows.Forms.Label()
         Me.lblPlayer3Score = New System.Windows.Forms.Label()
         Me.btnDelPlayer = New System.Windows.Forms.Button()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'rdoPlayer1
@@ -121,12 +122,21 @@ Partial Class frmLogin
         '
         'btnDelPlayer
         '
-        Me.btnDelPlayer.Location = New System.Drawing.Point(162, 296)
+        Me.btnDelPlayer.Location = New System.Drawing.Point(196, 204)
         Me.btnDelPlayer.Name = "btnDelPlayer"
         Me.btnDelPlayer.Size = New System.Drawing.Size(75, 23)
         Me.btnDelPlayer.TabIndex = 16
         Me.btnDelPlayer.Text = "Delete Player"
         Me.btnDelPlayer.UseVisualStyleBackColor = True
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Location = New System.Drawing.Point(74, 204)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.TabIndex = 17
+        Me.btnAdd.Text = "Add Player"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
         'UclHomeExit1
         '
@@ -136,14 +146,14 @@ Partial Class frmLogin
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
-        'btnAdd
+        'btnNext
         '
-        Me.btnAdd.Location = New System.Drawing.Point(162, 204)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
-        Me.btnAdd.TabIndex = 17
-        Me.btnAdd.Text = "Add Player"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnNext.Location = New System.Drawing.Point(507, 352)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 18
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
         '
         'frmLogin
         '
@@ -151,6 +161,7 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnDelPlayer)
         Me.Controls.Add(Me.lblPlayer3Score)
@@ -182,4 +193,5 @@ Partial Class frmLogin
     Friend WithEvents lblPlayer3Score As System.Windows.Forms.Label
     Friend WithEvents btnDelPlayer As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents btnNext As System.Windows.Forms.Button
 End Class

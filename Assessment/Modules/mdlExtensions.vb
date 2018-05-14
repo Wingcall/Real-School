@@ -39,4 +39,10 @@ Module extensions
         form.Show() 'Show the selected form
         frmMain.Hide() 'Hide the main form
     End Sub
+
+    <Extension()>
+    Public Sub closeForm(ByVal form As Form) 'Exstention to the forms
+        cLock = False
+        form.Close() 'Show the selected form
+    End Sub
 End Module

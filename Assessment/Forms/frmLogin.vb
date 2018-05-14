@@ -6,7 +6,7 @@
 
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
-        loadUserDB()
+        'loadUserDB()
         rdoPlayer1.Text = userInfo(0).name
         rdoPlayer2.Text = userInfo(1).name
         rdoPlayer3.Text = userInfo(2).name
@@ -53,4 +53,9 @@
         playerID = sender.tag
     End Sub
 
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        'playerID = sender.tag
+        frmCategories.Show()
+        Me.closeForm()
+    End Sub
 End Class
