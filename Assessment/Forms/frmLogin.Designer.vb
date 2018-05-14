@@ -32,7 +32,11 @@ Partial Class frmLogin
         Me.lblPlayer3Score = New System.Windows.Forms.Label()
         Me.btnDelPlayer = New System.Windows.Forms.Button()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
-        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.rdoPlayer1 = New System.Windows.Forms.RadioButton()
+        Me.rdoPlayer2 = New System.Windows.Forms.RadioButton()
+        Me.rdoPlayer3 = New System.Windows.Forms.RadioButton()
+        Me.rdoPlayer4 = New System.Windows.Forms.RadioButton()
+
         Me.SuspendLayout()
         '
         'rdoPlayer1
@@ -136,14 +140,50 @@ Partial Class frmLogin
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
-        'btnAdd
+        'rdoPlayer1
         '
-        Me.btnAdd.Location = New System.Drawing.Point(162, 204)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
-        Me.btnAdd.TabIndex = 17
-        Me.btnAdd.Text = "Add Player"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.rdoPlayer1.BackColor = System.Drawing.Color.Transparent
+        Me.rdoPlayer1.Location = New System.Drawing.Point(317, 201)
+        Me.rdoPlayer1.Name = "rdoPlayer1"
+        Me.rdoPlayer1.Size = New System.Drawing.Size(89, 19)
+        Me.rdoPlayer1.TabIndex = 8
+        Me.rdoPlayer1.TabStop = True
+        Me.rdoPlayer1.Text = "Player 1"
+        Me.rdoPlayer1.UseVisualStyleBackColor = False
+        '
+        'rdoPlayer2
+        '
+        Me.rdoPlayer2.BackColor = System.Drawing.Color.Transparent
+        Me.rdoPlayer2.Location = New System.Drawing.Point(317, 235)
+        Me.rdoPlayer2.Name = "rdoPlayer2"
+        Me.rdoPlayer2.Size = New System.Drawing.Size(89, 19)
+        Me.rdoPlayer2.TabIndex = 9
+        Me.rdoPlayer2.TabStop = True
+        Me.rdoPlayer2.Text = "Player 2"
+        Me.rdoPlayer2.UseVisualStyleBackColor = False
+        '
+        'rdoPlayer3
+        '
+        Me.rdoPlayer3.BackColor = System.Drawing.Color.Transparent
+        Me.rdoPlayer3.Location = New System.Drawing.Point(317, 269)
+        Me.rdoPlayer3.Name = "rdoPlayer3"
+        Me.rdoPlayer3.Size = New System.Drawing.Size(89, 19)
+        Me.rdoPlayer3.TabIndex = 10
+        Me.rdoPlayer3.TabStop = True
+        Me.rdoPlayer3.Text = "Player 3"
+        Me.rdoPlayer3.UseVisualStyleBackColor = False
+        '
+        'rdoPlayer4
+        '
+        Me.rdoPlayer4.BackColor = System.Drawing.Color.Transparent
+        Me.rdoPlayer4.Location = New System.Drawing.Point(317, 306)
+        Me.rdoPlayer4.Name = "rdoPlayer4"
+        Me.rdoPlayer4.Size = New System.Drawing.Size(89, 19)
+        Me.rdoPlayer4.TabIndex = 11
+        Me.rdoPlayer4.TabStop = True
+        Me.rdoPlayer4.Text = "Player 4"
+        Me.rdoPlayer4.UseVisualStyleBackColor = False
+
         '
         'frmLogin
         '
@@ -151,12 +191,7 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
-        Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.btnDelPlayer)
-        Me.Controls.Add(Me.lblPlayer3Score)
-        Me.Controls.Add(Me.lblPlayer2Score)
-        Me.Controls.Add(Me.lblPlayer1Score)
-        Me.Controls.Add(Me.lblPlayer0Score)
+
         Me.Controls.Add(Me.rdoPlayer4)
         Me.Controls.Add(Me.rdoPlayer3)
         Me.Controls.Add(Me.rdoPlayer2)
@@ -175,11 +210,5 @@ Partial Class frmLogin
     Friend WithEvents rdoPlayer1 As System.Windows.Forms.RadioButton
     Friend WithEvents rdoPlayer2 As System.Windows.Forms.RadioButton
     Friend WithEvents rdoPlayer3 As System.Windows.Forms.RadioButton
-    Friend WithEvents rdoPlayer4 As System.Windows.Forms.RadioButton
-    Friend WithEvents lblPlayer0Score As System.Windows.Forms.Label
-    Friend WithEvents lblPlayer1Score As System.Windows.Forms.Label
-    Friend WithEvents lblPlayer2Score As System.Windows.Forms.Label
-    Friend WithEvents lblPlayer3Score As System.Windows.Forms.Label
-    Friend WithEvents btnDelPlayer As System.Windows.Forms.Button
-    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents rdoPlayer4 As System.Windows.For
 End Class
