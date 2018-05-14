@@ -456,6 +456,7 @@ Partial Class frmGame
         '
         'picHangman
         '
+        Me.picHangman.BackColor = System.Drawing.Color.Transparent
         Me.picHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.picHangman.InitialImage = Nothing
         Me.picHangman.Location = New System.Drawing.Point(516, 1)

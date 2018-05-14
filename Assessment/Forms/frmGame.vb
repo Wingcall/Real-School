@@ -1,5 +1,5 @@
 ﻿Public Class frmGame
-    Dim maxGuesses As Integer = 7
+    Dim maxGuesses As Integer = 7 'Stop yelling at me for magic numbers
     Dim letterGuesses As String = ""
     Dim badGuesses As Integer
 
