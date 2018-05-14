@@ -10,6 +10,11 @@
         score = pInfo(2)
     End Sub
 
+    Public Sub wipePlayer(inName As String)
+        name = inName
+        score = 0
+    End Sub
+
     Public Sub del()
         name = "New Player!"
         score = 0
