@@ -51,7 +51,7 @@ Module XML_DB
             'Console.WriteLine("id: " & id & " Name: " & name & " Score: " & score)
         Next 'Loop
 
-        printUserInfo()
+        'printUserInfo()
     End Sub
 
     Sub printUserInfo()

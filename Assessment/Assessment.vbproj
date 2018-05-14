@@ -100,7 +100,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Classes\clsFormEvents.vb" />
     <Compile Include="Classes\clsPlayerInfo.vb" />
     <Compile Include="Forms\frmAbout.Designer.vb">
@@ -113,12 +112,6 @@
       <DependentUpon>frmCategories.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmCategories.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmDebug.Designer.vb">
-      <DependentUpon>frmDebug.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmDebug.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmGame.Designer.vb">
@@ -184,9 +177,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCategories.resx">
       <DependentUpon>frmCategories.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmDebug.resx">
-      <DependentUpon>frmDebug.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmGame.resx">
       <DependentUpon>frmGame.vb</DependentUpon>
