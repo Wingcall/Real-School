@@ -8,7 +8,7 @@
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
 
         picHangman.SizeMode = PictureBoxSizeMode.Normal
-        picHangman.Image = 
+        picHangman.Image = Nothing
 
         letterGuesses = ""
         badGuesses = maxGuesses
