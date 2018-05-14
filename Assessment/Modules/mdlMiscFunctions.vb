@@ -1,6 +1,13 @@
 ﻿Module miscFunctions
     Public Sub exitGame(form As Form, Optional e As FormClosingEventArgs = Nothing)
-        Dim result As Integer = MessageBox.Show("Do you really want to quit?", "Exit", MessageBoxButtons.YesNo) 'Ask the user if they want to quit
+        Dim arguments As String() = Environment.GetCommandLineArgs() 'get command line arguments
+        Dim result As Integer
+        If arguments(1) = "--debug" Then ' if debug is given
+            result = 6 'just close the game
+        Else
+            result = MessageBox.Show("Do you really want to quit?", "Exit", MessageBoxButtons.YesNo) 'Ask the user if they want to quit
+        End If
+
         If (result = DialogResult.Yes) Then 'Check if they said yes
             'form.disabled = True
             If (form.Name = "frmGame") Then 'Check if the game form called the close

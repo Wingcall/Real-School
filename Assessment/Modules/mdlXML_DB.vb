@@ -6,8 +6,8 @@ Module XML_DB
 
     Private ReadOnly userLimit As Int16 = 4 'Wow, ok before you yell at me for magic numbers, this is a limit we chose to impliment.
 
-    Public userInfo(0) As Object 'This is now dynamic using Array.add
-    Public wordLists(0) As Object
+    Public userInfo(0) As playerInfo 'This is now dynamic using Array.add
+    Public wordLists(0) As wordList
 
     Public Sub loadWordDB()
         Dim doc As New XmlDocument() 'Create a var to hold the users xml file
