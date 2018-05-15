@@ -22,6 +22,7 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Me.rdoPlayer1 = New System.Windows.Forms.RadioButton()
         Me.rdoPlayer2 = New System.Windows.Forms.RadioButton()
         Me.rdoPlayer3 = New System.Windows.Forms.RadioButton()
@@ -185,6 +186,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.rdoPlayer1)
         Me.Controls.Add(Me.UclHomeExit1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
