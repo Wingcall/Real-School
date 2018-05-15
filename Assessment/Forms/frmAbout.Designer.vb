@@ -22,6 +22,7 @@ Partial Class frmAbout
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAbout))
         Me.lblCAbout = New System.Windows.Forms.Label()
         Me.lblAbout = New System.Windows.Forms.Label()
         Me.lblBAbout = New System.Windows.Forms.Label()
@@ -70,11 +71,11 @@ Partial Class frmAbout
         Me.lblBTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblBTitle.Font = New System.Drawing.Font("Harlow Solid Italic", 26.25!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBTitle.Location = New System.Drawing.Point(4, 92)
+        Me.lblBTitle.Location = New System.Drawing.Point(-5, 93)
         Me.lblBTitle.Name = "lblBTitle"
-        Me.lblBTitle.Size = New System.Drawing.Size(268, 45)
+        Me.lblBTitle.Size = New System.Drawing.Size(283, 45)
         Me.lblBTitle.TabIndex = 11
-        Me.lblBTitle.Text = "Brandon Dingly"
+        Me.lblBTitle.Text = "Brandon Dingley"
         '
         'lblCTitle
         '
@@ -120,6 +121,7 @@ Partial Class frmAbout
         Me.Controls.Add(Me.lblAbout)
         Me.Controls.Add(Me.lblCAbout)
         Me.Controls.Add(Me.UclHomeExit1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmAbout"
         Me.Text = "Divisions of Science"

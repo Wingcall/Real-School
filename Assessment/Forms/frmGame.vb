@@ -38,6 +38,9 @@
             lblHyphen.Text = plrWord.hyphenWord(letterGuesses)
             If Not lblHyphen.Text.Contains("-") Then
                 pnlLetters.Enabled = False
+                userInfo(playerID).score += 1
+                lblScore.Text = userInfo(playerID).score
+                updateUserXML()
                 MsgBox("Game Win!")
             End If
         Else

@@ -22,6 +22,7 @@ Partial Class frmEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEdit))
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.lstWords = New System.Windows.Forms.ListBox()
         Me.btnDel = New System.Windows.Forms.Button()
@@ -123,6 +124,7 @@ Partial Class frmEdit
         Me.Controls.Add(Me.btnDel)
         Me.Controls.Add(Me.lstWords)
         Me.Controls.Add(Me.UclHomeExit1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmEdit"
         Me.Text = "Divisions of Science"

@@ -51,10 +51,11 @@
 
     Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
         playerID = sender.tag
+        lblTag.Text = sender.tag
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        'playerID = sender.tag
+        playerID = sender.tag
         frmCategories.Show()
         Me.closeForm()
     End Sub
