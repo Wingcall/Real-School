@@ -22,6 +22,7 @@ Partial Class frmHelp
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHelp))
         Me.cboHelp = New System.Windows.Forms.ComboBox()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.SuspendLayout()
@@ -56,6 +57,7 @@ Partial Class frmHelp
         Me.Controls.Add(Me.cboHelp)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.HelpButton = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmHelp"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
