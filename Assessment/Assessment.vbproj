@@ -255,6 +255,7 @@
     <None Include="Resources\Phsyics Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Our Font.bmp" />
     <Content Include="XML_Files\users.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
