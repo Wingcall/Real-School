@@ -77,14 +77,14 @@ Module XML_DB
 
     Public Sub updateWordXML()
         Dim XML As String = "<wordList>"
-        For Each cat As wordList In wordLists
+        For Each cat As Object In wordLists
             XML += "<category id=" & ControlChars.Quote & cat.id & ControlChars.Quote & ">"
             XML += "<name>" & cat.name & "</name>"
             XML += "<words>"
-            For Each word As word In cat.words
+            For Each word As Object In cat.words
                 If Not word.del Then
                     XML += "<word>"
-                    XML += "<name>" & word.wordVal & "</name>"
+                    XML += "<name>" & word.word & "</name>"
                     XML += "<hint>" & word.hint & "</hint>"
                     XML += "</word>"
                 End If
@@ -100,7 +100,7 @@ Module XML_DB
     Public Sub updateUserXML()
         userInfo(1).del()
         Dim XML As String = "<users>"
-        For Each user As playerInfo In userInfo
+        For Each user As Object In userInfo
             XML += "<user id=" & ControlChars.Quote & user.id & ControlChars.Quote & ">"
             XML += "<name>" & user.name & "</name>"
             XML += "<score>" & user.score & "</score>"
