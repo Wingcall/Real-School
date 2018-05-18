@@ -41,14 +41,14 @@
                 userInfo(playerID).score += 1
                 lblScore.Text = userInfo(playerID).score
                 updateUserXML()
-                MsgBox("Game Win!")
+                MsgBox("Game Win! :)")
             End If
         Else
             If badGuesses > 0 Then picHangman.Image = ilsHangmen.Images(badGuesses - 1)
             badGuesses -= 1
             If badGuesses <= 0 Then
                 pnlLetters.Enabled = False
-                MsgBox("Game Lost")
+                MsgBox("Game Lost! :(")
                 Exit Sub
             End If
         End If

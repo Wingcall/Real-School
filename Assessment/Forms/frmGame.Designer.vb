@@ -32,35 +32,40 @@ Partial Class frmGame
         Me.btnLoadButton = New System.Windows.Forms.Button()
         Me.lblHyphen = New System.Windows.Forms.Label()
         Me.pnlLetters = New System.Windows.Forms.Panel()
+        Me.lblLetterZ = New System.Windows.Forms.Label()
+        Me.lblLetterY = New System.Windows.Forms.Label()
+        Me.lblLetterX = New System.Windows.Forms.Label()
+        Me.lblLetterW = New System.Windows.Forms.Label()
+        Me.lblLetterV = New System.Windows.Forms.Label()
+        Me.lblLetterU = New System.Windows.Forms.Label()
+        Me.lblLetterT = New System.Windows.Forms.Label()
+        Me.lblLetterS = New System.Windows.Forms.Label()
+        Me.lblLetterR = New System.Windows.Forms.Label()
+        Me.lblLetterQ = New System.Windows.Forms.Label()
+        Me.lblLetterP = New System.Windows.Forms.Label()
+        Me.lblLetterO = New System.Windows.Forms.Label()
+        Me.lblLetterN = New System.Windows.Forms.Label()
+        Me.lblLetterM = New System.Windows.Forms.Label()
+        Me.lblLetterL = New System.Windows.Forms.Label()
+        Me.lblLetterK = New System.Windows.Forms.Label()
+        Me.lblLetterJ = New System.Windows.Forms.Label()
+        Me.lblLetterI = New System.Windows.Forms.Label()
+        Me.lblLetterH = New System.Windows.Forms.Label()
+        Me.lblLetterG = New System.Windows.Forms.Label()
+        Me.lblLetterF = New System.Windows.Forms.Label()
+        Me.lblLetterE = New System.Windows.Forms.Label()
         Me.lblLetterB = New System.Windows.Forms.Label()
         Me.lblLetterC = New System.Windows.Forms.Label()
         Me.lblLetterD = New System.Windows.Forms.Label()
         Me.lblLetterA = New System.Windows.Forms.Label()
-        Me.lblLetterE = New System.Windows.Forms.Label()
-        Me.lblLetterF = New System.Windows.Forms.Label()
-        Me.lblLetterG = New System.Windows.Forms.Label()
-        Me.lblLetterH = New System.Windows.Forms.Label()
-        Me.lblLetterI = New System.Windows.Forms.Label()
-        Me.lblLetterJ = New System.Windows.Forms.Label()
-        Me.lblLetterK = New System.Windows.Forms.Label()
-        Me.lblLetterL = New System.Windows.Forms.Label()
-        Me.lblLetterM = New System.Windows.Forms.Label()
-        Me.lblLetterN = New System.Windows.Forms.Label()
-        Me.lblLetterO = New System.Windows.Forms.Label()
-        Me.lblLetterP = New System.Windows.Forms.Label()
-        Me.lblLetterQ = New System.Windows.Forms.Label()
-        Me.lblLetterR = New System.Windows.Forms.Label()
-        Me.lblLetterS = New System.Windows.Forms.Label()
-        Me.lblLetterT = New System.Windows.Forms.Label()
-        Me.lblLetterU = New System.Windows.Forms.Label()
-        Me.lblLetterV = New System.Windows.Forms.Label()
-        Me.lblLetterW = New System.Windows.Forms.Label()
-        Me.lblLetterX = New System.Windows.Forms.Label()
-        Me.lblLetterY = New System.Windows.Forms.Label()
-        Me.lblLetterZ = New System.Windows.Forms.Label()
         Me.picHangman = New System.Windows.Forms.PictureBox()
         Me.ilsHangmen = New System.Windows.Forms.ImageList(Me.components)
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.lblNameLabel = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnForfit = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.pnlLetters.SuspendLayout()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -69,7 +74,7 @@ Partial Class frmGame
         '
         Me.lblHint.AutoSize = True
         Me.lblHint.BackColor = System.Drawing.Color.Transparent
-        Me.lblHint.Location = New System.Drawing.Point(180, 97)
+        Me.lblHint.Location = New System.Drawing.Point(65, 146)
         Me.lblHint.Name = "lblHint"
         Me.lblHint.Size = New System.Drawing.Size(26, 13)
         Me.lblHint.TabIndex = 8
@@ -79,7 +84,7 @@ Partial Class frmGame
         '
         Me.lblScore.AutoSize = True
         Me.lblScore.BackColor = System.Drawing.Color.Transparent
-        Me.lblScore.Location = New System.Drawing.Point(126, 115)
+        Me.lblScore.Location = New System.Drawing.Point(95, 97)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(35, 13)
         Me.lblScore.TabIndex = 9
@@ -89,7 +94,7 @@ Partial Class frmGame
         '
         Me.lblName.AutoSize = True
         Me.lblName.BackColor = System.Drawing.Color.Transparent
-        Me.lblName.Location = New System.Drawing.Point(95, 77)
+        Me.lblName.Location = New System.Drawing.Point(67, 62)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(35, 13)
         Me.lblName.TabIndex = 10
@@ -99,7 +104,7 @@ Partial Class frmGame
         '
         Me.lblWord.AutoSize = True
         Me.lblWord.BackColor = System.Drawing.Color.Transparent
-        Me.lblWord.Location = New System.Drawing.Point(143, 62)
+        Me.lblWord.Location = New System.Drawing.Point(350, 36)
         Me.lblWord.Name = "lblWord"
         Me.lblWord.Size = New System.Drawing.Size(33, 13)
         Me.lblWord.TabIndex = 11
@@ -109,7 +114,7 @@ Partial Class frmGame
         '
         Me.lblCat.AutoSize = True
         Me.lblCat.BackColor = System.Drawing.Color.Transparent
-        Me.lblCat.Location = New System.Drawing.Point(193, 147)
+        Me.lblCat.Location = New System.Drawing.Point(140, 322)
         Me.lblCat.Name = "lblCat"
         Me.lblCat.Size = New System.Drawing.Size(23, 13)
         Me.lblCat.TabIndex = 12
@@ -117,7 +122,7 @@ Partial Class frmGame
         '
         'btnLoadButton
         '
-        Me.btnLoadButton.Location = New System.Drawing.Point(330, 166)
+        Me.btnLoadButton.Location = New System.Drawing.Point(683, 312)
         Me.btnLoadButton.Name = "btnLoadButton"
         Me.btnLoadButton.Size = New System.Drawing.Size(75, 23)
         Me.btnLoadButton.TabIndex = 13
@@ -128,9 +133,10 @@ Partial Class frmGame
         '
         Me.lblHyphen.AutoSize = True
         Me.lblHyphen.BackColor = System.Drawing.Color.Transparent
-        Me.lblHyphen.Location = New System.Drawing.Point(105, 166)
+        Me.lblHyphen.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHyphen.Location = New System.Drawing.Point(224, 183)
         Me.lblHyphen.Name = "lblHyphen"
-        Me.lblHyphen.Size = New System.Drawing.Size(44, 13)
+        Me.lblHyphen.Size = New System.Drawing.Size(148, 42)
         Me.lblHyphen.TabIndex = 14
         Me.lblHyphen.Text = "Hyphen"
         '
@@ -163,19 +169,261 @@ Partial Class frmGame
         Me.pnlLetters.Controls.Add(Me.lblLetterC)
         Me.pnlLetters.Controls.Add(Me.lblLetterD)
         Me.pnlLetters.Controls.Add(Me.lblLetterA)
-        Me.pnlLetters.Location = New System.Drawing.Point(82, 280)
+        Me.pnlLetters.Location = New System.Drawing.Point(98, 358)
         Me.pnlLetters.Name = "pnlLetters"
-        Me.pnlLetters.Size = New System.Drawing.Size(615, 116)
+        Me.pnlLetters.Size = New System.Drawing.Size(610, 113)
         Me.pnlLetters.TabIndex = 23
+        '
+        'lblLetterZ
+        '
+        Me.lblLetterZ.AutoSize = True
+        Me.lblLetterZ.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterZ.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterZ.Location = New System.Drawing.Point(511, 62)
+        Me.lblLetterZ.Name = "lblLetterZ"
+        Me.lblLetterZ.Size = New System.Drawing.Size(42, 42)
+        Me.lblLetterZ.TabIndex = 48
+        Me.lblLetterZ.Text = "Z"
+        '
+        'lblLetterY
+        '
+        Me.lblLetterY.AutoSize = True
+        Me.lblLetterY.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterY.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterY.Location = New System.Drawing.Point(468, 62)
+        Me.lblLetterY.Name = "lblLetterY"
+        Me.lblLetterY.Size = New System.Drawing.Size(43, 42)
+        Me.lblLetterY.TabIndex = 47
+        Me.lblLetterY.Text = "Y"
+        '
+        'lblLetterX
+        '
+        Me.lblLetterX.AutoSize = True
+        Me.lblLetterX.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterX.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterX.Location = New System.Drawing.Point(426, 62)
+        Me.lblLetterX.Name = "lblLetterX"
+        Me.lblLetterX.Size = New System.Drawing.Size(42, 42)
+        Me.lblLetterX.TabIndex = 46
+        Me.lblLetterX.Text = "X"
+        '
+        'lblLetterW
+        '
+        Me.lblLetterW.AutoSize = True
+        Me.lblLetterW.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterW.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterW.Location = New System.Drawing.Point(373, 62)
+        Me.lblLetterW.Name = "lblLetterW"
+        Me.lblLetterW.Size = New System.Drawing.Size(53, 42)
+        Me.lblLetterW.TabIndex = 45
+        Me.lblLetterW.Text = "W"
+        '
+        'lblLetterV
+        '
+        Me.lblLetterV.AutoSize = True
+        Me.lblLetterV.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterV.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterV.Location = New System.Drawing.Point(329, 62)
+        Me.lblLetterV.Name = "lblLetterV"
+        Me.lblLetterV.Size = New System.Drawing.Size(44, 42)
+        Me.lblLetterV.TabIndex = 44
+        Me.lblLetterV.Text = "V"
+        '
+        'lblLetterU
+        '
+        Me.lblLetterU.AutoSize = True
+        Me.lblLetterU.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterU.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterU.Location = New System.Drawing.Point(285, 62)
+        Me.lblLetterU.Name = "lblLetterU"
+        Me.lblLetterU.Size = New System.Drawing.Size(44, 42)
+        Me.lblLetterU.TabIndex = 43
+        Me.lblLetterU.Text = "U"
+        '
+        'lblLetterT
+        '
+        Me.lblLetterT.AutoSize = True
+        Me.lblLetterT.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterT.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterT.Location = New System.Drawing.Point(241, 62)
+        Me.lblLetterT.Name = "lblLetterT"
+        Me.lblLetterT.Size = New System.Drawing.Size(44, 42)
+        Me.lblLetterT.TabIndex = 42
+        Me.lblLetterT.Text = "T"
+        '
+        'lblLetterS
+        '
+        Me.lblLetterS.AutoSize = True
+        Me.lblLetterS.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterS.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterS.Location = New System.Drawing.Point(203, 62)
+        Me.lblLetterS.Name = "lblLetterS"
+        Me.lblLetterS.Size = New System.Drawing.Size(38, 42)
+        Me.lblLetterS.TabIndex = 41
+        Me.lblLetterS.Text = "S"
+        '
+        'lblLetterR
+        '
+        Me.lblLetterR.AutoSize = True
+        Me.lblLetterR.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterR.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterR.Location = New System.Drawing.Point(160, 62)
+        Me.lblLetterR.Name = "lblLetterR"
+        Me.lblLetterR.Size = New System.Drawing.Size(43, 42)
+        Me.lblLetterR.TabIndex = 40
+        Me.lblLetterR.Text = "R"
+        '
+        'lblLetterQ
+        '
+        Me.lblLetterQ.AutoSize = True
+        Me.lblLetterQ.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterQ.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterQ.Location = New System.Drawing.Point(113, 62)
+        Me.lblLetterQ.Name = "lblLetterQ"
+        Me.lblLetterQ.Size = New System.Drawing.Size(47, 42)
+        Me.lblLetterQ.TabIndex = 39
+        Me.lblLetterQ.Text = "Q"
+        '
+        'lblLetterP
+        '
+        Me.lblLetterP.AutoSize = True
+        Me.lblLetterP.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterP.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterP.Location = New System.Drawing.Point(74, 62)
+        Me.lblLetterP.Name = "lblLetterP"
+        Me.lblLetterP.Size = New System.Drawing.Size(39, 42)
+        Me.lblLetterP.TabIndex = 38
+        Me.lblLetterP.Text = "P"
+        '
+        'lblLetterO
+        '
+        Me.lblLetterO.AutoSize = True
+        Me.lblLetterO.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterO.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterO.Location = New System.Drawing.Point(564, 13)
+        Me.lblLetterO.Name = "lblLetterO"
+        Me.lblLetterO.Size = New System.Drawing.Size(47, 42)
+        Me.lblLetterO.TabIndex = 37
+        Me.lblLetterO.Text = "O"
+        '
+        'lblLetterN
+        '
+        Me.lblLetterN.AutoSize = True
+        Me.lblLetterN.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterN.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterN.Location = New System.Drawing.Point(525, 13)
+        Me.lblLetterN.Name = "lblLetterN"
+        Me.lblLetterN.Size = New System.Drawing.Size(45, 42)
+        Me.lblLetterN.TabIndex = 36
+        Me.lblLetterN.Text = "N"
+        '
+        'lblLetterM
+        '
+        Me.lblLetterM.AutoSize = True
+        Me.lblLetterM.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterM.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterM.Location = New System.Drawing.Point(475, 13)
+        Me.lblLetterM.Name = "lblLetterM"
+        Me.lblLetterM.Size = New System.Drawing.Size(50, 42)
+        Me.lblLetterM.TabIndex = 35
+        Me.lblLetterM.Text = "M"
+        '
+        'lblLetterL
+        '
+        Me.lblLetterL.AutoSize = True
+        Me.lblLetterL.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterL.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterL.Location = New System.Drawing.Point(436, 13)
+        Me.lblLetterL.Name = "lblLetterL"
+        Me.lblLetterL.Size = New System.Drawing.Size(39, 42)
+        Me.lblLetterL.TabIndex = 34
+        Me.lblLetterL.Text = "L"
+        '
+        'lblLetterK
+        '
+        Me.lblLetterK.AutoSize = True
+        Me.lblLetterK.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterK.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterK.Location = New System.Drawing.Point(392, 13)
+        Me.lblLetterK.Name = "lblLetterK"
+        Me.lblLetterK.Size = New System.Drawing.Size(44, 42)
+        Me.lblLetterK.TabIndex = 33
+        Me.lblLetterK.Text = "K"
+        '
+        'lblLetterJ
+        '
+        Me.lblLetterJ.AutoSize = True
+        Me.lblLetterJ.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterJ.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterJ.Location = New System.Drawing.Point(359, 13)
+        Me.lblLetterJ.Name = "lblLetterJ"
+        Me.lblLetterJ.Size = New System.Drawing.Size(33, 42)
+        Me.lblLetterJ.TabIndex = 32
+        Me.lblLetterJ.Text = "J"
+        '
+        'lblLetterI
+        '
+        Me.lblLetterI.AutoSize = True
+        Me.lblLetterI.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterI.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterI.Location = New System.Drawing.Point(329, 13)
+        Me.lblLetterI.Name = "lblLetterI"
+        Me.lblLetterI.Size = New System.Drawing.Size(30, 42)
+        Me.lblLetterI.TabIndex = 31
+        Me.lblLetterI.Text = "I"
+        '
+        'lblLetterH
+        '
+        Me.lblLetterH.AutoSize = True
+        Me.lblLetterH.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterH.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterH.Location = New System.Drawing.Point(282, 13)
+        Me.lblLetterH.Name = "lblLetterH"
+        Me.lblLetterH.Size = New System.Drawing.Size(47, 42)
+        Me.lblLetterH.TabIndex = 30
+        Me.lblLetterH.Text = "H"
+        '
+        'lblLetterG
+        '
+        Me.lblLetterG.AutoSize = True
+        Me.lblLetterG.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterG.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterG.Location = New System.Drawing.Point(242, 13)
+        Me.lblLetterG.Name = "lblLetterG"
+        Me.lblLetterG.Size = New System.Drawing.Size(46, 42)
+        Me.lblLetterG.TabIndex = 29
+        Me.lblLetterG.Text = "G"
+        '
+        'lblLetterF
+        '
+        Me.lblLetterF.AutoSize = True
+        Me.lblLetterF.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterF.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterF.Location = New System.Drawing.Point(208, 13)
+        Me.lblLetterF.Name = "lblLetterF"
+        Me.lblLetterF.Size = New System.Drawing.Size(38, 42)
+        Me.lblLetterF.TabIndex = 28
+        Me.lblLetterF.Text = "F"
+        '
+        'lblLetterE
+        '
+        Me.lblLetterE.AutoSize = True
+        Me.lblLetterE.BackColor = System.Drawing.Color.Transparent
+        Me.lblLetterE.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterE.Location = New System.Drawing.Point(169, 13)
+        Me.lblLetterE.Name = "lblLetterE"
+        Me.lblLetterE.Size = New System.Drawing.Size(39, 42)
+        Me.lblLetterE.TabIndex = 27
+        Me.lblLetterE.Text = "E"
         '
         'lblLetterB
         '
         Me.lblLetterB.AutoSize = True
         Me.lblLetterB.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterB.Location = New System.Drawing.Point(49, 14)
+        Me.lblLetterB.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterB.Location = New System.Drawing.Point(51, 13)
         Me.lblLetterB.Name = "lblLetterB"
-        Me.lblLetterB.Size = New System.Drawing.Size(34, 33)
+        Me.lblLetterB.Size = New System.Drawing.Size(40, 42)
         Me.lblLetterB.TabIndex = 26
         Me.lblLetterB.Text = "B"
         '
@@ -183,10 +431,10 @@ Partial Class frmGame
         '
         Me.lblLetterC.AutoSize = True
         Me.lblLetterC.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterC.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterC.Location = New System.Drawing.Point(81, 14)
+        Me.lblLetterC.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterC.Location = New System.Drawing.Point(85, 13)
         Me.lblLetterC.Name = "lblLetterC"
-        Me.lblLetterC.Size = New System.Drawing.Size(36, 33)
+        Me.lblLetterC.Size = New System.Drawing.Size(44, 42)
         Me.lblLetterC.TabIndex = 25
         Me.lblLetterC.Text = "C"
         '
@@ -194,10 +442,10 @@ Partial Class frmGame
         '
         Me.lblLetterD.AutoSize = True
         Me.lblLetterD.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterD.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterD.Location = New System.Drawing.Point(116, 14)
+        Me.lblLetterD.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterD.Location = New System.Drawing.Point(126, 13)
         Me.lblLetterD.Name = "lblLetterD"
-        Me.lblLetterD.Size = New System.Drawing.Size(36, 33)
+        Me.lblLetterD.Size = New System.Drawing.Size(46, 42)
         Me.lblLetterD.TabIndex = 24
         Me.lblLetterD.Text = "D"
         '
@@ -205,261 +453,19 @@ Partial Class frmGame
         '
         Me.lblLetterA.AutoSize = True
         Me.lblLetterA.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterA.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterA.Location = New System.Drawing.Point(18, 14)
+        Me.lblLetterA.Font = New System.Drawing.Font("Lucida Bright", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetterA.Location = New System.Drawing.Point(7, 13)
         Me.lblLetterA.Name = "lblLetterA"
-        Me.lblLetterA.Size = New System.Drawing.Size(34, 33)
+        Me.lblLetterA.Size = New System.Drawing.Size(46, 42)
         Me.lblLetterA.TabIndex = 23
         Me.lblLetterA.Text = "A"
-        '
-        'lblLetterE
-        '
-        Me.lblLetterE.AutoSize = True
-        Me.lblLetterE.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterE.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterE.Location = New System.Drawing.Point(158, 14)
-        Me.lblLetterE.Name = "lblLetterE"
-        Me.lblLetterE.Size = New System.Drawing.Size(34, 33)
-        Me.lblLetterE.TabIndex = 27
-        Me.lblLetterE.Text = "E"
-        '
-        'lblLetterF
-        '
-        Me.lblLetterF.AutoSize = True
-        Me.lblLetterF.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterF.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterF.Location = New System.Drawing.Point(198, 14)
-        Me.lblLetterF.Name = "lblLetterF"
-        Me.lblLetterF.Size = New System.Drawing.Size(33, 33)
-        Me.lblLetterF.TabIndex = 28
-        Me.lblLetterF.Text = "F"
-        '
-        'lblLetterG
-        '
-        Me.lblLetterG.AutoSize = True
-        Me.lblLetterG.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterG.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterG.Location = New System.Drawing.Point(237, 14)
-        Me.lblLetterG.Name = "lblLetterG"
-        Me.lblLetterG.Size = New System.Drawing.Size(38, 33)
-        Me.lblLetterG.TabIndex = 29
-        Me.lblLetterG.Text = "G"
-        '
-        'lblLetterH
-        '
-        Me.lblLetterH.AutoSize = True
-        Me.lblLetterH.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterH.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterH.Location = New System.Drawing.Point(281, 14)
-        Me.lblLetterH.Name = "lblLetterH"
-        Me.lblLetterH.Size = New System.Drawing.Size(36, 33)
-        Me.lblLetterH.TabIndex = 30
-        Me.lblLetterH.Text = "H"
-        '
-        'lblLetterI
-        '
-        Me.lblLetterI.AutoSize = True
-        Me.lblLetterI.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterI.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterI.Location = New System.Drawing.Point(311, 14)
-        Me.lblLetterI.Name = "lblLetterI"
-        Me.lblLetterI.Size = New System.Drawing.Size(23, 33)
-        Me.lblLetterI.TabIndex = 31
-        Me.lblLetterI.Text = "I"
-        '
-        'lblLetterJ
-        '
-        Me.lblLetterJ.AutoSize = True
-        Me.lblLetterJ.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterJ.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterJ.Location = New System.Drawing.Point(323, 14)
-        Me.lblLetterJ.Name = "lblLetterJ"
-        Me.lblLetterJ.Size = New System.Drawing.Size(30, 33)
-        Me.lblLetterJ.TabIndex = 32
-        Me.lblLetterJ.Text = "J"
-        '
-        'lblLetterK
-        '
-        Me.lblLetterK.AutoSize = True
-        Me.lblLetterK.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterK.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterK.Location = New System.Drawing.Point(359, 14)
-        Me.lblLetterK.Name = "lblLetterK"
-        Me.lblLetterK.Size = New System.Drawing.Size(34, 33)
-        Me.lblLetterK.TabIndex = 33
-        Me.lblLetterK.Text = "K"
-        '
-        'lblLetterL
-        '
-        Me.lblLetterL.AutoSize = True
-        Me.lblLetterL.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterL.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterL.Location = New System.Drawing.Point(399, 14)
-        Me.lblLetterL.Name = "lblLetterL"
-        Me.lblLetterL.Size = New System.Drawing.Size(31, 33)
-        Me.lblLetterL.TabIndex = 34
-        Me.lblLetterL.Text = "L"
-        '
-        'lblLetterM
-        '
-        Me.lblLetterM.AutoSize = True
-        Me.lblLetterM.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterM.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterM.Location = New System.Drawing.Point(436, 14)
-        Me.lblLetterM.Name = "lblLetterM"
-        Me.lblLetterM.Size = New System.Drawing.Size(39, 33)
-        Me.lblLetterM.TabIndex = 35
-        Me.lblLetterM.Text = "M"
-        '
-        'lblLetterN
-        '
-        Me.lblLetterN.AutoSize = True
-        Me.lblLetterN.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterN.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterN.Location = New System.Drawing.Point(481, 14)
-        Me.lblLetterN.Name = "lblLetterN"
-        Me.lblLetterN.Size = New System.Drawing.Size(36, 33)
-        Me.lblLetterN.TabIndex = 36
-        Me.lblLetterN.Text = "N"
-        '
-        'lblLetterO
-        '
-        Me.lblLetterO.AutoSize = True
-        Me.lblLetterO.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterO.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterO.Location = New System.Drawing.Point(523, 14)
-        Me.lblLetterO.Name = "lblLetterO"
-        Me.lblLetterO.Size = New System.Drawing.Size(38, 33)
-        Me.lblLetterO.TabIndex = 37
-        Me.lblLetterO.Text = "O"
-        '
-        'lblLetterP
-        '
-        Me.lblLetterP.AutoSize = True
-        Me.lblLetterP.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterP.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterP.Location = New System.Drawing.Point(49, 47)
-        Me.lblLetterP.Name = "lblLetterP"
-        Me.lblLetterP.Size = New System.Drawing.Size(34, 33)
-        Me.lblLetterP.TabIndex = 38
-        Me.lblLetterP.Text = "P"
-        '
-        'lblLetterQ
-        '
-        Me.lblLetterQ.AutoSize = True
-        Me.lblLetterQ.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterQ.Location = New System.Drawing.Point(81, 47)
-        Me.lblLetterQ.Name = "lblLetterQ"
-        Me.lblLetterQ.Size = New System.Drawing.Size(38, 33)
-        Me.lblLetterQ.TabIndex = 39
-        Me.lblLetterQ.Text = "Q"
-        '
-        'lblLetterR
-        '
-        Me.lblLetterR.AutoSize = True
-        Me.lblLetterR.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterR.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterR.Location = New System.Drawing.Point(116, 47)
-        Me.lblLetterR.Name = "lblLetterR"
-        Me.lblLetterR.Size = New System.Drawing.Size(36, 33)
-        Me.lblLetterR.TabIndex = 40
-        Me.lblLetterR.Text = "R"
-        '
-        'lblLetterS
-        '
-        Me.lblLetterS.AutoSize = True
-        Me.lblLetterS.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterS.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterS.Location = New System.Drawing.Point(158, 47)
-        Me.lblLetterS.Name = "lblLetterS"
-        Me.lblLetterS.Size = New System.Drawing.Size(34, 33)
-        Me.lblLetterS.TabIndex = 41
-        Me.lblLetterS.Text = "S"
-        '
-        'lblLetterT
-        '
-        Me.lblLetterT.AutoSize = True
-        Me.lblLetterT.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterT.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterT.Location = New System.Drawing.Point(198, 47)
-        Me.lblLetterT.Name = "lblLetterT"
-        Me.lblLetterT.Size = New System.Drawing.Size(33, 33)
-        Me.lblLetterT.TabIndex = 42
-        Me.lblLetterT.Text = "T"
-        '
-        'lblLetterU
-        '
-        Me.lblLetterU.AutoSize = True
-        Me.lblLetterU.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterU.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterU.Location = New System.Drawing.Point(237, 47)
-        Me.lblLetterU.Name = "lblLetterU"
-        Me.lblLetterU.Size = New System.Drawing.Size(36, 33)
-        Me.lblLetterU.TabIndex = 43
-        Me.lblLetterU.Text = "U"
-        '
-        'lblLetterV
-        '
-        Me.lblLetterV.AutoSize = True
-        Me.lblLetterV.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterV.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterV.Location = New System.Drawing.Point(279, 47)
-        Me.lblLetterV.Name = "lblLetterV"
-        Me.lblLetterV.Size = New System.Drawing.Size(34, 33)
-        Me.lblLetterV.TabIndex = 44
-        Me.lblLetterV.Text = "V"
-        '
-        'lblLetterW
-        '
-        Me.lblLetterW.AutoSize = True
-        Me.lblLetterW.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterW.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterW.Location = New System.Drawing.Point(323, 47)
-        Me.lblLetterW.Name = "lblLetterW"
-        Me.lblLetterW.Size = New System.Drawing.Size(42, 33)
-        Me.lblLetterW.TabIndex = 45
-        Me.lblLetterW.Text = "W"
-        '
-        'lblLetterX
-        '
-        Me.lblLetterX.AutoSize = True
-        Me.lblLetterX.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterX.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterX.Location = New System.Drawing.Point(371, 47)
-        Me.lblLetterX.Name = "lblLetterX"
-        Me.lblLetterX.Size = New System.Drawing.Size(34, 33)
-        Me.lblLetterX.TabIndex = 46
-        Me.lblLetterX.Text = "X"
-        '
-        'lblLetterY
-        '
-        Me.lblLetterY.AutoSize = True
-        Me.lblLetterY.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterY.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterY.Location = New System.Drawing.Point(411, 47)
-        Me.lblLetterY.Name = "lblLetterY"
-        Me.lblLetterY.Size = New System.Drawing.Size(35, 33)
-        Me.lblLetterY.TabIndex = 47
-        Me.lblLetterY.Text = "Y"
-        '
-        'lblLetterZ
-        '
-        Me.lblLetterZ.AutoSize = True
-        Me.lblLetterZ.BackColor = System.Drawing.Color.Transparent
-        Me.lblLetterZ.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLetterZ.Location = New System.Drawing.Point(452, 47)
-        Me.lblLetterZ.Name = "lblLetterZ"
-        Me.lblLetterZ.Size = New System.Drawing.Size(33, 33)
-        Me.lblLetterZ.TabIndex = 48
-        Me.lblLetterZ.Text = "Z"
         '
         'picHangman
         '
         Me.picHangman.BackColor = System.Drawing.Color.Transparent
         Me.picHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.picHangman.InitialImage = Nothing
-        Me.picHangman.Location = New System.Drawing.Point(516, 1)
+        Me.picHangman.Location = New System.Drawing.Point(516, 49)
         Me.picHangman.Name = "picHangman"
         Me.picHangman.Size = New System.Drawing.Size(256, 256)
         Me.picHangman.TabIndex = 49
@@ -485,12 +491,66 @@ Partial Class frmGame
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
+        'lblNameLabel
+        '
+        Me.lblNameLabel.AutoSize = True
+        Me.lblNameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.lblNameLabel.Location = New System.Drawing.Point(28, 62)
+        Me.lblNameLabel.Name = "lblNameLabel"
+        Me.lblNameLabel.Size = New System.Drawing.Size(42, 13)
+        Me.lblNameLabel.TabIndex = 50
+        Me.lblNameLabel.Text = "Player: "
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(28, 97)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.TabIndex = 51
+        Me.Label1.Text = "Your Score:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(85, 322)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(55, 13)
+        Me.Label2.TabIndex = 52
+        Me.Label2.Text = "Category: "
+        '
+        'btnForfit
+        '
+        Me.btnForfit.Location = New System.Drawing.Point(4, 317)
+        Me.btnForfit.Name = "btnForfit"
+        Me.btnForfit.Size = New System.Drawing.Size(75, 23)
+        Me.btnForfit.TabIndex = 53
+        Me.btnForfit.Text = "Forfit"
+        Me.btnForfit.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Location = New System.Drawing.Point(28, 146)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(32, 13)
+        Me.Label3.TabIndex = 54
+        Me.Label3.Text = "Hint: "
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.btnForfit)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblNameLabel)
         Me.Controls.Add(Me.picHangman)
         Me.Controls.Add(Me.pnlLetters)
         Me.Controls.Add(Me.lblHyphen)
@@ -548,4 +608,9 @@ Partial Class frmGame
     Friend WithEvents lblLetterI As System.Windows.Forms.Label
     Friend WithEvents picHangman As System.Windows.Forms.PictureBox
     Friend WithEvents ilsHangmen As System.Windows.Forms.ImageList
+    Friend WithEvents lblNameLabel As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnForfit As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
