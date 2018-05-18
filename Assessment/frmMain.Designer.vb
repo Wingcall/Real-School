@@ -37,42 +37,46 @@ Partial Class frmMain
         '
         Me.lblPlay.BackColor = System.Drawing.Color.Transparent
         Me.lblPlay.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay.Location = New System.Drawing.Point(291, 156)
+        Me.lblPlay.Location = New System.Drawing.Point(292, 171)
         Me.lblPlay.Name = "lblPlay"
-        Me.lblPlay.Size = New System.Drawing.Size(234, 72)
+        Me.lblPlay.Size = New System.Drawing.Size(225, 74)
         Me.lblPlay.TabIndex = 0
-        Me.lblPlay.Text = "PLAY2"
+        Me.lblPlay.Text = "PLAY"
+        Me.lblPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHelp
         '
         Me.lblHelp.BackColor = System.Drawing.Color.Transparent
         Me.lblHelp.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHelp.Location = New System.Drawing.Point(291, 302)
+        Me.lblHelp.Location = New System.Drawing.Point(292, 317)
         Me.lblHelp.Name = "lblHelp"
-        Me.lblHelp.Size = New System.Drawing.Size(173, 73)
+        Me.lblHelp.Size = New System.Drawing.Size(225, 74)
         Me.lblHelp.TabIndex = 1
         Me.lblHelp.Text = "HELP"
+        Me.lblHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblExit
         '
         Me.lblExit.BackColor = System.Drawing.Color.Transparent
         Me.lblExit.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExit.Location = New System.Drawing.Point(291, 375)
+        Me.lblExit.Location = New System.Drawing.Point(292, 390)
         Me.lblExit.Name = "lblExit"
-        Me.lblExit.Size = New System.Drawing.Size(156, 69)
+        Me.lblExit.Size = New System.Drawing.Size(225, 74)
         Me.lblExit.TabIndex = 2
         Me.lblExit.Text = "EXIT"
+        Me.lblExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblAbout
         '
         Me.lblAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblAbout.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAbout.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblAbout.Location = New System.Drawing.Point(291, 228)
+        Me.lblAbout.Location = New System.Drawing.Point(292, 243)
         Me.lblAbout.Name = "lblAbout"
         Me.lblAbout.Size = New System.Drawing.Size(225, 74)
         Me.lblAbout.TabIndex = 3
         Me.lblAbout.Text = "ABOUT"
+        Me.lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button1
         '
