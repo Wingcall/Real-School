@@ -60,12 +60,12 @@ Partial Class frmGame
         Me.lblLetterA = New System.Windows.Forms.Label()
         Me.picHangman = New System.Windows.Forms.PictureBox()
         Me.ilsHangmen = New System.Windows.Forms.ImageList(Me.components)
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.lblNameLabel = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblScoreLabel = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnForfit = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.pnlLetters.SuspendLayout()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -74,9 +74,10 @@ Partial Class frmGame
         '
         Me.lblHint.AutoSize = True
         Me.lblHint.BackColor = System.Drawing.Color.Transparent
+        Me.lblHint.Font = New System.Drawing.Font("Palatino Linotype", 17.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHint.Location = New System.Drawing.Point(65, 146)
         Me.lblHint.Name = "lblHint"
-        Me.lblHint.Size = New System.Drawing.Size(26, 13)
+        Me.lblHint.Size = New System.Drawing.Size(61, 31)
         Me.lblHint.TabIndex = 8
         Me.lblHint.Text = "Hint"
         '
@@ -84,9 +85,10 @@ Partial Class frmGame
         '
         Me.lblScore.AutoSize = True
         Me.lblScore.BackColor = System.Drawing.Color.Transparent
-        Me.lblScore.Location = New System.Drawing.Point(95, 97)
+        Me.lblScore.Font = New System.Drawing.Font("Comic Sans MS", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.Location = New System.Drawing.Point(439, 37)
         Me.lblScore.Name = "lblScore"
-        Me.lblScore.Size = New System.Drawing.Size(35, 13)
+        Me.lblScore.Size = New System.Drawing.Size(81, 33)
         Me.lblScore.TabIndex = 9
         Me.lblScore.Text = "Score"
         '
@@ -94,9 +96,10 @@ Partial Class frmGame
         '
         Me.lblName.AutoSize = True
         Me.lblName.BackColor = System.Drawing.Color.Transparent
-        Me.lblName.Location = New System.Drawing.Point(67, 62)
+        Me.lblName.Font = New System.Drawing.Font("Magneto", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(104, 37)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(35, 13)
+        Me.lblName.Size = New System.Drawing.Size(88, 28)
         Me.lblName.TabIndex = 10
         Me.lblName.Text = "Name"
         '
@@ -104,7 +107,7 @@ Partial Class frmGame
         '
         Me.lblWord.AutoSize = True
         Me.lblWord.BackColor = System.Drawing.Color.Transparent
-        Me.lblWord.Location = New System.Drawing.Point(350, 36)
+        Me.lblWord.Location = New System.Drawing.Point(375, 9)
         Me.lblWord.Name = "lblWord"
         Me.lblWord.Size = New System.Drawing.Size(33, 13)
         Me.lblWord.TabIndex = 11
@@ -114,7 +117,7 @@ Partial Class frmGame
         '
         Me.lblCat.AutoSize = True
         Me.lblCat.BackColor = System.Drawing.Color.Transparent
-        Me.lblCat.Location = New System.Drawing.Point(140, 322)
+        Me.lblCat.Location = New System.Drawing.Point(140, 402)
         Me.lblCat.Name = "lblCat"
         Me.lblCat.Size = New System.Drawing.Size(23, 13)
         Me.lblCat.TabIndex = 12
@@ -122,7 +125,7 @@ Partial Class frmGame
         '
         'btnLoadButton
         '
-        Me.btnLoadButton.Location = New System.Drawing.Point(683, 312)
+        Me.btnLoadButton.Location = New System.Drawing.Point(683, 392)
         Me.btnLoadButton.Name = "btnLoadButton"
         Me.btnLoadButton.Size = New System.Drawing.Size(75, 23)
         Me.btnLoadButton.TabIndex = 13
@@ -131,14 +134,14 @@ Partial Class frmGame
         '
         'lblHyphen
         '
-        Me.lblHyphen.AutoSize = True
         Me.lblHyphen.BackColor = System.Drawing.Color.Transparent
         Me.lblHyphen.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHyphen.Location = New System.Drawing.Point(224, 183)
+        Me.lblHyphen.Location = New System.Drawing.Point(70, 203)
         Me.lblHyphen.Name = "lblHyphen"
-        Me.lblHyphen.Size = New System.Drawing.Size(148, 42)
+        Me.lblHyphen.Size = New System.Drawing.Size(440, 183)
         Me.lblHyphen.TabIndex = 14
         Me.lblHyphen.Text = "Hyphen"
+        Me.lblHyphen.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'pnlLetters
         '
@@ -169,7 +172,7 @@ Partial Class frmGame
         Me.pnlLetters.Controls.Add(Me.lblLetterC)
         Me.pnlLetters.Controls.Add(Me.lblLetterD)
         Me.pnlLetters.Controls.Add(Me.lblLetterA)
-        Me.pnlLetters.Location = New System.Drawing.Point(98, 358)
+        Me.pnlLetters.Location = New System.Drawing.Point(98, 438)
         Me.pnlLetters.Name = "pnlLetters"
         Me.pnlLetters.Size = New System.Drawing.Size(610, 113)
         Me.pnlLetters.TabIndex = 23
@@ -483,39 +486,33 @@ Partial Class frmGame
         Me.ilsHangmen.Images.SetKeyName(5, "Hangman-1.png")
         Me.ilsHangmen.Images.SetKeyName(6, "Hangman-0.png")
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'lblNameLabel
         '
         Me.lblNameLabel.AutoSize = True
         Me.lblNameLabel.BackColor = System.Drawing.Color.Transparent
-        Me.lblNameLabel.Location = New System.Drawing.Point(28, 62)
+        Me.lblNameLabel.Font = New System.Drawing.Font("Magneto", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNameLabel.Location = New System.Drawing.Point(4, 36)
         Me.lblNameLabel.Name = "lblNameLabel"
-        Me.lblNameLabel.Size = New System.Drawing.Size(42, 13)
+        Me.lblNameLabel.Size = New System.Drawing.Size(118, 28)
         Me.lblNameLabel.TabIndex = 50
         Me.lblNameLabel.Text = "Player: "
         '
-        'Label1
+        'lblScoreLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(28, 97)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
-        Me.Label1.TabIndex = 51
-        Me.Label1.Text = "Your Score:"
+        Me.lblScoreLabel.BackColor = System.Drawing.Color.Transparent
+        Me.lblScoreLabel.Font = New System.Drawing.Font("Comic Sans MS", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScoreLabel.Location = New System.Drawing.Point(297, 37)
+        Me.lblScoreLabel.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblScoreLabel.Name = "lblScoreLabel"
+        Me.lblScoreLabel.Size = New System.Drawing.Size(147, 33)
+        Me.lblScoreLabel.TabIndex = 51
+        Me.lblScoreLabel.Text = "Your Score:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(85, 322)
+        Me.Label2.Location = New System.Drawing.Point(85, 402)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(55, 13)
         Me.Label2.TabIndex = 52
@@ -523,7 +520,7 @@ Partial Class frmGame
         '
         'btnForfit
         '
-        Me.btnForfit.Location = New System.Drawing.Point(4, 317)
+        Me.btnForfit.Location = New System.Drawing.Point(4, 397)
         Me.btnForfit.Name = "btnForfit"
         Me.btnForfit.Size = New System.Drawing.Size(75, 23)
         Me.btnForfit.TabIndex = 53
@@ -540,27 +537,36 @@ Partial Class frmGame
         Me.Label3.TabIndex = 54
         Me.Label3.Text = "Hint: "
         '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picHangman)
+        Me.Controls.Add(Me.lblScore)
+        Me.Controls.Add(Me.lblScoreLabel)
+        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnForfit)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblNameLabel)
-        Me.Controls.Add(Me.picHangman)
         Me.Controls.Add(Me.pnlLetters)
         Me.Controls.Add(Me.lblHyphen)
         Me.Controls.Add(Me.btnLoadButton)
         Me.Controls.Add(Me.lblCat)
         Me.Controls.Add(Me.lblWord)
-        Me.Controls.Add(Me.lblName)
-        Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblHint)
         Me.Controls.Add(Me.UclHomeExit1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmGame"
         Me.Text = "Divisions of Science"
@@ -609,7 +615,7 @@ Partial Class frmGame
     Friend WithEvents picHangman As System.Windows.Forms.PictureBox
     Friend WithEvents ilsHangmen As System.Windows.Forms.ImageList
     Friend WithEvents lblNameLabel As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblScoreLabel As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnForfit As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
