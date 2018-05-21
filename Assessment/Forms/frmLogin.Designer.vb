@@ -41,6 +41,7 @@ Partial Class frmLogin
         '
         'rdoPlayer1
         '
+        Me.rdoPlayer1.AutoCheck = False
         Me.rdoPlayer1.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer1.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer1.Location = New System.Drawing.Point(167, 177)
@@ -112,6 +113,7 @@ Partial Class frmLogin
         '
         'rdoPlayer2
         '
+        Me.rdoPlayer2.AutoCheck = False
         Me.rdoPlayer2.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer2.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer2.Location = New System.Drawing.Point(167, 257)
@@ -125,6 +127,7 @@ Partial Class frmLogin
         '
         'rdoPlayer3
         '
+        Me.rdoPlayer3.AutoCheck = False
         Me.rdoPlayer3.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer3.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer3.Location = New System.Drawing.Point(167, 337)
@@ -138,6 +141,7 @@ Partial Class frmLogin
         '
         'rdoPlayer4
         '
+        Me.rdoPlayer4.AutoCheck = False
         Me.rdoPlayer4.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer4.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer4.Location = New System.Drawing.Point(167, 417)

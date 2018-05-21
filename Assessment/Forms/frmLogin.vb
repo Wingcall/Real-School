@@ -19,10 +19,6 @@
         'rdoPlayer2.AutoCheck = False
         'rdoPlayer3.AutoCheck = False
         'rdoPlayer4.AutoCheck = False
-        rdoPlayer1.Checked = False
-        rdoPlayer2.Checked = False
-        rdoPlayer3.Checked = False
-        rdoPlayer4.Checked = False
     End Sub
 
     Private Sub btnDelPlayer_Click(sender As Object, e As EventArgs) Handles btnDelPlayer.Click
@@ -63,17 +59,13 @@
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click, rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
-        If rdoPlayer1.Checked = False Then
-            If rdoPlayer2.Checked = False Then
-                If rdoPlayer3.Checked = False Then
-                    If rdoPlayer4.Checked = False Then
-                        MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)
-                    End If
-                End If
-            End If
-        End If
+        If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
+            MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)
+        Else
             playerID = sender.tag
             frmCategories.Show()
             Me.closeForm()
+        End If
     End Sub
+
 End Class
