@@ -41,14 +41,12 @@ Partial Class frmLogin
         '
         'rdoPlayer1
         '
-        Me.rdoPlayer1.AutoCheck = False
         Me.rdoPlayer1.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer1.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer1.Location = New System.Drawing.Point(167, 177)
         Me.rdoPlayer1.Name = "rdoPlayer1"
         Me.rdoPlayer1.Size = New System.Drawing.Size(219, 58)
         Me.rdoPlayer1.TabIndex = 8
-        Me.rdoPlayer1.TabStop = True
         Me.rdoPlayer1.Tag = "0"
         Me.rdoPlayer1.Text = "Player 1"
         Me.rdoPlayer1.UseVisualStyleBackColor = False
@@ -113,42 +111,36 @@ Partial Class frmLogin
         '
         'rdoPlayer2
         '
-        Me.rdoPlayer2.AutoCheck = False
         Me.rdoPlayer2.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer2.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer2.Location = New System.Drawing.Point(167, 257)
         Me.rdoPlayer2.Name = "rdoPlayer2"
         Me.rdoPlayer2.Size = New System.Drawing.Size(219, 58)
         Me.rdoPlayer2.TabIndex = 21
-        Me.rdoPlayer2.TabStop = True
         Me.rdoPlayer2.Tag = "1"
         Me.rdoPlayer2.Text = "Player 2"
         Me.rdoPlayer2.UseVisualStyleBackColor = False
         '
         'rdoPlayer3
         '
-        Me.rdoPlayer3.AutoCheck = False
         Me.rdoPlayer3.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer3.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer3.Location = New System.Drawing.Point(167, 337)
         Me.rdoPlayer3.Name = "rdoPlayer3"
         Me.rdoPlayer3.Size = New System.Drawing.Size(219, 58)
         Me.rdoPlayer3.TabIndex = 22
-        Me.rdoPlayer3.TabStop = True
         Me.rdoPlayer3.Tag = "2"
         Me.rdoPlayer3.Text = "Player 3"
         Me.rdoPlayer3.UseVisualStyleBackColor = False
         '
         'rdoPlayer4
         '
-        Me.rdoPlayer4.AutoCheck = False
         Me.rdoPlayer4.BackColor = System.Drawing.Color.Transparent
         Me.rdoPlayer4.Font = New System.Drawing.Font("Modern No. 20", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoPlayer4.Location = New System.Drawing.Point(167, 417)
         Me.rdoPlayer4.Name = "rdoPlayer4"
         Me.rdoPlayer4.Size = New System.Drawing.Size(219, 58)
         Me.rdoPlayer4.TabIndex = 23
-        Me.rdoPlayer4.TabStop = True
         Me.rdoPlayer4.Tag = "3"
         Me.rdoPlayer4.Text = "Player 4"
         Me.rdoPlayer4.UseVisualStyleBackColor = False

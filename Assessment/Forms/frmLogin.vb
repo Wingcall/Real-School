@@ -1,9 +1,5 @@
 ﻿Public Class frmLogin
 
-    Private Sub lblExit_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
         'loadUserDB()
@@ -58,7 +54,7 @@
         lblTag.Text = sender.tag
     End Sub
 
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click, rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click ', rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)
         Else
