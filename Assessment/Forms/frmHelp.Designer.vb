@@ -26,9 +26,11 @@ Partial Class frmHelp
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabGame = New System.Windows.Forms.TabPage()
         Me.tabLogin = New System.Windows.Forms.TabPage()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.tabEdit = New System.Windows.Forms.TabPage()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -62,14 +64,6 @@ Partial Class frmHelp
         Me.tabLogin.Text = "Login Screen"
         Me.tabLogin.UseVisualStyleBackColor = True
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'tabEdit
         '
         Me.tabEdit.Location = New System.Drawing.Point(4, 22)
@@ -79,12 +73,32 @@ Partial Class frmHelp
         Me.tabEdit.Text = "Editting Words"
         Me.tabEdit.UseVisualStyleBackColor = True
         '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
+        '
+        'picBanner
+        '
+        Me.picBanner.BackColor = System.Drawing.Color.Transparent
+        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
+        Me.picBanner.Location = New System.Drawing.Point(152, -2)
+        Me.picBanner.Name = "picBanner"
+        Me.picBanner.Size = New System.Drawing.Size(480, 50)
+        Me.picBanner.TabIndex = 9
+        Me.picBanner.TabStop = False
+        '
         'frmHelp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.UclHomeExit1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -95,6 +109,7 @@ Partial Class frmHelp
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
         Me.TabControl1.ResumeLayout(False)
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -103,4 +118,5 @@ Partial Class frmHelp
     Friend WithEvents tabGame As System.Windows.Forms.TabPage
     Friend WithEvents tabLogin As System.Windows.Forms.TabPage
     Friend WithEvents tabEdit As System.Windows.Forms.TabPage
+    Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class

@@ -37,6 +37,8 @@ Partial Class frmLogin
         Me.lblPlayer3Score = New System.Windows.Forms.Label()
         Me.lblPlayer4Score = New System.Windows.Forms.Label()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.picBanner = New System.Windows.Forms.PictureBox()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'rdoPlayer1
@@ -186,12 +188,24 @@ Partial Class frmLogin
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
+        'picBanner
+        '
+        Me.picBanner.BackColor = System.Drawing.Color.Transparent
+        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
+        Me.picBanner.Location = New System.Drawing.Point(152, 0)
+        Me.picBanner.Name = "picBanner"
+        Me.picBanner.Size = New System.Drawing.Size(480, 50)
+        Me.picBanner.TabIndex = 27
+        Me.picBanner.TabStop = False
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.lblPlayer4Score)
         Me.Controls.Add(Me.lblPlayer3Score)
         Me.Controls.Add(Me.lblPlayer2Score)
@@ -212,6 +226,7 @@ Partial Class frmLogin
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -230,4 +245,5 @@ Partial Class frmLogin
     Friend WithEvents lblPlayer2Score As System.Windows.Forms.Label
     Friend WithEvents lblPlayer3Score As System.Windows.Forms.Label
     Friend WithEvents lblPlayer4Score As System.Windows.Forms.Label
+    Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class

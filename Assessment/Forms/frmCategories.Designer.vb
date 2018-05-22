@@ -31,9 +31,11 @@ Partial Class frmCategories
         Me.lblPhysics = New System.Windows.Forms.Label()
         Me.lblChemistry = New System.Windows.Forms.Label()
         Me.lblBiology = New System.Windows.Forms.Label()
+        Me.picBanner = New System.Windows.Forms.PictureBox()
         CType(Me.picBiology, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picChemistry, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPhysics, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picBiology
@@ -119,12 +121,24 @@ Partial Class frmCategories
         Me.lblBiology.Tag = "0"
         Me.lblBiology.Text = "Biology"
         '
+        'picBanner
+        '
+        Me.picBanner.BackColor = System.Drawing.Color.Transparent
+        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
+        Me.picBanner.Location = New System.Drawing.Point(140, 1)
+        Me.picBanner.Name = "picBanner"
+        Me.picBanner.Size = New System.Drawing.Size(480, 50)
+        Me.picBanner.TabIndex = 11
+        Me.picBanner.TabStop = False
+        '
         'frmCategories
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.lblPhysics)
         Me.Controls.Add(Me.lblChemistry)
         Me.Controls.Add(Me.lblBiology)
@@ -142,6 +156,7 @@ Partial Class frmCategories
         CType(Me.picBiology, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picChemistry, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPhysics, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -154,4 +169,5 @@ Partial Class frmCategories
     Friend WithEvents lblPhysics As System.Windows.Forms.Label
     Friend WithEvents lblChemistry As System.Windows.Forms.Label
     Friend WithEvents lblBiology As System.Windows.Forms.Label
+    Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class
