@@ -31,6 +31,8 @@ Partial Class frmMain
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnGame = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
+        Me.picBanner = New System.Windows.Forms.PictureBox()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPlay
@@ -80,7 +82,7 @@ Partial Class frmMain
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(62, 48)
+        Me.Button1.Location = New System.Drawing.Point(12, 431)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(105, 23)
         Me.Button1.TabIndex = 4
@@ -89,7 +91,7 @@ Partial Class frmMain
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(62, 90)
+        Me.Button2.Location = New System.Drawing.Point(12, 473)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(105, 23)
         Me.Button2.TabIndex = 5
@@ -98,7 +100,7 @@ Partial Class frmMain
         '
         'btnGame
         '
-        Me.btnGame.Location = New System.Drawing.Point(62, 130)
+        Me.btnGame.Location = New System.Drawing.Point(12, 513)
         Me.btnGame.Name = "btnGame"
         Me.btnGame.Size = New System.Drawing.Size(105, 23)
         Me.btnGame.TabIndex = 0
@@ -107,12 +109,23 @@ Partial Class frmMain
         '
         'btnEdit
         '
-        Me.btnEdit.Location = New System.Drawing.Point(62, 171)
+        Me.btnEdit.Location = New System.Drawing.Point(12, 554)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(105, 23)
         Me.btnEdit.TabIndex = 6
         Me.btnEdit.Text = "go to edit"
         Me.btnEdit.UseVisualStyleBackColor = True
+        '
+        'picBanner
+        '
+        Me.picBanner.BackColor = System.Drawing.Color.Transparent
+        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
+        Me.picBanner.Location = New System.Drawing.Point(158, 12)
+        Me.picBanner.Name = "picBanner"
+        Me.picBanner.Size = New System.Drawing.Size(480, 50)
+        Me.picBanner.TabIndex = 7
+        Me.picBanner.TabStop = False
         '
         'frmMain
         '
@@ -120,6 +133,7 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnGame)
         Me.Controls.Add(Me.Button2)
@@ -134,6 +148,7 @@ Partial Class frmMain
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -145,4 +160,5 @@ Partial Class frmMain
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents btnGame As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
+    Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class
