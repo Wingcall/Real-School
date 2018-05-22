@@ -1,18 +1,34 @@
 ﻿Public Class frmMain
-    'Bla bla comments add later
+    'Bla bla comments add later hehe
 
-    Private Sub lblPlay_Click(sender As Object, e As EventArgs) Handles lblPlay.Click
-        frmLogin.openForm() 'Thats right a custom function
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
+        loadDB()
     End Sub
 
-    Private Sub lblHelp_Click(sender As Object, e As EventArgs) Handles lblHelp.Click
-        frmHelp.openForm()              'Displays the Help Form
+    Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
+        Select Case sender.name
+            Case "lblPlay"
+                frmLogin.openForm()
+            Case "lblAbout"
+                frmAbout.openForm()
+            Case "lblHelp"
+                frmHelp.openForm()
+            Case "lblExit"
+                End
+        End Select
     End Sub
 
-    Private Sub lblExit_Click(sender As Object, e As EventArgs) Handles lblExit.Click
-        End                         'Closes the Hangman Game
+    Private Sub lblPlay_MouseHover(sender As Label, e As EventArgs) Handles lblPlay.MouseHover, lblAbout.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, _
+        lblPlay.MouseLeave, lblAbout.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave
+        If sender.ForeColor = Color.MediumOrchid Then
+            sender.ForeColor = Color.Black
+        Else
+            sender.ForeColor = Color.MediumOrchid
+        End If
     End Sub
 
+    'Below are debug buttons, to be removed in final copy.
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         frmCategories.openForm()        'Testing purposes, REMOVE WHEN DONE
     End Sub
@@ -23,15 +39,6 @@
 
     Private Sub btnGame_Click(sender As Object, e As EventArgs) Handles btnGame.Click
         frmGame.openForm()
-    End Sub
-
-    Private Sub lblAbout_Click(sender As Object, e As EventArgs) Handles lblAbout.Click
-        frmAbout.openForm()
-    End Sub
-
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
-        loadDB()
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
