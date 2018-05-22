@@ -567,6 +567,7 @@ Partial Class frmGame
         Me.Controls.Add(Me.UclHomeExit1)
         Me.Controls.Add(Me.Label3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmGame"
         Me.Text = "Divisions of Science"
