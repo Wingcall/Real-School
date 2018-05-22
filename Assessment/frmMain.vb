@@ -40,4 +40,7 @@
 
 
 
+    Private Sub btnDebug_Click(sender As Object, e As EventArgs) Handles btnDebug.Click
+        frmDebug.openForm()
+    End Sub
 End Class

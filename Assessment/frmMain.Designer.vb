@@ -31,6 +31,7 @@ Partial Class frmMain
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnGame = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnDebug = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblPlay
@@ -114,12 +115,22 @@ Partial Class frmMain
         Me.btnEdit.Text = "go to edit"
         Me.btnEdit.UseVisualStyleBackColor = True
         '
+        'btnDebug
+        '
+        Me.btnDebug.Location = New System.Drawing.Point(62, 212)
+        Me.btnDebug.Name = "btnDebug"
+        Me.btnDebug.Size = New System.Drawing.Size(105, 23)
+        Me.btnDebug.TabIndex = 7
+        Me.btnDebug.Text = "go to debug"
+        Me.btnDebug.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.btnDebug)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnGame)
         Me.Controls.Add(Me.Button2)
@@ -145,4 +156,5 @@ Partial Class frmMain
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents btnGame As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
+    Friend WithEvents btnDebug As System.Windows.Forms.Button
 End Class

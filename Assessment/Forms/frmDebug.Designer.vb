@@ -26,6 +26,7 @@ Partial Class frmDebug
         Me.lblName = New System.Windows.Forms.Label()
         Me.btnPlayer2 = New System.Windows.Forms.Button()
         Me.lblScore = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnPlayer1
@@ -66,12 +67,22 @@ Partial Class frmDebug
         Me.lblScore.TabIndex = 3
         Me.lblScore.Text = "Label1"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(182, 302)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmDebug
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.btnPlayer2)
         Me.Controls.Add(Me.lblName)
@@ -86,4 +97,5 @@ Partial Class frmDebug
     Friend WithEvents lblName As System.Windows.Forms.Label
     Friend WithEvents btnPlayer2 As System.Windows.Forms.Button
     Friend WithEvents lblScore As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

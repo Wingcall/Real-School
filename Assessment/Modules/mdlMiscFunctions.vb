@@ -1,38 +1,24 @@
 ﻿Module miscFunctions
-    Public cLock As Boolean = True
     Public Sub exitGame(form As Form, Optional e As FormClosingEventArgs = Nothing)
-        Dim arguments As String() = Environment.GetCommandLineArgs() 'get command line arguments
         Dim result As Integer
-        ' If arguments(1) = "--debug" Then ' if debug is given
-        ' result = 6 'just close the game
-        ' Else
-        If cLock Then
-            result = MessageBox.Show("Do you really want to quit?", "Exit", MessageBoxButtons.YesNo) 'Ask the user if they want to quit
-            ' End If
-
-            If (result = DialogResult.Yes) Then 'Check if they said yes
-                'form.disabled = True
-                If (form.Name = "frmGame") Then 'Check if the game form called the close
-                    updateUserXML() 'If so, save the user state
-                    'Else
-                    'form.disabled = False
-                End If
-                End 'Lets just quit
-
-                '=============================================================================================
-                'This Needs to be reworked. Mabey close all forms, or set the process to end at Main.Close()
-                '=============================================================================================
-
-                'form.Close() 'Close the current form
-                'frmMain.Close() 'close the main form.
-            Else
-                If Not IsNothing(e) Then
-                    e.Cancel = True
-                End If
+        result = MessageBox.Show("Do you really want to quit?", "Exit", MessageBoxButtons.YesNo) 'Ask the user if they want to quit
+        If (result = DialogResult.Yes) Then 'Check if they said yes
+            If (form.Name = "frmGame") Then 'Check if the game form called the close
+                updateUserXML() 'If so, save the user state
             End If
+
+            RemoveHandler frmMain.FormClosing, AddressOf formEvents.FormClosing
+            frmMain.Close()
         Else
-            cLock = True
+            If Not IsNothing(e) Then
+                e.Cancel = True
+            End If
         End If
+    End Sub
+
+    Public Sub exitGame1(form As Form, Optional e As FormClosedEventArgs = Nothing)
+        RemoveHandler frmMain.FormClosing, AddressOf formEvents.FormClosing
+        frmMain.Close()
     End Sub
 
 End Module

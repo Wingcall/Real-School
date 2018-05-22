@@ -116,9 +116,10 @@ Partial Class frmGame
         '
         Me.lblCat.AutoSize = True
         Me.lblCat.BackColor = System.Drawing.Color.Transparent
-        Me.lblCat.Location = New System.Drawing.Point(140, 402)
+        Me.lblCat.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCat.Location = New System.Drawing.Point(212, 386)
         Me.lblCat.Name = "lblCat"
-        Me.lblCat.Size = New System.Drawing.Size(23, 13)
+        Me.lblCat.Size = New System.Drawing.Size(58, 34)
         Me.lblCat.TabIndex = 12
         Me.lblCat.Text = "Cat"
         '
@@ -466,6 +467,7 @@ Partial Class frmGame
         '
         Me.picHangman.BackColor = System.Drawing.Color.Transparent
         Me.picHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.picHangman.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.picHangman.InitialImage = Nothing
         Me.picHangman.Location = New System.Drawing.Point(516, 49)
         Me.picHangman.Name = "picHangman"
@@ -511,9 +513,10 @@ Partial Class frmGame
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(85, 402)
+        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(85, 386)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 13)
+        Me.Label2.Size = New System.Drawing.Size(142, 34)
         Me.Label2.TabIndex = 52
         Me.Label2.Text = "Category: "
         '
@@ -523,7 +526,7 @@ Partial Class frmGame
         Me.btnForfit.Name = "btnForfit"
         Me.btnForfit.Size = New System.Drawing.Size(75, 23)
         Me.btnForfit.TabIndex = 53
-        Me.btnForfit.Text = "Forfit"
+        Me.btnForfit.Text = "Foreit"
         Me.btnForfit.UseVisualStyleBackColor = True
         '
         'Label3
@@ -551,6 +554,7 @@ Partial Class frmGame
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.lblCat)
         Me.Controls.Add(Me.picHangman)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblScoreLabel)
@@ -561,7 +565,6 @@ Partial Class frmGame
         Me.Controls.Add(Me.pnlLetters)
         Me.Controls.Add(Me.lblHyphen)
         Me.Controls.Add(Me.btnLoadButton)
-        Me.Controls.Add(Me.lblCat)
         Me.Controls.Add(Me.lblWord)
         Me.Controls.Add(Me.lblHint)
         Me.Controls.Add(Me.UclHomeExit1)
