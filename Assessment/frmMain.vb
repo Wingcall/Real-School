@@ -19,6 +19,16 @@
         End Select
     End Sub
 
+    Private Sub lblPlay_MouseHover(sender As Label, e As EventArgs) Handles lblPlay.MouseHover, lblAbout.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, _
+        lblPlay.MouseLeave, lblAbout.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave
+        If sender.ForeColor = Color.MediumOrchid Then
+            sender.ForeColor = Color.Black
+        Else
+            sender.ForeColor = Color.MediumOrchid
+        End If
+    End Sub
+
+    'Below are debug buttons, to be removed in final copy.
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         frmCategories.openForm()        'Testing purposes, REMOVE WHEN DONE
     End Sub
