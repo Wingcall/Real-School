@@ -24,41 +24,43 @@ Partial Class frmHelp
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHelp))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.tabGameform = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.tabGame = New System.Windows.Forms.TabPage()
+        Me.tabLogin = New System.Windows.Forms.TabPage()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.tabEdit = New System.Windows.Forms.TabPage()
         Me.TabControl1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.tabGameform)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.tabGame)
+        Me.TabControl1.Controls.Add(Me.tabLogin)
+        Me.TabControl1.Controls.Add(Me.tabEdit)
         Me.TabControl1.Location = New System.Drawing.Point(174, 136)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(443, 319)
         Me.TabControl1.TabIndex = 8
         '
-        'tabGameform
+        'tabGame
         '
-        Me.tabGameform.Location = New System.Drawing.Point(4, 22)
-        Me.tabGameform.Name = "tabGameform"
-        Me.tabGameform.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabGameform.Size = New System.Drawing.Size(435, 293)
-        Me.tabGameform.TabIndex = 0
-        Me.tabGameform.Text = "Game Form"
-        Me.tabGameform.UseVisualStyleBackColor = True
+        Me.tabGame.Location = New System.Drawing.Point(4, 22)
+        Me.tabGame.Name = "tabGame"
+        Me.tabGame.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabGame.Size = New System.Drawing.Size(435, 293)
+        Me.tabGame.TabIndex = 0
+        Me.tabGame.Text = "Playing the Game"
+        Me.tabGame.UseVisualStyleBackColor = True
         '
-        'TabPage2
+        'tabLogin
         '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(435, 293)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.tabLogin.Location = New System.Drawing.Point(4, 22)
+        Me.tabLogin.Name = "tabLogin"
+        Me.tabLogin.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabLogin.Size = New System.Drawing.Size(435, 293)
+        Me.tabLogin.TabIndex = 1
+        Me.tabLogin.Text = "Login Screen"
+        Me.tabLogin.UseVisualStyleBackColor = True
         '
         'UclHomeExit1
         '
@@ -67,6 +69,15 @@ Partial Class frmHelp
         Me.UclHomeExit1.Name = "UclHomeExit1"
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
+        '
+        'tabEdit
+        '
+        Me.tabEdit.Location = New System.Drawing.Point(4, 22)
+        Me.tabEdit.Name = "tabEdit"
+        Me.tabEdit.Size = New System.Drawing.Size(435, 293)
+        Me.tabEdit.TabIndex = 2
+        Me.tabEdit.Text = "Editting Words"
+        Me.tabEdit.UseVisualStyleBackColor = True
         '
         'frmHelp
         '
@@ -89,6 +100,7 @@ Partial Class frmHelp
     End Sub
     Friend WithEvents UclHomeExit1 As Assessment.uclHomeExit
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
-    Friend WithEvents tabGameform As System.Windows.Forms.TabPage
-    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents tabGame As System.Windows.Forms.TabPage
+    Friend WithEvents tabLogin As System.Windows.Forms.TabPage
+    Friend WithEvents tabEdit As System.Windows.Forms.TabPage
 End Class
