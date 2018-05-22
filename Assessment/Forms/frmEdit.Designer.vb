@@ -32,6 +32,8 @@ Partial Class frmEdit
         Me.txtHint = New System.Windows.Forms.TextBox()
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.picBanner = New System.Windows.Forms.PictureBox()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UclHomeExit1
@@ -109,12 +111,24 @@ Partial Class frmEdit
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'picBanner
+        '
+        Me.picBanner.BackColor = System.Drawing.Color.Transparent
+        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
+        Me.picBanner.Location = New System.Drawing.Point(149, 1)
+        Me.picBanner.Name = "picBanner"
+        Me.picBanner.Size = New System.Drawing.Size(480, 50)
+        Me.picBanner.TabIndex = 16
+        Me.picBanner.TabStop = False
+        '
         'frmEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.txtHint)
@@ -128,6 +142,7 @@ Partial Class frmEdit
         Me.MaximizeBox = False
         Me.Name = "frmEdit"
         Me.Text = "Divisions of Science"
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -141,4 +156,5 @@ Partial Class frmEdit
     Friend WithEvents cmbCat As System.Windows.Forms.ComboBox
     Friend WithEvents btnUpdate As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class

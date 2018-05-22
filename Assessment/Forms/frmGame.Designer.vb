@@ -27,7 +27,6 @@ Partial Class frmGame
         Me.lblHint = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.lblWord = New System.Windows.Forms.Label()
         Me.lblCat = New System.Windows.Forms.Label()
         Me.btnLoadButton = New System.Windows.Forms.Button()
         Me.lblHyphen = New System.Windows.Forms.Label()
@@ -66,8 +65,10 @@ Partial Class frmGame
         Me.btnForfit = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.pnlLetters.SuspendLayout()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHint
@@ -102,24 +103,13 @@ Partial Class frmGame
         Me.lblName.TabIndex = 10
         Me.lblName.Text = "Name"
         '
-        'lblWord
-        '
-        Me.lblWord.AutoSize = True
-        Me.lblWord.BackColor = System.Drawing.Color.Transparent
-        Me.lblWord.Location = New System.Drawing.Point(375, 9)
-        Me.lblWord.Name = "lblWord"
-        Me.lblWord.Size = New System.Drawing.Size(33, 13)
-        Me.lblWord.TabIndex = 11
-        Me.lblWord.Text = "Word"
-        '
         'lblCat
         '
         Me.lblCat.AutoSize = True
         Me.lblCat.BackColor = System.Drawing.Color.Transparent
-        Me.lblCat.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCat.Location = New System.Drawing.Point(212, 386)
+        Me.lblCat.Location = New System.Drawing.Point(140, 402)
         Me.lblCat.Name = "lblCat"
-        Me.lblCat.Size = New System.Drawing.Size(58, 34)
+        Me.lblCat.Size = New System.Drawing.Size(23, 13)
         Me.lblCat.TabIndex = 12
         Me.lblCat.Text = "Cat"
         '
@@ -467,7 +457,6 @@ Partial Class frmGame
         '
         Me.picHangman.BackColor = System.Drawing.Color.Transparent
         Me.picHangman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.picHangman.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.picHangman.InitialImage = Nothing
         Me.picHangman.Location = New System.Drawing.Point(516, 49)
         Me.picHangman.Name = "picHangman"
@@ -513,10 +502,9 @@ Partial Class frmGame
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(85, 386)
+        Me.Label2.Location = New System.Drawing.Point(85, 402)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(142, 34)
+        Me.Label2.Size = New System.Drawing.Size(55, 13)
         Me.Label2.TabIndex = 52
         Me.Label2.Text = "Category: "
         '
@@ -526,7 +514,7 @@ Partial Class frmGame
         Me.btnForfit.Name = "btnForfit"
         Me.btnForfit.Size = New System.Drawing.Size(75, 23)
         Me.btnForfit.TabIndex = 53
-        Me.btnForfit.Text = "Foreit"
+        Me.btnForfit.Text = "Forfit"
         Me.btnForfit.UseVisualStyleBackColor = True
         '
         'Label3
@@ -548,13 +536,24 @@ Partial Class frmGame
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
+        'picBanner
+        '
+        Me.picBanner.BackColor = System.Drawing.Color.Transparent
+        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
+        Me.picBanner.Location = New System.Drawing.Point(303, 1)
+        Me.picBanner.Name = "picBanner"
+        Me.picBanner.Size = New System.Drawing.Size(480, 50)
+        Me.picBanner.TabIndex = 55
+        Me.picBanner.TabStop = False
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
-        Me.Controls.Add(Me.lblCat)
+        Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.picHangman)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblScoreLabel)
@@ -565,7 +564,7 @@ Partial Class frmGame
         Me.Controls.Add(Me.pnlLetters)
         Me.Controls.Add(Me.lblHyphen)
         Me.Controls.Add(Me.btnLoadButton)
-        Me.Controls.Add(Me.lblWord)
+        Me.Controls.Add(Me.lblCat)
         Me.Controls.Add(Me.lblHint)
         Me.Controls.Add(Me.UclHomeExit1)
         Me.Controls.Add(Me.Label3)
@@ -577,6 +576,7 @@ Partial Class frmGame
         Me.pnlLetters.ResumeLayout(False)
         Me.pnlLetters.PerformLayout()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -585,7 +585,6 @@ Partial Class frmGame
     Friend WithEvents lblHint As System.Windows.Forms.Label
     Friend WithEvents lblScore As System.Windows.Forms.Label
     Friend WithEvents lblName As System.Windows.Forms.Label
-    Friend WithEvents lblWord As System.Windows.Forms.Label
     Friend WithEvents lblCat As System.Windows.Forms.Label
     Friend WithEvents btnLoadButton As System.Windows.Forms.Button
     Friend WithEvents lblHyphen As System.Windows.Forms.Label
@@ -623,4 +622,5 @@ Partial Class frmGame
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnForfit As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class

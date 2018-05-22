@@ -14,7 +14,6 @@
         badGuesses = maxGuesses
 
         plrWord = wordLists(catID).randomWord()
-        lblWord.Text = plrWord.wordVal
         lblHint.Text = plrWord.hint
         lblCat.Text = wordLists(catID).name
         lblName.Text = userInfo(playerID).name
