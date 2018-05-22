@@ -18,6 +18,11 @@
                     'form.disabled = False
                 End If
                 End 'Lets just quit
+
+                '=============================================================================================
+                'This Needs to be reworked. Mabey close all forms, or set the process to end at Main.Close()
+                '=============================================================================================
+
                 'form.Close() 'Close the current form
                 'frmMain.Close() 'close the main form.
             Else

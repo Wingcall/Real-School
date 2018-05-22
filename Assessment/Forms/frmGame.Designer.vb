@@ -72,12 +72,11 @@ Partial Class frmGame
         '
         'lblHint
         '
-        Me.lblHint.AutoSize = True
         Me.lblHint.BackColor = System.Drawing.Color.Transparent
         Me.lblHint.Font = New System.Drawing.Font("Palatino Linotype", 17.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHint.Location = New System.Drawing.Point(65, 146)
+        Me.lblHint.Location = New System.Drawing.Point(65, 98)
         Me.lblHint.Name = "lblHint"
-        Me.lblHint.Size = New System.Drawing.Size(61, 31)
+        Me.lblHint.Size = New System.Drawing.Size(445, 105)
         Me.lblHint.TabIndex = 8
         Me.lblHint.Text = "Hint"
         '
@@ -531,9 +530,10 @@ Partial Class frmGame
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(28, 146)
+        Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 17.25!)
+        Me.Label3.Location = New System.Drawing.Point(7, 98)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(32, 13)
+        Me.Label3.Size = New System.Drawing.Size(73, 31)
         Me.Label3.TabIndex = 54
         Me.Label3.Text = "Hint: "
         '
@@ -555,7 +555,6 @@ Partial Class frmGame
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblScoreLabel)
         Me.Controls.Add(Me.lblName)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnForfit)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblNameLabel)
@@ -566,6 +565,7 @@ Partial Class frmGame
         Me.Controls.Add(Me.lblWord)
         Me.Controls.Add(Me.lblHint)
         Me.Controls.Add(Me.UclHomeExit1)
+        Me.Controls.Add(Me.Label3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmGame"
