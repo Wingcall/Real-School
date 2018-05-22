@@ -1,16 +1,22 @@
 ﻿Public Class frmMain
     'Bla bla comments add later
 
-    Private Sub lblPlay_Click(sender As Object, e As EventArgs) Handles lblPlay.Click
-        frmLogin.openForm() 'Thats right a custom function
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
+        loadDB()
     End Sub
 
-    Private Sub lblHelp_Click(sender As Object, e As EventArgs) Handles lblHelp.Click
-        frmHelp.openForm()              'Displays the Help Form
-    End Sub
-
-    Private Sub lblExit_Click(sender As Object, e As EventArgs) Handles lblExit.Click
-        End                         'Closes the Hangman Game
+    Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
+        Select Case sender.name
+            Case "lblPlay"
+                frmLogin.openForm()
+            Case "lblAbout"
+                frmAbout.openForm()
+            Case "lblHelp"
+                frmHelp.openForm()
+            Case "lblExit"
+                End
+        End Select
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -25,19 +31,7 @@
         frmGame.openForm()
     End Sub
 
-    Private Sub lblAbout_Click(sender As Object, e As EventArgs) Handles lblAbout.Click
-        frmAbout.openForm()
-    End Sub
-
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
-        loadDB()
-    End Sub
-
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         frmEdit.openForm()
     End Sub
-
-
-
 End Class

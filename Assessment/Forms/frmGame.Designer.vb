@@ -86,7 +86,7 @@ Partial Class frmGame
         Me.lblScore.AutoSize = True
         Me.lblScore.BackColor = System.Drawing.Color.Transparent
         Me.lblScore.Font = New System.Drawing.Font("Comic Sans MS", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(439, 37)
+        Me.lblScore.Location = New System.Drawing.Point(439, 46)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(81, 33)
         Me.lblScore.TabIndex = 9
@@ -491,7 +491,7 @@ Partial Class frmGame
         '
         Me.lblScoreLabel.BackColor = System.Drawing.Color.Transparent
         Me.lblScoreLabel.Font = New System.Drawing.Font("Comic Sans MS", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScoreLabel.Location = New System.Drawing.Point(297, 37)
+        Me.lblScoreLabel.Location = New System.Drawing.Point(297, 46)
         Me.lblScoreLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.lblScoreLabel.Name = "lblScoreLabel"
         Me.lblScoreLabel.Size = New System.Drawing.Size(147, 33)
