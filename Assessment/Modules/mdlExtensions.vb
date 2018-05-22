@@ -42,7 +42,7 @@ Module extensions
 
     <Extension()>
     Public Sub closeForm(ByVal form As Form) 'Exstention to the forms
-        cLock = False
-        form.Close() 'Show the selected form
+        RemoveHandler form.FormClosing, AddressOf formEvents.FormClosing
+        form.Close()
     End Sub
 End Module
