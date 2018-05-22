@@ -1,7 +1,8 @@
 ﻿Public Class frmGame
-    Dim maxGuesses As Integer = 7 'Stop yelling at me for magic numbers
+    Const maxGuesses As Integer = 7 'Stop yelling at me for magic numbers
     Dim letterGuesses As String = ""
     Dim badGuesses As Integer
+    Dim cPlayer As playerInfo = userInfo(playerID)
 
     Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load, btnLoadButton.Click
         loadDB()
@@ -16,18 +17,28 @@
         plrWord = wordLists(catID).randomWord()
         lblHint.Text = plrWord.hint
         lblCat.Text = wordLists(catID).name
-        lblName.Text = userInfo(playerID).name
-        lblScore.Text = userInfo(playerID).score
+        lblName.Text = cPlayer.name
+        lblScore.Text = cPlayer.score
         lblHyphen.Text = plrWord.hyphenWord()
 
         pnlLetters.Enabled = True
         For Each Letter As Label In pnlLetters.Controls
             If sender.name = "frmGame" Then
                 AddHandler Letter.Click, AddressOf Me.lblLetterS_Click
+                AddHandler Letter.MouseHover, AddressOf Me.colourChange
+                AddHandler Letter.MouseLeave, AddressOf Me.colourChange
             End If
             Letter.Enabled = True
         Next
 
+    End Sub
+
+    Private Sub colourChange(sender As Label, e As EventArgs)
+        If sender.ForeColor = Color.MediumOrchid Then
+            sender.ForeColor = Color.Black
+        Else
+            sender.ForeColor = Color.MediumOrchid
+        End If
     End Sub
 
     Private Sub lblLetterS_Click(sender As Label, e As EventArgs)
@@ -40,7 +51,8 @@
                 userInfo(playerID).score += 1
                 lblScore.Text = userInfo(playerID).score
                 updateUserXML()
-                MsgBox("Game Win! :)")
+                Dim winText As String = "Well done " & cPlayer.name & "! You guessed the word was " & plrWord.wordVal & ". Would you like to try again?"
+                Dim res As MsgBoxResult = MsgBox(winText, MsgBoxStyle.Question, "Congrats")
             End If
         Else
             If badGuesses > 0 Then picHangman.Image = ilsHangmen.Images(badGuesses - 1)

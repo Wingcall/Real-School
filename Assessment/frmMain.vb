@@ -37,10 +37,4 @@
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         frmEdit.openForm()
     End Sub
-
-
-
-    Private Sub btnDebug_Click(sender As Object, e As EventArgs) Handles btnDebug.Click
-        frmDebug.openForm()
-    End Sub
 End Class
