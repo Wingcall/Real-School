@@ -22,6 +22,7 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.lblPlay = New System.Windows.Forms.Label()
         Me.lblHelp = New System.Windows.Forms.Label()
         Me.lblExit = New System.Windows.Forms.Label()
@@ -35,43 +36,47 @@ Partial Class frmMain
         'lblPlay
         '
         Me.lblPlay.BackColor = System.Drawing.Color.Transparent
-        Me.lblPlay.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay.Location = New System.Drawing.Point(291, 156)
+        Me.lblPlay.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlay.Location = New System.Drawing.Point(292, 171)
         Me.lblPlay.Name = "lblPlay"
-        Me.lblPlay.Size = New System.Drawing.Size(234, 72)
+        Me.lblPlay.Size = New System.Drawing.Size(225, 74)
         Me.lblPlay.TabIndex = 0
-        Me.lblPlay.Text = "PLAY@"
+        Me.lblPlay.Text = "PLAY"
+        Me.lblPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblHelp
         '
         Me.lblHelp.BackColor = System.Drawing.Color.Transparent
-        Me.lblHelp.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHelp.Location = New System.Drawing.Point(291, 302)
+        Me.lblHelp.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHelp.Location = New System.Drawing.Point(292, 317)
         Me.lblHelp.Name = "lblHelp"
-        Me.lblHelp.Size = New System.Drawing.Size(156, 52)
+        Me.lblHelp.Size = New System.Drawing.Size(225, 74)
         Me.lblHelp.TabIndex = 1
         Me.lblHelp.Text = "HELP"
+        Me.lblHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblExit
         '
         Me.lblExit.BackColor = System.Drawing.Color.Transparent
-        Me.lblExit.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExit.Location = New System.Drawing.Point(291, 375)
+        Me.lblExit.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblExit.Location = New System.Drawing.Point(292, 390)
         Me.lblExit.Name = "lblExit"
-        Me.lblExit.Size = New System.Drawing.Size(156, 52)
+        Me.lblExit.Size = New System.Drawing.Size(225, 74)
         Me.lblExit.TabIndex = 2
         Me.lblExit.Text = "EXIT"
+        Me.lblExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblAbout
         '
         Me.lblAbout.BackColor = System.Drawing.Color.Transparent
-        Me.lblAbout.Font = New System.Drawing.Font("Palatino Linotype", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAbout.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAbout.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblAbout.Location = New System.Drawing.Point(291, 228)
+        Me.lblAbout.Location = New System.Drawing.Point(292, 243)
         Me.lblAbout.Name = "lblAbout"
-        Me.lblAbout.Size = New System.Drawing.Size(211, 52)
+        Me.lblAbout.Size = New System.Drawing.Size(225, 74)
         Me.lblAbout.TabIndex = 3
         Me.lblAbout.Text = "ABOUT"
+        Me.lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button1
         '
@@ -124,6 +129,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblHelp)
         Me.Controls.Add(Me.lblPlay)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
