@@ -5,9 +5,8 @@
     Dim cPlayer As playerInfo = userInfo(playerID)
 
     Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load, btnLoadButton.Click
-        loadDB()
-        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
-
+        'loadDB()
+        If sender.name = "frmMain" Then AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
         picHangman.SizeMode = PictureBoxSizeMode.Normal
         picHangman.Image = Nothing
 
@@ -25,20 +24,19 @@
         For Each Letter As Label In pnlLetters.Controls
             If sender.name = "frmGame" Then
                 AddHandler Letter.Click, AddressOf Me.lblLetterS_Click
-                AddHandler Letter.MouseHover, AddressOf Me.colourChange
-                AddHandler Letter.MouseLeave, AddressOf Me.colourChange
+                AddHandler Letter.MouseHover, AddressOf Me.colourChangeP
+                AddHandler Letter.MouseLeave, AddressOf Me.colourChangeB
             End If
             Letter.Enabled = True
         Next
 
     End Sub
 
-    Private Sub colourChange(sender As Label, e As EventArgs)
-        If sender.ForeColor = Color.MediumOrchid Then
-            sender.ForeColor = Color.Black
-        Else
-            sender.ForeColor = Color.MediumOrchid
-        End If
+    Private Sub colourChangeP(sender As Label, e As EventArgs)
+        sender.ForeColor = Color.MediumOrchid
+    End Sub
+    Private Sub colourChangeB(sender As Label, e As EventArgs)
+        sender.ForeColor = Color.Black
     End Sub
 
     Private Sub lblLetterS_Click(sender As Label, e As EventArgs)

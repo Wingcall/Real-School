@@ -62,10 +62,10 @@ Partial Class frmGame
         Me.lblNameLabel = New System.Windows.Forms.Label()
         Me.lblScoreLabel = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnForfit = New System.Windows.Forms.Button()
+        Me.btnForfeit = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.picBanner = New System.Windows.Forms.PictureBox()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.pnlLetters.SuspendLayout()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,9 +107,10 @@ Partial Class frmGame
         '
         Me.lblCat.AutoSize = True
         Me.lblCat.BackColor = System.Drawing.Color.Transparent
-        Me.lblCat.Location = New System.Drawing.Point(140, 402)
+        Me.lblCat.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCat.Location = New System.Drawing.Point(177, 402)
         Me.lblCat.Name = "lblCat"
-        Me.lblCat.Size = New System.Drawing.Size(23, 13)
+        Me.lblCat.Size = New System.Drawing.Size(43, 25)
         Me.lblCat.TabIndex = 12
         Me.lblCat.Text = "Cat"
         '
@@ -502,20 +503,21 @@ Partial Class frmGame
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(85, 402)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 13)
+        Me.Label2.Size = New System.Drawing.Size(106, 25)
         Me.Label2.TabIndex = 52
         Me.Label2.Text = "Category: "
         '
-        'btnForfit
+        'btnForfeit
         '
-        Me.btnForfit.Location = New System.Drawing.Point(4, 397)
-        Me.btnForfit.Name = "btnForfit"
-        Me.btnForfit.Size = New System.Drawing.Size(75, 23)
-        Me.btnForfit.TabIndex = 53
-        Me.btnForfit.Text = "Forfit"
-        Me.btnForfit.UseVisualStyleBackColor = True
+        Me.btnForfeit.Location = New System.Drawing.Point(4, 397)
+        Me.btnForfeit.Name = "btnForfeit"
+        Me.btnForfeit.Size = New System.Drawing.Size(75, 23)
+        Me.btnForfeit.TabIndex = 53
+        Me.btnForfeit.Text = "Forfeit"
+        Me.btnForfeit.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -528,14 +530,6 @@ Partial Class frmGame
         Me.Label3.TabIndex = 54
         Me.Label3.Text = "Hint: "
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'picBanner
         '
         Me.picBanner.BackColor = System.Drawing.Color.Transparent
@@ -547,24 +541,32 @@ Partial Class frmGame
         Me.picBanner.TabIndex = 55
         Me.picBanner.TabStop = False
         '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.lblCat)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.picHangman)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblScoreLabel)
         Me.Controls.Add(Me.lblName)
-        Me.Controls.Add(Me.btnForfit)
+        Me.Controls.Add(Me.btnForfeit)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblNameLabel)
         Me.Controls.Add(Me.pnlLetters)
         Me.Controls.Add(Me.lblHyphen)
         Me.Controls.Add(Me.btnLoadButton)
-        Me.Controls.Add(Me.lblCat)
         Me.Controls.Add(Me.lblHint)
         Me.Controls.Add(Me.UclHomeExit1)
         Me.Controls.Add(Me.Label3)
@@ -620,7 +622,7 @@ Partial Class frmGame
     Friend WithEvents lblNameLabel As System.Windows.Forms.Label
     Friend WithEvents lblScoreLabel As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents btnForfit As System.Windows.Forms.Button
+    Friend WithEvents btnForfeit As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class
