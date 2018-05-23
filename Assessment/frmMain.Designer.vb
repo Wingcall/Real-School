@@ -39,7 +39,7 @@ Partial Class frmMain
         '
         Me.lblPlay.BackColor = System.Drawing.Color.Transparent
         Me.lblPlay.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay.Location = New System.Drawing.Point(292, 171)
+        Me.lblPlay.Location = New System.Drawing.Point(292, 112)
         Me.lblPlay.Name = "lblPlay"
         Me.lblPlay.Size = New System.Drawing.Size(225, 74)
         Me.lblPlay.TabIndex = 0
