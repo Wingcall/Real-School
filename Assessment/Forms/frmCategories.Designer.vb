@@ -26,12 +26,12 @@ Partial Class frmCategories
         Me.picBiology = New System.Windows.Forms.PictureBox()
         Me.picChemistry = New System.Windows.Forms.PictureBox()
         Me.picPhysics = New System.Windows.Forms.PictureBox()
-        Me.lblTag = New System.Windows.Forms.Label()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.lblPhysics = New System.Windows.Forms.Label()
         Me.lblChemistry = New System.Windows.Forms.Label()
         Me.lblBiology = New System.Windows.Forms.Label()
         Me.picBanner = New System.Windows.Forms.PictureBox()
+        Me.lblInstruction = New System.Windows.Forms.Label()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         CType(Me.picBiology, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picChemistry, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPhysics, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,7 +44,7 @@ Partial Class frmCategories
         Me.picBiology.BackgroundImage = Global.Assessment.My.Resources.Resources.Biology_Icon
         Me.picBiology.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picBiology.InitialImage = Nothing
-        Me.picBiology.Location = New System.Drawing.Point(12, 198)
+        Me.picBiology.Location = New System.Drawing.Point(12, 233)
         Me.picBiology.Name = "picBiology"
         Me.picBiology.Size = New System.Drawing.Size(170, 170)
         Me.picBiology.TabIndex = 3
@@ -57,7 +57,7 @@ Partial Class frmCategories
         Me.picChemistry.BackgroundImage = Global.Assessment.My.Resources.Resources.Chemistry_Icon
         Me.picChemistry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picChemistry.InitialImage = Nothing
-        Me.picChemistry.Location = New System.Drawing.Point(305, 198)
+        Me.picChemistry.Location = New System.Drawing.Point(305, 233)
         Me.picChemistry.Name = "picChemistry"
         Me.picChemistry.Size = New System.Drawing.Size(170, 170)
         Me.picChemistry.TabIndex = 4
@@ -70,53 +70,42 @@ Partial Class frmCategories
         Me.picPhysics.BackgroundImage = Global.Assessment.My.Resources.Resources.Phsyics_Icon
         Me.picPhysics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picPhysics.InitialImage = Nothing
-        Me.picPhysics.Location = New System.Drawing.Point(602, 198)
+        Me.picPhysics.Location = New System.Drawing.Point(602, 233)
         Me.picPhysics.Name = "picPhysics"
         Me.picPhysics.Size = New System.Drawing.Size(170, 170)
         Me.picPhysics.TabIndex = 5
         Me.picPhysics.TabStop = False
         Me.picPhysics.Tag = "2"
         '
-        'lblTag
-        '
-        Me.lblTag.AutoSize = True
-        Me.lblTag.Location = New System.Drawing.Point(354, 91)
-        Me.lblTag.Name = "lblTag"
-        Me.lblTag.Size = New System.Drawing.Size(39, 13)
-        Me.lblTag.TabIndex = 7
-        Me.lblTag.Text = "Label1"
-        '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 6
-        '
         'lblPhysics
         '
-        Me.lblPhysics.Location = New System.Drawing.Point(602, 380)
+        Me.lblPhysics.BackColor = System.Drawing.Color.Transparent
+        Me.lblPhysics.Font = New System.Drawing.Font("Segoe Print", 20.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPhysics.Location = New System.Drawing.Point(631, 408)
         Me.lblPhysics.Name = "lblPhysics"
-        Me.lblPhysics.Size = New System.Drawing.Size(170, 36)
+        Me.lblPhysics.Size = New System.Drawing.Size(118, 47)
         Me.lblPhysics.TabIndex = 10
         Me.lblPhysics.Tag = "2"
         Me.lblPhysics.Text = "Physics"
         '
         'lblChemistry
         '
-        Me.lblChemistry.Location = New System.Drawing.Point(305, 380)
+        Me.lblChemistry.BackColor = System.Drawing.Color.Transparent
+        Me.lblChemistry.Font = New System.Drawing.Font("Segoe Print", 20.0!, System.Drawing.FontStyle.Bold)
+        Me.lblChemistry.Location = New System.Drawing.Point(314, 406)
         Me.lblChemistry.Name = "lblChemistry"
-        Me.lblChemistry.Size = New System.Drawing.Size(166, 36)
+        Me.lblChemistry.Size = New System.Drawing.Size(170, 49)
         Me.lblChemistry.TabIndex = 9
         Me.lblChemistry.Tag = "1"
         Me.lblChemistry.Text = "Chemistry"
         '
         'lblBiology
         '
-        Me.lblBiology.Location = New System.Drawing.Point(12, 380)
+        Me.lblBiology.BackColor = System.Drawing.Color.Transparent
+        Me.lblBiology.Font = New System.Drawing.Font("Segoe Print", 20.0!, System.Drawing.FontStyle.Bold)
+        Me.lblBiology.Location = New System.Drawing.Point(37, 406)
         Me.lblBiology.Name = "lblBiology"
-        Me.lblBiology.Size = New System.Drawing.Size(161, 36)
+        Me.lblBiology.Size = New System.Drawing.Size(122, 48)
         Me.lblBiology.TabIndex = 8
         Me.lblBiology.Tag = "0"
         Me.lblBiology.Text = "Biology"
@@ -132,17 +121,36 @@ Partial Class frmCategories
         Me.picBanner.TabIndex = 11
         Me.picBanner.TabStop = False
         '
+        'lblInstruction
+        '
+        Me.lblInstruction.AutoSize = True
+        Me.lblInstruction.BackColor = System.Drawing.Color.Transparent
+        Me.lblInstruction.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInstruction.Location = New System.Drawing.Point(219, 95)
+        Me.lblInstruction.Name = "lblInstruction"
+        Me.lblInstruction.Size = New System.Drawing.Size(342, 57)
+        Me.lblInstruction.TabIndex = 21
+        Me.lblInstruction.Text = "Choose a Category!"
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 6
+        '
         'frmCategories
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.lblInstruction)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.lblPhysics)
         Me.Controls.Add(Me.lblChemistry)
         Me.Controls.Add(Me.lblBiology)
-        Me.Controls.Add(Me.lblTag)
         Me.Controls.Add(Me.UclHomeExit1)
         Me.Controls.Add(Me.picPhysics)
         Me.Controls.Add(Me.picChemistry)
@@ -165,9 +173,9 @@ Partial Class frmCategories
     Friend WithEvents picChemistry As System.Windows.Forms.PictureBox
     Friend WithEvents picPhysics As System.Windows.Forms.PictureBox
     Friend WithEvents UclHomeExit1 As Assessment.uclHomeExit
-    Friend WithEvents lblTag As System.Windows.Forms.Label
     Friend WithEvents lblPhysics As System.Windows.Forms.Label
     Friend WithEvents lblChemistry As System.Windows.Forms.Label
     Friend WithEvents lblBiology As System.Windows.Forms.Label
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
+    Friend WithEvents lblInstruction As System.Windows.Forms.Label
 End Class
