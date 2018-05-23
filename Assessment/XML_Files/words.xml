@@ -34,8 +34,12 @@
     <name>Phsyics</name>
     <words>
       <word>
-        <name>Da-ve</name>
-        <hint>Its not Dave</hint>
+        <name>Acceleration</name>
+        <hint>The rate of change of an object with respect to time.</hint>
+      </word>
+      <word>
+        <name>Albert Einstein</name>
+        <hint>German-born theoretical physicist.</hint>
       </word>
     </words>
   </category>
