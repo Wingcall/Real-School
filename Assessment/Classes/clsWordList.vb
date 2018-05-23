@@ -53,6 +53,11 @@ Public Class word
     Public del As Boolean = False
     Public blank As Boolean
 
+    Public Function HyCount() As Integer
+        Return wordVal.Length - wordVal.Replace("-", "").Length
+    End Function
+
+
 
     Public Sub New(wordLocal As String, hintLocal As String, Optional blankLocal As Boolean = False)
         wordVal = wordLocal.ToUpper

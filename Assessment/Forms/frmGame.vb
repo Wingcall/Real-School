@@ -6,7 +6,7 @@
 
     Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load, btnLoadButton.Click
         'loadDB()
-        If sender.name = "frmMain" Then AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
+        If sender.name = "frmGame" Then AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
         picHangman.SizeMode = PictureBoxSizeMode.Normal
         picHangman.Image = Nothing
 
@@ -44,13 +44,17 @@
         If plrWord.wordVal.Contains(sender.Text) Then
             letterGuesses += sender.Text
             lblHyphen.Text = plrWord.hyphenWord(letterGuesses)
+
             If Not lblHyphen.Text.Contains("-") Then
                 pnlLetters.Enabled = False
                 userInfo(playerID).score += 1
                 lblScore.Text = userInfo(playerID).score
                 updateUserXML()
                 Dim winText As String = "Well done " & cPlayer.name & "! You guessed the word was " & plrWord.wordVal & ". Would you like to try again?"
-                Dim res As MsgBoxResult = MsgBox(winText, MsgBoxStyle.Question, "Congrats")
+                Dim res As MsgBoxResult = MsgBox(winText, MsgBoxStyle.YesNo, "Congrats")
+                If res = MsgBoxResult.Yes Then
+
+                End If
             End If
         Else
             If badGuesses > 0 Then picHangman.Image = ilsHangmen.Images(badGuesses - 1)
