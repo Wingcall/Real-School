@@ -11,10 +11,6 @@
         lblPlayer2Score.Text = userInfo(1).score
         lblPlayer3Score.Text = userInfo(2).score
         lblPlayer4Score.Text = userInfo(3).score
-        'rdoPlayer1.AutoCheck = False
-        'rdoPlayer2.AutoCheck = False
-        'rdoPlayer3.AutoCheck = False
-        'rdoPlayer4.AutoCheck = False
     End Sub
 
     Private Sub btnDelPlayer_Click(sender As Object, e As EventArgs) Handles btnDelPlayer.Click
@@ -54,7 +50,7 @@
         lblTag.Text = sender.tag
     End Sub
 
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click ', rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click ';, rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)
         Else
@@ -64,4 +60,11 @@
         End If
     End Sub
 
+    Private Sub rdoPlayer1_MouseHover(sender As RadioButton, e As EventArgs) Handles rdoPlayer1.MouseHover, rdoPlayer2.MouseHover, rdoPlayer3.MouseHover, rdoPlayer4.MouseHover
+        sender.ForeColor = Color.MediumOrchid
+    End Sub
+
+    Private Sub rdoPlayer1_MouseLeave(sender As RadioButton, e As EventArgs) Handles rdoPlayer1.MouseLeave, rdoPlayer2.MouseLeave, rdoPlayer3.MouseLeave, rdoPlayer4.MouseLeave
+        sender.ForeColor = Color.Black
+    End Sub
 End Class
