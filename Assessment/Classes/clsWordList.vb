@@ -57,7 +57,10 @@ Public Class word
         Return wordVal.Length - wordVal.Replace("-", "").Length
     End Function
 
-
+    Public Function correct(input As String) As Boolean
+        Dim local As Integer = input.Length - input.Replace("-", "").Length
+        Return (local = HyCount())
+    End Function
 
     Public Sub New(wordLocal As String, hintLocal As String, Optional blankLocal As Boolean = False)
         wordVal = wordLocal.ToUpper
