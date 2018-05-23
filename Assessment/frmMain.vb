@@ -19,13 +19,12 @@
         End Select
     End Sub
 
-    Private Sub lblPlay_MouseHover(sender As Label, e As EventArgs) Handles lblPlay.MouseHover, lblAbout.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, _
-        lblPlay.MouseLeave, lblAbout.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave
-        If sender.ForeColor = Color.MediumOrchid Then
-            sender.ForeColor = Color.Black
-        Else
-            sender.ForeColor = Color.MediumOrchid
-        End If
+    Private Sub lblPlay_MouseHover(sender As Label, e As EventArgs) Handles lblPlay.MouseHover, lblAbout.MouseHover, lblHelp.MouseHover, lblExit.MouseHover
+        sender.ForeColor = Color.MediumOrchid
+    End Sub
+
+    Private Sub lblPlay_MouseLeave(sender As Label, e As EventArgs) Handles lblPlay.MouseLeave, lblAbout.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave
+        sender.ForeColor = Color.Black
     End Sub
 
     'Below are debug buttons, to be removed in final copy.
