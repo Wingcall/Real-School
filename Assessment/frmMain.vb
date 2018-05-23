@@ -1,31 +1,30 @@
 ﻿Public Class frmMain
-    'Bla bla comments add later hehe
+    'Idk
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
-        loadDB()
+        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
+        loadDB()    'Initialilzing and Loading Database (XML)
     End Sub
 
     Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
-        Select Case sender.name
+        Select Case sender.name         'Handles conditions with multiple outcomes
             Case "lblPlay"
-                frmLogin.openForm()
+                frmLogin.openForm()     'Runs the custom sub-routine to open the Login Form
             Case "lblAbout"
-                frmAbout.openForm()
+                frmAbout.openForm()     'Runs the custom sub-routine to open the About Form
             Case "lblHelp"
-                frmHelp.openForm()
+                frmHelp.openForm()      'Runs the custom sub-routine to open the Help Form
             Case "lblExit"
-                End
+                End     'Closes the Divisions of Science Hangman Game
         End Select
     End Sub
 
-    Private Sub lblPlay_MouseHover(sender As Label, e As EventArgs) Handles lblPlay.MouseHover, lblAbout.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, _
-        lblPlay.MouseLeave, lblAbout.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave
-        If sender.ForeColor = Color.MediumOrchid Then
-            sender.ForeColor = Color.Black
-        Else
-            sender.ForeColor = Color.MediumOrchid
-        End If
+    Private Sub lblPlay_MouseHover(sender As Label, e As EventArgs) Handles lblPlay.MouseHover, lblAbout.MouseHover, lblHelp.MouseHover, lblExit.MouseHover
+        sender.ForeColor = Color.MediumOrchid   'On mouse hover, changes the Label(s) Forecolour to Medium Orchid
+    End Sub
+
+    Private Sub lblPlay_MouseLeave(sender As Label, e As EventArgs) Handles lblPlay.MouseLeave, lblAbout.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave
+        sender.ForeColor = Color.Black  'On mouse leave, changes the Label(s) Forecolour to Black
     End Sub
 
     'Below are debug buttons, to be removed in final copy.
