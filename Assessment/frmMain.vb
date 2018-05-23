@@ -3,7 +3,7 @@
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
-        loadDB()    'Initialilzing and Loading Database (XML)
+        loadDB()    'Initialilzes and loads XML database
     End Sub
 
     Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
