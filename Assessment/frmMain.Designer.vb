@@ -32,6 +32,7 @@ Partial Class frmMain
         Me.btnGame = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.picBanner = New System.Windows.Forms.PictureBox()
+        Me.lblEdit = New System.Windows.Forms.Label()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,7 +40,7 @@ Partial Class frmMain
         '
         Me.lblPlay.BackColor = System.Drawing.Color.Transparent
         Me.lblPlay.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay.Location = New System.Drawing.Point(292, 112)
+        Me.lblPlay.Location = New System.Drawing.Point(292, 125)
         Me.lblPlay.Name = "lblPlay"
         Me.lblPlay.Size = New System.Drawing.Size(225, 74)
         Me.lblPlay.TabIndex = 0
@@ -50,7 +51,7 @@ Partial Class frmMain
         '
         Me.lblHelp.BackColor = System.Drawing.Color.Transparent
         Me.lblHelp.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHelp.Location = New System.Drawing.Point(292, 317)
+        Me.lblHelp.Location = New System.Drawing.Point(292, 347)
         Me.lblHelp.Name = "lblHelp"
         Me.lblHelp.Size = New System.Drawing.Size(225, 74)
         Me.lblHelp.TabIndex = 1
@@ -61,7 +62,7 @@ Partial Class frmMain
         '
         Me.lblExit.BackColor = System.Drawing.Color.Transparent
         Me.lblExit.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExit.Location = New System.Drawing.Point(292, 390)
+        Me.lblExit.Location = New System.Drawing.Point(292, 421)
         Me.lblExit.Name = "lblExit"
         Me.lblExit.Size = New System.Drawing.Size(225, 74)
         Me.lblExit.TabIndex = 2
@@ -73,7 +74,7 @@ Partial Class frmMain
         Me.lblAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblAbout.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAbout.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblAbout.Location = New System.Drawing.Point(292, 243)
+        Me.lblAbout.Location = New System.Drawing.Point(292, 273)
         Me.lblAbout.Name = "lblAbout"
         Me.lblAbout.Size = New System.Drawing.Size(225, 74)
         Me.lblAbout.TabIndex = 3
@@ -127,12 +128,24 @@ Partial Class frmMain
         Me.picBanner.TabIndex = 7
         Me.picBanner.TabStop = False
         '
+        'lblEdit
+        '
+        Me.lblEdit.BackColor = System.Drawing.Color.Transparent
+        Me.lblEdit.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEdit.Location = New System.Drawing.Point(216, 199)
+        Me.lblEdit.Name = "lblEdit"
+        Me.lblEdit.Size = New System.Drawing.Size(383, 74)
+        Me.lblEdit.TabIndex = 8
+        Me.lblEdit.Text = "EDIT WORDS"
+        Me.lblEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.lblEdit)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnGame)
@@ -161,4 +174,5 @@ Partial Class frmMain
     Friend WithEvents btnGame As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
+    Friend WithEvents lblEdit As System.Windows.Forms.Label
 End Class

@@ -6,7 +6,7 @@
         loadDB()    'Initialilzes and loads XML database
     End Sub
 
-    Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
+    Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblEdit.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
         Select Case sender.name         'Handles conditions with multiple outcomes
             Case "lblPlay"
                 frmLogin.openForm()     'Runs the custom sub-routine to open the Login Form
@@ -14,6 +14,8 @@
                 frmAbout.openForm()     'Runs the custom sub-routine to open the About Form
             Case "lblHelp"
                 frmHelp.openForm()      'Runs the custom sub-routine to open the Help Form
+            Case "lblEdit"
+                frmEdit.openForm()      'Runs the custom sub-routine to open the Edit Words Form
             Case "lblExit"
                 End     'Closes the Divisions of Science Hangman Game
         End Select
@@ -29,11 +31,11 @@
 
     'Below are debug buttons, to be removed in final copy.
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        frmCategories.openForm()        'Testing purposes, REMOVE WHEN DONE
+        frmCategories.openForm()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        frmLogin.openForm()             'testing purposes, REMOVE WHEN DONE
+        frmLogin.openForm()
     End Sub
 
     Private Sub btnGame_Click(sender As Object, e As EventArgs) Handles btnGame.Click
@@ -42,5 +44,13 @@
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         frmEdit.openForm()
+    End Sub
+
+    Private Sub lblPlay_MouseHover(sender As Object, e As EventArgs) Handles lblPlay.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, lblAbout.MouseHover
+
+    End Sub
+
+    Private Sub lblPlay_MouseLeave(sender As Object, e As EventArgs) Handles lblPlay.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave, lblAbout.MouseLeave
+
     End Sub
 End Class
