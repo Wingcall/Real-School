@@ -63,7 +63,9 @@ Partial Class frmAbout
         Me.lblBAbout.Name = "lblBAbout"
         Me.lblBAbout.Size = New System.Drawing.Size(263, 439)
         Me.lblBAbout.TabIndex = 10
-        Me.lblBAbout.Text = "About"
+        Me.lblBAbout.Text = "Brandon Dingley is one of the creators of Divisons of Science. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "His hobbies in" & _
+    "clude sports, technology, cooking and sleeping. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "At the time of this project " & _
+    "(2018), Brandon was 17." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'lblBTitle
         '

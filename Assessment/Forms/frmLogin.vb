@@ -16,22 +16,26 @@
     End Sub
 
     Private Sub btnDelPlayer_Click(sender As Object, e As EventArgs) Handles btnDelPlayer.Click
-        Dim result As Integer = MessageBox.Show("Are you sure you want to delete this slot?", "Divisions of Science", MessageBoxButtons.YesNo) 'Ask the user if they want to delete player
-        If (result = DialogResult.Yes) Then     'If the result is yes, do below
-            userInfo(playerID).del()        'Deletes the player info selected by selected.
-            Reset()                         'Calls sub-procedure Reset
-            updateUserXML()                 'Updates the User XML File
+        If userInfo(playerID).name = "New Player!" Then     'Check if the player slots name is "New Player!"
+            MessageBox.Show("This slot is empty!", "Divisions of Science", MessageBoxButtons.OK)    'Display Message Box saying that the slot is already empty
+        Else
+            Dim result As Integer = MessageBox.Show("Are you sure you want to delete this slot?", "Divisions of Science", MessageBoxButtons.YesNo) 'Ask the user if they want to delete player
+            If (result = DialogResult.Yes) Then     'If the result is yes, do below
+                userInfo(playerID).del()        'Deletes the player info selected by selected.
+                Reset()                         'Calls sub-procedure Reset
+                updateUserXML()                 'Updates the User XML File
+            End If
         End If
     End Sub
 
     Private Sub Namecatching()
         Dim prompt, title, answer, prompt2, title2, answer2 As String
-        prompt = "Hello There! What's your name?"   'Sets the Question in the message box
+        prompt = "Hello There! What's your name?"   'Sets the Question in the message box'
         title = "Create New Profile"    'Sets the Message Box Title'
         answer = InputBox(prompt, title)    'Answer is equal to what the user inputs
         btnNext.Focus()     'Sets the mouse focus to the Next Button
         If answer = "New Player!" Then
-            MessageBox.Show("Nice Try! For real this time, what's your name?", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+            MessageBox.Show("Nice Try! What's your name?", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
             prompt2 = "Enter your REAL name!"   'Sets the instruction of the message box
             title2 = "Create New Profile"   'Sets the Title of the window
             answer2 = InputBox(prompt2, title2)     'Answer is equal to what the user inputs
@@ -50,7 +54,13 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Namecatching()
+        If Not userInfo(playerID).name = "New Player!" Then     'Check if the slot isn't "New Player!"
+            MessageBox.Show("Are you sure you want to overwrite this slot?", "Divisions of Science", MessageBoxButtons.YesNo)   'Displays message box to ask if the user wishes to overwrite
+            Namecatching()      'Runs the sub-procedure Namecatching
+        End If
+        If userInfo(playerID).name = "New Player!" Then         'Check if the slot is "New Player!"
+            Namecatching()      'Runs the sub-procedure Namecatching
+        End If
     End Sub
 
     Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
