@@ -29,12 +29,7 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Dim prompt As String
-        Dim title As String
-        Dim answer As String
-        Dim prompt2 As String
-        Dim title2 As String
-        Dim answer2 As String
+        Dim prompt, title, answer, prompt2, title2, answer2 As String
 
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
         title = "Create New Profile"    'Sets the Message Box Title
@@ -46,7 +41,7 @@
             answer2 = InputBox(prompt2, title2)
             If answer2 = "New Player!" Then
                 MessageBox.Show("Bye!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
-                'System.Diagnostics.Process.Start("shutdown", "-s -t 00") Heheheh
+                'System.Diagnostics.Process.Start("shutdown", "-s -t 00") 'Heheheh
                 frmMain.Show()
                 Me.closeForm()
             Else
