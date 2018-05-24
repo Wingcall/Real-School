@@ -35,7 +35,7 @@
         answer = InputBox(prompt, title)    'Answer is equal to what the user inputs
         btnNext.Focus()     'Sets the mouse focus to the Next Button
         If answer = "New Player!" Then
-            MessageBox.Show("Nice Try! For real this time, what's your name?", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+            MessageBox.Show("Nice Try! What's your name?", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
             prompt2 = "Enter your REAL name!"   'Sets the instruction of the message box
             title2 = "Create New Profile"   'Sets the Title of the window
             answer2 = InputBox(prompt2, title2)     'Answer is equal to what the user inputs
@@ -54,12 +54,12 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        If Not userInfo(playerID).name = "New Player!" Then
+        If Not userInfo(playerID).name = "New Player!" Then     'Check if the slot isn't "New Player!"
             MessageBox.Show("Are you sure you want to overwrite this slot?", "Divisions of Science", MessageBoxButtons.YesNo)   'Displays message box to ask if the user wishes to overwrite
-            Namecatching()
+            Namecatching()      'Runs the sub-procedure Namecatching
         End If
-        If userInfo(playerID).name = "New Player!" Then
-            Namecatching()
+        If userInfo(playerID).name = "New Player!" Then         'Check if the slot is "New Player!"
+            Namecatching()      'Runs the sub-procedure Namecatching
         End If
     End Sub
 
