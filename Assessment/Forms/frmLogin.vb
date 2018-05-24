@@ -66,7 +66,7 @@
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
         Else
-            playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
+            'playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
             frmCategories.Show()    'Displays the Categories Form
             Me.closeForm()  'Closes the current form
         End If
