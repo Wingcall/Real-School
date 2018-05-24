@@ -32,7 +32,7 @@
         Dim prompt, title, answer, prompt2, title2, answer2 As String
 
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
-        title = "Create New Profile"    'Sets the Message Box Title
+        title = "Create New Profile"    'Sets the Message Box Title'
         answer = InputBox(prompt, title)
         If answer = "New Player!" Then
             MessageBox.Show("Nice Try!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
