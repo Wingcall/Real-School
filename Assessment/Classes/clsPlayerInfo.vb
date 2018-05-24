@@ -2,7 +2,7 @@
     Public id As Int16
     Public name As String
     Public score As Integer
-    Public answer As String
+    'Public answer As String
 
     Public Sub New(pInfo As Array)
         id = pInfo(0)
