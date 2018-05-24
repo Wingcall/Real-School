@@ -111,6 +111,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Game_theme_music() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Game_theme_music", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Phsyics_Icon() As System.Drawing.Bitmap
