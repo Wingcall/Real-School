@@ -29,24 +29,18 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Dim prompt As String
-        Dim title As String
-        Dim answer As String
-        Dim prompt2 As String
-        Dim title2 As String
-        Dim answer2 As String
+        Dim prompt, title, answer, prompt2, title2, answer2 As String
 
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
         title = "Create New Profile"    'Sets the Message Box Title'
         answer = InputBox(prompt, title)
         If answer = "New Player!" Then
-            MessageBox.Show("Nice Try!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+            MessageBox.Show("Nice Try! For real this time, what's your name?", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
             prompt2 = "Enter your REAL name!"
             title2 = "Create New Profile"
             answer2 = InputBox(prompt2, title2)
             If answer2 = "New Player!" Then
                 MessageBox.Show("Okay Bond, James Bond.", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
-                'System.Diagnostics.Process.Start("shutdown", "-s -t 00")
                 frmMain.Show()
                 Me.closeForm()
             Else
@@ -65,11 +59,11 @@
         playerID = sender.tag   'Sets the playerID global variable to equal the value of sender.tag
     End Sub
 
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click 'rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
         Else
-            'playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
+            playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
             frmCategories.Show()    'Displays the Categories Form
             Me.closeForm()  'Closes the current form
         End If
