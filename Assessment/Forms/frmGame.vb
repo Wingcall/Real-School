@@ -52,7 +52,7 @@
                 Dim winText As String = "Well done " & cPlayer.name & "! You guessed the word was " & plrWord.wordVal & ". Would you like to try again?"
                 Dim res As MsgBoxResult = MsgBox(winText, MsgBoxStyle.YesNo, "Congrats")
                 If res = MsgBoxResult.Yes Then
-
+                    frmGame_Load(Me, Nothing)
                 End If
             End If
         Else
