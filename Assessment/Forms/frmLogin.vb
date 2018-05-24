@@ -30,7 +30,7 @@
 
     Private Sub Namecatching()
         Dim prompt, title, answer, prompt2, title2, answer2 As String
-        prompt = "Hello There! What's your name?"   'Sets the Question in the message box
+        prompt = "Hello There! What's your name?"   'Sets the Question in the message box'
         title = "Create New Profile"    'Sets the Message Box Title'
         answer = InputBox(prompt, title)    'Answer is equal to what the user inputs
         btnNext.Focus()     'Sets the mouse focus to the Next Button
