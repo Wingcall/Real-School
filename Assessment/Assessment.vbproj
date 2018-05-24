@@ -104,12 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Callie.Designer.vb">
-      <DependentUpon>Callie.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Callie.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Classes\clsFormEvents.vb" />
     <Compile Include="Classes\clsPlayerInfo.vb" />
     <Compile Include="Forms\frmAbout.Designer.vb">
@@ -182,9 +176,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Callie.resx">
-      <DependentUpon>Callie.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAbout.resx">
       <DependentUpon>frmAbout.vb</DependentUpon>
     </EmbeddedResource>
