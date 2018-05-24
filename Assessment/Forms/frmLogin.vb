@@ -45,14 +45,13 @@
             title2 = "Create New Profile"
             answer2 = InputBox(prompt2, title2)
             If answer2 = "New Player!" Then
-                MessageBox.Show("Bye!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
-                'System.Diagnostics.Process.Start("shutdown", "-s -t 00") Heheheh
+                MessageBox.Show("Okay Bond, James Bond.", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+                'System.Diagnostics.Process.Start("shutdown", "-s -t 00")
                 frmMain.Show()
                 Me.closeForm()
             Else
                 userInfo(playerID).ans(answer)
             End If
-            userInfo(playerID).ans(answer)
         End If
         userInfo(playerID).ans(answer)      'Sets the user input as the Player Name
         rdoPlayer1.Text = userInfo(0).name          'Resets the Player 1's name
@@ -63,15 +62,14 @@
     End Sub
 
     Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
-        lblTag.Text = sender.tag    'Sets the sender.tag as the tag set on the label
-        sender.tag = playerID   'Sets the playerID global variable to equal the value of sender.tag
+        playerID = sender.tag   'Sets the playerID global variable to equal the value of sender.tag
     End Sub
 
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click ';, rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click 'rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
         Else
-            playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
+            'playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
             frmCategories.Show()    'Displays the Categories Form
             Me.closeForm()  'Closes the current form
         End If
