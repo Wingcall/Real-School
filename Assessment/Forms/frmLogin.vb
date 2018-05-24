@@ -1,7 +1,5 @@
 ﻿Public Class frmLogin
-
-    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
+    Private Sub Reset()
         rdoPlayer1.Text = userInfo(0).name          'Sets Player 1's Name
         rdoPlayer2.Text = userInfo(1).name          'Sets Player 2's Name
         rdoPlayer3.Text = userInfo(2).name          'Sets Player 3's Name
@@ -12,25 +10,22 @@
         lblPlayer4Score.Text = userInfo(3).score    'Sets Player 4's Score
     End Sub
 
+    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
+        Reset()     'Calls sub-procedure Reset
+    End Sub
+
     Private Sub btnDelPlayer_Click(sender As Object, e As EventArgs) Handles btnDelPlayer.Click
         Dim result As Integer = MessageBox.Show("Are you sure you want to delete this slot?", "Divisions of Science", MessageBoxButtons.YesNo) 'Ask the user if they want to delete player
         If (result = DialogResult.Yes) Then     'If the result is yes, do below
             userInfo(playerID).del()        'Deletes the player info selected by selected.
-            rdoPlayer1.Text = userInfo(0).name          'Resets the Player 1's Name
-            rdoPlayer2.Text = userInfo(1).name          'Resets the Player 2's Name
-            rdoPlayer3.Text = userInfo(2).name          'Resets the Player 3's Name
-            rdoPlayer4.Text = userInfo(3).name          'Resets the Player 4's Name
-            lblPlayer1Score.Text = userInfo(0).score    'Resets the Player 1's Score
-            lblPlayer2Score.Text = userInfo(1).score    'Resets the Player 2's Score
-            lblPlayer3Score.Text = userInfo(2).score    'Resets the Player 3's Score
-            lblPlayer4Score.Text = userInfo(3).score    'Resets the Player 4's Score
+            Reset()                         'Calls sub-procedure Reset
             updateUserXML()                 'Updates the User XML File
         End If
     End Sub
 
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+    Private Sub Namecatching()
         Dim prompt, title, answer, prompt2, title2, answer2 As String
-
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
         title = "Create New Profile"    'Sets the Message Box Title'
         answer = InputBox(prompt, title)
@@ -47,12 +42,13 @@
                 userInfo(playerID).ans(answer)
             End If
         End If
-        userInfo(playerID).ans(answer)      'Sets the user input as the Player Name
-        rdoPlayer1.Text = userInfo(0).name          'Resets the Player 1's name
-        rdoPlayer2.Text = userInfo(1).name          'Resets the Player 2's name
-        rdoPlayer3.Text = userInfo(2).name          'Resets the Player 3's name
-        rdoPlayer4.Text = userInfo(3).name          'Resets the Player 4's name
+        userInfo(playerID).ans(answer)
+        Reset()                         'Calls sub-procedure Reset
         updateUserXML()     'Updates the User XML file
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Namecatching()
     End Sub
 
     Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
@@ -60,6 +56,8 @@
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        If userInfo(playerID).name = "New Player!" Then Namecatching()
+
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
         Else
