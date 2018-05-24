@@ -28,7 +28,7 @@ Partial Class frmGame
         Me.lblScore = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.lblCat = New System.Windows.Forms.Label()
-        Me.btnLoadButton = New System.Windows.Forms.Button()
+        Me.btnNewGame = New System.Windows.Forms.Button()
         Me.lblHyphen = New System.Windows.Forms.Label()
         Me.pnlLetters = New System.Windows.Forms.Panel()
         Me.lblLetterZ = New System.Windows.Forms.Label()
@@ -114,14 +114,14 @@ Partial Class frmGame
         Me.lblCat.TabIndex = 12
         Me.lblCat.Text = "Cat"
         '
-        'btnLoadButton
+        'btnNewGame
         '
-        Me.btnLoadButton.Location = New System.Drawing.Point(683, 392)
-        Me.btnLoadButton.Name = "btnLoadButton"
-        Me.btnLoadButton.Size = New System.Drawing.Size(75, 23)
-        Me.btnLoadButton.TabIndex = 13
-        Me.btnLoadButton.Text = "go"
-        Me.btnLoadButton.UseVisualStyleBackColor = True
+        Me.btnNewGame.Location = New System.Drawing.Point(683, 392)
+        Me.btnNewGame.Name = "btnNewGame"
+        Me.btnNewGame.Size = New System.Drawing.Size(75, 23)
+        Me.btnNewGame.TabIndex = 13
+        Me.btnNewGame.Text = "New Game"
+        Me.btnNewGame.UseVisualStyleBackColor = True
         '
         'lblHyphen
         '
@@ -566,7 +566,7 @@ Partial Class frmGame
         Me.Controls.Add(Me.lblNameLabel)
         Me.Controls.Add(Me.pnlLetters)
         Me.Controls.Add(Me.lblHyphen)
-        Me.Controls.Add(Me.btnLoadButton)
+        Me.Controls.Add(Me.btnNewGame)
         Me.Controls.Add(Me.lblHint)
         Me.Controls.Add(Me.UclHomeExit1)
         Me.Controls.Add(Me.Label3)
@@ -588,7 +588,7 @@ Partial Class frmGame
     Friend WithEvents lblScore As System.Windows.Forms.Label
     Friend WithEvents lblName As System.Windows.Forms.Label
     Friend WithEvents lblCat As System.Windows.Forms.Label
-    Friend WithEvents btnLoadButton As System.Windows.Forms.Button
+    Friend WithEvents btnNewGame As System.Windows.Forms.Button
     Friend WithEvents lblHyphen As System.Windows.Forms.Label
     Friend WithEvents pnlLetters As System.Windows.Forms.Panel
     Friend WithEvents lblLetterB As System.Windows.Forms.Label

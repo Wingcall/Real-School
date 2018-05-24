@@ -77,8 +77,10 @@ Public Class word
         Dim hyphen As String = ""
         Dim wCharArray As Char() = wordVal.ToCharArray()
         For Each wChar As Char In wCharArray
-            If wChar <> CChar(" ") And Not charList.Contains(wChar.ToString()) Then hyphen += "-"
-            If charList.Contains(wChar.ToString()) Then hyphen += wChar.ToString
+            If wChar <> CChar(" ") And Not charList.Contains(wChar.ToString) _
+                And alphabet.Contains(wChar.ToString) Then hyphen += "-"
+            If charList.Contains(wChar.ToString) _
+                Or Not alphabet.Contains(wChar.ToString) Then hyphen += wChar.ToString
             If wChar = CChar(" ") Then hyphen += " "
         Next
         Return hyphen

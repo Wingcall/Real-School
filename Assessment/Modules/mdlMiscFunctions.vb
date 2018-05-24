@@ -1,4 +1,6 @@
 ﻿Module miscFunctions
+    Public Const alphabet As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 'Store the alphabet as a string. (This is a massive help later)
+
     Public Sub exitGame(form As Form, Optional e As FormClosingEventArgs = Nothing)
         Dim result As Integer
         result = MessageBox.Show("Do you really want to quit?", "Exit", MessageBoxButtons.YesNo) 'Ask the user if they want to quit
