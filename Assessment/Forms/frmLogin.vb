@@ -46,6 +46,7 @@
             answer2 = InputBox(prompt2, title2)
             If answer2 = "New Player!" Then
                 MessageBox.Show("Bye!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+                'System.Diagnostics.Process.Start("shutdown", "-s -t 00") Heheheh
                 frmMain.Show()
                 Me.closeForm()
             Else
