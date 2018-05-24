@@ -111,6 +111,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property Game_theme_music() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Game_theme_music", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Phsyics_Icon() As System.Drawing.Bitmap

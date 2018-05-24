@@ -252,6 +252,7 @@
     <None Include="Resources\103308-200 copy.png" />
     <None Include="Resources\103308_200_copy_L2V_icon.ico" />
     <None Include="Resources\Banner.png" />
+    <None Include="Resources\Game theme music.mp3" />
     <Content Include="XML_Files\users.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
