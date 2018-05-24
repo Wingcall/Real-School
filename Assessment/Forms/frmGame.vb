@@ -1,6 +1,6 @@
 ﻿Public Class frmGame
     Const maxGuesses As Integer = 7 'Stop yelling at me for magic numbers
-    'Const alphabet As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 'Remeber the alphabet
+    'Const alphabet As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 'Remeber the alphabet, THIS IS NOW A GLOBAL CONST
     Dim letterGuesses As String = ""
     Dim badGuesses As Integer
     Dim cPlayer As playerInfo = userInfo(playerID)
