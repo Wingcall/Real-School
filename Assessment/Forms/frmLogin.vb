@@ -58,6 +58,9 @@
             MessageBox.Show("Are you sure you want to overwrite this slot?", "Divisions of Science", MessageBoxButtons.YesNo)   'Displays message box to ask if the user wishes to overwrite
             Namecatching()
         End If
+        If userInfo(playerID).name = "New Player!" Then
+            Namecatching()
+        End If
     End Sub
 
     Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
