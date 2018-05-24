@@ -32,10 +32,27 @@
         Dim prompt As String
         Dim title As String
         Dim answer As String
+        Dim prompt2 As String
+        Dim title2 As String
+        Dim answer2 As String
 
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
         title = "Create New Profile"    'Sets the Message Box Title
         answer = InputBox(prompt, title)
+        If answer = "New Player!" Then
+            MessageBox.Show("Nice Try!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+            prompt2 = "Enter your REAL name!"
+            title2 = "Create New Profile"
+            answer2 = InputBox(prompt2, title2)
+            If answer2 = "New Player!" Then
+                MessageBox.Show("Bye!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+                frmMain.Show()
+                Me.closeForm()
+            Else
+                userInfo(playerID).ans(answer)
+            End If
+            userInfo(playerID).ans(answer)
+        End If
         userInfo(playerID).ans(answer)      'Sets the user input as the Player Name
         rdoPlayer1.Text = userInfo(0).name          'Resets the Player 1's name
         rdoPlayer2.Text = userInfo(1).name          'Resets the Player 2's name
