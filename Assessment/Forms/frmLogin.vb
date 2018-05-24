@@ -28,16 +28,18 @@
         Dim prompt, title, answer, prompt2, title2, answer2 As String
         prompt = "Hello There! What's your name?"   'Sets the Question in the message box
         title = "Create New Profile"    'Sets the Message Box Title'
-        answer = InputBox(prompt, title)
+        answer = InputBox(prompt, title)    'Answer is equal to what the user inputs
+        btnNext.Focus()     'Sets the mouse focus to the Next Button
         If answer = "New Player!" Then
             MessageBox.Show("Nice Try! For real this time, what's your name?", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
-            prompt2 = "Enter your REAL name!"
-            title2 = "Create New Profile"
-            answer2 = InputBox(prompt2, title2)
-            If answer2 = "New Player!" Then
+            prompt2 = "Enter your REAL name!"   'Sets the instruction of the message box
+            title2 = "Create New Profile"   'Sets the Title of the window
+            answer2 = InputBox(prompt2, title2)     'Answer is equal to what the user inputs
+            btnNext.Focus()     'Sets the mouse focus to the Next Button
+            If answer2 = "New Player!" Then     'Check if the answer is "New Player!" again
                 MessageBox.Show("Okay Bond, James Bond.", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
-                frmMain.Show()
-                Me.closeForm()
+                frmMain.Show()  'Show the main form
+                Me.closeForm()  'Close the current form
             Else
                 userInfo(playerID).ans(answer)
             End If
