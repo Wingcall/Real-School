@@ -117,6 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblMaininfo.Text" xml:space="preserve">
+    <value>MAIN MENU
+
+This is the initial screen when you open Divisons of Science. From this menu you can do multiple things such as:
+- Playing the game (Hangman)
+- Editting the words for the game
+- Learning about the creators/developers
+- Access this Help Screen
+- Exit the game
+
+Every time the "Home" button is pressed (which is not on this screen), the Main Menu will be displayed.</value>
+  </data>
+  <data name="lblPlayinginfo.Text" xml:space="preserve">
+    <value>PLAYING THE GAME
+
+After selecting your player slot and category, you will be presented with the Game screen! 
+
+In the top left corner there will be a hint, this will give you valuble information to guess the word!
+
+In the center of the screen, you will see the hyphens ( - ), this indicates how many letters there are in the particular word. For example, if there are 8 hyphens then there is 8 letters.
+
+Using either your keyboard or mouse, you can click or press a letter to guess if it is contained in the word. But beware, if it isn't in the word, you will have a strike! 7 strikes and it's game over!
+
+When the word is correctly guessed (congratulations by the way!), a message box will appear with the correct word and will prompt if you would like to play again.
+
+</value>
+  </data>
+  <data name="lblLogininfo.Text" xml:space="preserve">
+    <value>LOGGING IN
+
+After pressing the "Play" button on the Main Menu, you will be presented with the Login screen! There are 4 available slots to play from.
+
+To create a new profile/slot, click on a slot and press "Add Player". You will be prompted to enter your name. Once completed, that slot will be yours! To the right of your name is your score, this will be updated the more you win at the game. Each win is worth 1 point.
+
+To delete a new profile/slot, choose the desired slot and press "Delete Slot". You will be asked for comfirmation before doing so.
+
+Once you have chosen your slot (or created a new profile), press Next! Now it's time to pick your category!
+
+</value>
+  </data>
+  <data name="lblEditinfo.Text" xml:space="preserve">
+    <value>EDITTING WORDS
+
+There is functionality to add or remove your own words which can be played in Hangman.
+
+Adding a Word:
+To add a word, first select a Category from the dropdown box (Biology, Chemistry or Physics). 
+Next, type in your desired word into the input box outlined. In the Hint input box, type in a Hint for this word. This should help the player! Once all done, press the "Add Word" button!
+
+Deleting a Word:
+To delete a word, select the Category that you wish to delete it from (Biology, Chemistry or Physics).
+Click the word from the list on the left, and click "Delete Word". You have now deleted that word.
+
+Updating a Word:
+To update the word and its properties, select the category (Biology, Chemistry or Physics).
+Find the word in that list and click on it. Then, you can change the name or the hint to suit. Once completed, press "Update". That word is now updated.
+
+
+
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="picBanner.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
