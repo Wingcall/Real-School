@@ -16,11 +16,15 @@
     End Sub
 
     Private Sub btnDelPlayer_Click(sender As Object, e As EventArgs) Handles btnDelPlayer.Click
-        Dim result As Integer = MessageBox.Show("Are you sure you want to delete this slot?", "Divisions of Science", MessageBoxButtons.YesNo) 'Ask the user if they want to delete player
-        If (result = DialogResult.Yes) Then     'If the result is yes, do below
-            userInfo(playerID).del()        'Deletes the player info selected by selected.
-            Reset()                         'Calls sub-procedure Reset
-            updateUserXML()                 'Updates the User XML File
+        If userInfo(playerID).name = "New Player!" Then     'Check if the player slots name is "New Player!"
+            MessageBox.Show("This slot is empty!", "Divisions of Science", MessageBoxButtons.OK)    'Display Message Box saying that the slot is already empty
+        Else
+            Dim result As Integer = MessageBox.Show("Are you sure you want to delete this slot?", "Divisions of Science", MessageBoxButtons.YesNo) 'Ask the user if they want to delete player
+            If (result = DialogResult.Yes) Then     'If the result is yes, do below
+                userInfo(playerID).del()        'Deletes the player info selected by selected.
+                Reset()                         'Calls sub-procedure Reset
+                updateUserXML()                 'Updates the User XML File
+            End If
         End If
     End Sub
 
