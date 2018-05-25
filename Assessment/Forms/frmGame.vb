@@ -14,20 +14,28 @@
                 userInfo(playerID).score += 1
                 lblScore.Text = userInfo(playerID).score
                 updateUserXML()
-                Dim winText As String = "Well done " & cPlayer.name & "! You guessed the word was " & plrWord.wordVal & ". Would you like to try again?"
-                Dim res As MsgBoxResult = MsgBox(winText, MsgBoxStyle.YesNo, "Congrats")
-                If res = MsgBoxResult.Yes Then
-                    frmGame_Load(Me, Nothing)
-                End If
+                winLose(True)
             End If
         Else
             If badGuesses > 0 Then picHangman.Image = ilsHangmen.Images(badGuesses - 1)
             badGuesses -= 1
             If badGuesses <= 0 Then
                 pnlLetters.Enabled = False
-                MsgBox("Game Lost! :(")
+                winLose(False)
                 Exit Sub
             End If
+        End If
+    End Sub
+
+    Private Sub winLose(win As Boolean)
+        If win Then
+            Dim winText As String = "Well done " & cPlayer.name & "! You guessed the word was " & plrWord.wordVal & ". Would you like to try again?"
+            Dim res As MsgBoxResult = MsgBox(winText, MsgBoxStyle.YesNo, "Congrats")
+            If res = MsgBoxResult.Yes Then
+                frmGame_Load(Me, Nothing)
+            End If
+        Else
+            MsgBox("Game Lost! :(")
         End If
     End Sub
 
@@ -41,8 +49,9 @@
     Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load, btnNewGame.Click
         'loadDB()
         If sender.name = "frmGame" Then AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
-
         Me.KeyPreview = True
+        btnNewGame.Enabled = False
+        btnForfeit.Enabled = True
 
         picHangman.SizeMode = PictureBoxSizeMode.Normal
         picHangman.Image = Nothing
