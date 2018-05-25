@@ -55,8 +55,12 @@
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         If Not userInfo(playerID).name = "New Player!" Then     'Check if the slot isn't "New Player!"
-            MessageBox.Show("Are you sure you want to overwrite this slot?", "Divisions of Science", MessageBoxButtons.YesNo)   'Displays message box to ask if the user wishes to overwrite
-            Namecatching()      'Runs the sub-procedure Namecatching
+            Dim res As Integer = MessageBox.Show("Are you sure you want to overwrite this slot?", "Divisions of Science", MessageBoxButtons.YesNo)   'Displays message box to ask if the user wishes to overwrite
+            If res = 6 Then
+                Namecatching() 'Runs the sub-procedure Namecatching
+            Else
+                userInfo(playerID).ans("New Player!")
+            End If
         End If
         If userInfo(playerID).name = "New Player!" Then         'Check if the slot is "New Player!"
             Namecatching()      'Runs the sub-procedure Namecatching
