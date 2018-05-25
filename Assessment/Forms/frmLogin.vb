@@ -44,13 +44,16 @@
                 MessageBox.Show("Okay Bond, James Bond.", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
                 frmMain.Show()  'Show the main form
                 Me.closeForm()  'Close the current form
+            ElseIf answer2 = "" Then 'NOOP
             Else
                 userInfo(playerID).ans(answer)
             End If
+        ElseIf answer = "" Then 'NOOP
+        Else
+            userInfo(playerID).ans(answer)
+            updateUserXML()     'Updates the User XML file
         End If
-        userInfo(playerID).ans(answer)
         Reset()                         'Calls sub-procedure Reset
-        updateUserXML()     'Updates the User XML file
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
