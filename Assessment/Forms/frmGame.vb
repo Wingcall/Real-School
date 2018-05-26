@@ -105,10 +105,10 @@
     End Sub
 
     Private Sub btnForfeit_Click(sender As Object, e As EventArgs) Handles btnForfeit.Click
-        btnForfeit.Enabled = False
         Dim message = "Hey, " & cPlayer.name & ", Are you sure you wish to forfit?" & vbNewLine & "You will lose a point!"
         Dim res As MsgBoxResult = MsgBox(message, MsgBoxStyle.YesNo, "Your Loss.")
         If res = MsgBoxResult.Yes Then
+            btnForfeit.Enabled = False
             If userInfo(playerID).score > 0 Then userInfo(playerID).score -= 1
             frmGame_Load(Me, Nothing)
         Else : btnNewGame.Enabled = True

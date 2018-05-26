@@ -29,8 +29,8 @@ Partial Class frmAbout
         Me.lblBTitle = New System.Windows.Forms.Label()
         Me.lblCTitle = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.picBanner = New System.Windows.Forms.PictureBox()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,31 +39,35 @@ Partial Class frmAbout
         Me.lblCAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblCAbout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCAbout.Font = New System.Drawing.Font("Monotype Corsiva", 22.0!, System.Drawing.FontStyle.Italic)
-        Me.lblCAbout.Location = New System.Drawing.Point(561, 138)
+        Me.lblCAbout.Location = New System.Drawing.Point(546, 136)
         Me.lblCAbout.Name = "lblCAbout"
-        Me.lblCAbout.Size = New System.Drawing.Size(219, 439)
+        Me.lblCAbout.Size = New System.Drawing.Size(234, 449)
         Me.lblCAbout.TabIndex = 8
-        Me.lblCAbout.Text = "Cal Wing is a #Insert Infomation here!#"
+        Me.lblCAbout.Text = "Cal Wing is the 2nd creator of Divisons of Scicence. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "He is a rower, hobbest c" & _
+    "oder and general tinkerer in a range of areas." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "He was also 17 at the time of " & _
+    "this project."
         '
         'lblAbout
         '
         Me.lblAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblAbout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblAbout.Font = New System.Drawing.Font("Monotype Corsiva", 22.0!, System.Drawing.FontStyle.Italic)
+        Me.lblAbout.Font = New System.Drawing.Font("Imprint MT Shadow", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAbout.Location = New System.Drawing.Point(278, 110)
         Me.lblAbout.Name = "lblAbout"
-        Me.lblAbout.Size = New System.Drawing.Size(277, 294)
+        Me.lblAbout.Size = New System.Drawing.Size(262, 337)
         Me.lblAbout.TabIndex = 9
-        Me.lblAbout.Text = "About"
+        Me.lblAbout.Text = "Divisions of Science, is the classic game of ""Hangman"" but Digitised!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "For more" & _
+    " inofmation about the game, click ""Home"" (top left) then ""Help"" on the main scre" & _
+    "en."
         '
         'lblBAbout
         '
         Me.lblBAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblBAbout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBAbout.Font = New System.Drawing.Font("Monotype Corsiva", 22.0!, System.Drawing.FontStyle.Italic)
-        Me.lblBAbout.Location = New System.Drawing.Point(9, 138)
+        Me.lblBAbout.Location = New System.Drawing.Point(9, 136)
         Me.lblBAbout.Name = "lblBAbout"
-        Me.lblBAbout.Size = New System.Drawing.Size(263, 439)
+        Me.lblBAbout.Size = New System.Drawing.Size(263, 449)
         Me.lblBAbout.TabIndex = 10
         Me.lblBAbout.Text = "Brandon Dingley is one of the creators of Divisons of Science. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "His hobbies in" & _
     "clude sports, technology, cooking and sleeping. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "At the time of this project " & _
@@ -75,7 +79,7 @@ Partial Class frmAbout
         Me.lblBTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblBTitle.Font = New System.Drawing.Font("Harlow Solid Italic", 26.25!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBTitle.Location = New System.Drawing.Point(-5, 93)
+        Me.lblBTitle.Location = New System.Drawing.Point(-5, 91)
         Me.lblBTitle.Name = "lblBTitle"
         Me.lblBTitle.Size = New System.Drawing.Size(283, 45)
         Me.lblBTitle.TabIndex = 11
@@ -87,7 +91,7 @@ Partial Class frmAbout
         Me.lblCTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblCTitle.Font = New System.Drawing.Font("Harlow Solid Italic", 26.25!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCTitle.Location = New System.Drawing.Point(591, 93)
+        Me.lblCTitle.Location = New System.Drawing.Point(591, 91)
         Me.lblCTitle.Name = "lblCTitle"
         Me.lblCTitle.Size = New System.Drawing.Size(165, 45)
         Me.lblCTitle.TabIndex = 12
@@ -104,14 +108,6 @@ Partial Class frmAbout
         Me.lblTitle.TabIndex = 13
         Me.lblTitle.Text = "About"
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'picBanner
         '
         Me.picBanner.BackColor = System.Drawing.Color.Transparent
@@ -122,6 +118,14 @@ Partial Class frmAbout
         Me.picBanner.Size = New System.Drawing.Size(480, 50)
         Me.picBanner.TabIndex = 14
         Me.picBanner.TabStop = False
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
         '
         'frmAbout
         '
