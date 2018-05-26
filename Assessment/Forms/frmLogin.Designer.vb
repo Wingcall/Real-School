@@ -38,8 +38,8 @@ Partial Class frmLogin
         Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.lblScore = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.picMute = New System.Windows.Forms.PictureBox()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picMute, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +51,7 @@ Partial Class frmLogin
         Me.rdoPlayer1.Location = New System.Drawing.Point(167, 177)
         Me.rdoPlayer1.Name = "rdoPlayer1"
         Me.rdoPlayer1.Size = New System.Drawing.Size(219, 58)
-        Me.rdoPlayer1.TabIndex = 8
+        Me.rdoPlayer1.TabIndex = 1
         Me.rdoPlayer1.Tag = "0"
         Me.rdoPlayer1.Text = "Player 1"
         Me.rdoPlayer1.UseVisualStyleBackColor = False
@@ -72,7 +72,7 @@ Partial Class frmLogin
         Me.btnDelPlayer.Location = New System.Drawing.Point(325, 514)
         Me.btnDelPlayer.Name = "btnDelPlayer"
         Me.btnDelPlayer.Size = New System.Drawing.Size(75, 23)
-        Me.btnDelPlayer.TabIndex = 16
+        Me.btnDelPlayer.TabIndex = 6
         Me.btnDelPlayer.Text = "Delete Player"
         Me.btnDelPlayer.UseVisualStyleBackColor = True
         '
@@ -81,7 +81,7 @@ Partial Class frmLogin
         Me.btnAdd.Location = New System.Drawing.Point(203, 514)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
-        Me.btnAdd.TabIndex = 17
+        Me.btnAdd.TabIndex = 5
         Me.btnAdd.Text = "Add Player"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
@@ -90,7 +90,7 @@ Partial Class frmLogin
         Me.btnNext.Location = New System.Drawing.Point(515, 514)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(75, 23)
-        Me.btnNext.TabIndex = 18
+        Me.btnNext.TabIndex = 7
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
         '
@@ -112,7 +112,7 @@ Partial Class frmLogin
         Me.rdoPlayer2.Location = New System.Drawing.Point(167, 257)
         Me.rdoPlayer2.Name = "rdoPlayer2"
         Me.rdoPlayer2.Size = New System.Drawing.Size(219, 58)
-        Me.rdoPlayer2.TabIndex = 21
+        Me.rdoPlayer2.TabIndex = 2
         Me.rdoPlayer2.Tag = "1"
         Me.rdoPlayer2.Text = "Player 2"
         Me.rdoPlayer2.UseVisualStyleBackColor = False
@@ -124,7 +124,7 @@ Partial Class frmLogin
         Me.rdoPlayer3.Location = New System.Drawing.Point(167, 337)
         Me.rdoPlayer3.Name = "rdoPlayer3"
         Me.rdoPlayer3.Size = New System.Drawing.Size(219, 58)
-        Me.rdoPlayer3.TabIndex = 22
+        Me.rdoPlayer3.TabIndex = 3
         Me.rdoPlayer3.Tag = "2"
         Me.rdoPlayer3.Text = "Player 3"
         Me.rdoPlayer3.UseVisualStyleBackColor = False
@@ -136,7 +136,7 @@ Partial Class frmLogin
         Me.rdoPlayer4.Location = New System.Drawing.Point(167, 417)
         Me.rdoPlayer4.Name = "rdoPlayer4"
         Me.rdoPlayer4.Size = New System.Drawing.Size(219, 58)
-        Me.rdoPlayer4.TabIndex = 23
+        Me.rdoPlayer4.TabIndex = 4
         Me.rdoPlayer4.Tag = "3"
         Me.rdoPlayer4.Text = "Player 4"
         Me.rdoPlayer4.UseVisualStyleBackColor = False
@@ -207,14 +207,6 @@ Partial Class frmLogin
         Me.lblName.TabIndex = 29
         Me.lblName.Text = "Name:"
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'picMute
         '
         Me.picMute.BackColor = System.Drawing.Color.Transparent
@@ -225,6 +217,14 @@ Partial Class frmLogin
         Me.picMute.Size = New System.Drawing.Size(67, 59)
         Me.picMute.TabIndex = 30
         Me.picMute.TabStop = False
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
         '
         'frmLogin
         '

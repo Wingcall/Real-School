@@ -55,7 +55,7 @@ Partial Class frmHelp
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(513, 358)
-        Me.TabControl1.TabIndex = 8
+        Me.TabControl1.TabIndex = 4
         '
         'tabMain
         '
