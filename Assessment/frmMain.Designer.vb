@@ -29,7 +29,9 @@ Partial Class frmMain
         Me.lblAbout = New System.Windows.Forms.Label()
         Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.lblEdit = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPlay
@@ -99,12 +101,23 @@ Partial Class frmMain
         Me.lblEdit.Text = "EDIT WORDS"
         Me.lblEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.Assessment.My.Resources.Resources.mute
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(705, 496)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(67, 59)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblEdit)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.lblAbout)
@@ -118,6 +131,7 @@ Partial Class frmMain
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -129,4 +143,5 @@ Partial Class frmMain
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
     Friend WithEvents lblEdit As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
