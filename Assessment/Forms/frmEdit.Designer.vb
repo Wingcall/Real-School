@@ -23,7 +23,6 @@ Partial Class frmEdit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEdit))
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.lstWords = New System.Windows.Forms.ListBox()
         Me.btnDel = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
@@ -33,74 +32,67 @@ Partial Class frmEdit
         Me.btnClear = New System.Windows.Forms.Button()
         Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.picMute = New System.Windows.Forms.PictureBox()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picMute, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'lstWords
         '
         Me.lstWords.FormattingEnabled = True
-        Me.lstWords.Location = New System.Drawing.Point(97, 104)
+        Me.lstWords.Location = New System.Drawing.Point(77, 112)
         Me.lstWords.Name = "lstWords"
-        Me.lstWords.Size = New System.Drawing.Size(150, 238)
-        Me.lstWords.TabIndex = 8
+        Me.lstWords.Size = New System.Drawing.Size(186, 381)
+        Me.lstWords.TabIndex = 6
         '
         'btnDel
         '
-        Me.btnDel.Location = New System.Drawing.Point(325, 207)
+        Me.btnDel.Location = New System.Drawing.Point(406, 238)
         Me.btnDel.Name = "btnDel"
-        Me.btnDel.Size = New System.Drawing.Size(75, 23)
-        Me.btnDel.TabIndex = 9
+        Me.btnDel.Size = New System.Drawing.Size(100, 23)
+        Me.btnDel.TabIndex = 3
         Me.btnDel.Text = "Delete Word"
         Me.btnDel.UseVisualStyleBackColor = True
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(325, 178)
+        Me.btnAdd.Location = New System.Drawing.Point(406, 209)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
-        Me.btnAdd.TabIndex = 10
+        Me.btnAdd.Size = New System.Drawing.Size(100, 23)
+        Me.btnAdd.TabIndex = 2
         Me.btnAdd.Text = "Add Word"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'txtWord
         '
-        Me.txtWord.Location = New System.Drawing.Point(325, 143)
+        Me.txtWord.Location = New System.Drawing.Point(406, 174)
         Me.txtWord.Name = "txtWord"
         Me.txtWord.Size = New System.Drawing.Size(100, 20)
-        Me.txtWord.TabIndex = 11
+        Me.txtWord.TabIndex = 1
         '
         'cmbCat
         '
         Me.cmbCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbCat.FormattingEnabled = True
-        Me.cmbCat.Location = New System.Drawing.Point(325, 116)
+        Me.cmbCat.Location = New System.Drawing.Point(406, 147)
         Me.cmbCat.Name = "cmbCat"
         Me.cmbCat.Size = New System.Drawing.Size(121, 21)
         Me.cmbCat.TabIndex = 0
         '
         'txtHint
         '
-        Me.txtHint.Location = New System.Drawing.Point(265, 254)
+        Me.txtHint.Location = New System.Drawing.Point(334, 306)
         Me.txtHint.Name = "txtHint"
         Me.txtHint.Size = New System.Drawing.Size(325, 20)
-        Me.txtHint.TabIndex = 13
+        Me.txtHint.TabIndex = 5
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(406, 207)
+        Me.btnClear.Location = New System.Drawing.Point(406, 267)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 23)
-        Me.btnClear.TabIndex = 15
-        Me.btnClear.Text = "Clear"
+        Me.btnClear.Size = New System.Drawing.Size(100, 23)
+        Me.btnClear.TabIndex = 4
+        Me.btnClear.Text = "Clear Textboxes"
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'picBanner
@@ -124,6 +116,14 @@ Partial Class frmEdit
         Me.picMute.Size = New System.Drawing.Size(67, 59)
         Me.picMute.TabIndex = 17
         Me.picMute.TabStop = False
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
         '
         'frmEdit
         '

@@ -29,7 +29,7 @@
     Function findWord(inputWord As String) As word
         Dim cWord As word = New word("BLANK", "BLANK", True)
         For Each word As word In words
-            If word.wordVal = inputWord Then
+            If word.wordValOrig = inputWord Then
                 cWord = word
             End If
         Next
@@ -38,7 +38,7 @@
 
     Public Function checkWordEsxits(inputWord As String) As Boolean
         For Each word As word In words
-            If word.wordVal = inputWord And Not word.del Then
+            If word.wordValOrig = inputWord And Not word.del Then
                 Return True
                 Exit Function
             End If

@@ -50,4 +50,8 @@
     Private Sub picMute_Clicked(sender As Object, e As EventArgs) Handles picMute.Click
         musicPic(sender)
     End Sub
+
+    Private Sub frmMain_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        musicPic(picMute, False)
+    End Sub
 End Class
