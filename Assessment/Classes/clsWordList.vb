@@ -49,6 +49,7 @@ End Class
 
 Public Class word
     Public wordVal As String
+    Public wordValOrig As String
     Public hint As String
     Public del As Boolean = False
     Public blank As Boolean
@@ -64,6 +65,7 @@ Public Class word
 
     Public Sub New(wordLocal As String, hintLocal As String, Optional blankLocal As Boolean = False)
         wordVal = wordLocal.ToUpper
+        wordValOrig = wordLocal
         hint = hintLocal
         blank = blankLocal
     End Sub
