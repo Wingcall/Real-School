@@ -30,7 +30,6 @@ Partial Class frmEdit
         Me.txtWord = New System.Windows.Forms.TextBox()
         Me.cmbCat = New System.Windows.Forms.ComboBox()
         Me.txtHint = New System.Windows.Forms.TextBox()
-        Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.picBanner = New System.Windows.Forms.PictureBox()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,15 +92,6 @@ Partial Class frmEdit
         Me.txtHint.Size = New System.Drawing.Size(325, 20)
         Me.txtHint.TabIndex = 13
         '
-        'btnUpdate
-        '
-        Me.btnUpdate.Location = New System.Drawing.Point(406, 178)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
-        Me.btnUpdate.TabIndex = 14
-        Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
-        '
         'btnClear
         '
         Me.btnClear.Location = New System.Drawing.Point(406, 207)
@@ -130,7 +120,6 @@ Partial Class frmEdit
         Me.ClientSize = New System.Drawing.Size(784, 586)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.txtHint)
         Me.Controls.Add(Me.cmbCat)
         Me.Controls.Add(Me.txtWord)
@@ -154,7 +143,6 @@ Partial Class frmEdit
     Friend WithEvents txtWord As System.Windows.Forms.TextBox
     Friend WithEvents txtHint As System.Windows.Forms.TextBox
     Friend WithEvents cmbCat As System.Windows.Forms.ComboBox
-    Friend WithEvents btnUpdate As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
 End Class

@@ -70,6 +70,12 @@ Public Class word
         blank = blankLocal
     End Sub
 
+    Public Sub update(nWord As String, nHint As String)
+        wordVal = nWord.ToUpper
+        wordValOrig = nWord
+        hint = nHint
+    End Sub
+
     Public Sub delWord()
         del = True
     End Sub
