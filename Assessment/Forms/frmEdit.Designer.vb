@@ -54,9 +54,9 @@ Partial Class frmEdit
         '
         'btnDel
         '
-        Me.btnDel.Location = New System.Drawing.Point(327, 329)
+        Me.btnDel.Location = New System.Drawing.Point(452, 300)
         Me.btnDel.Name = "btnDel"
-        Me.btnDel.Size = New System.Drawing.Size(100, 23)
+        Me.btnDel.Size = New System.Drawing.Size(109, 37)
         Me.btnDel.TabIndex = 3
         Me.btnDel.Text = "Remove Word"
         Me.btnDel.UseVisualStyleBackColor = True
@@ -65,7 +65,7 @@ Partial Class frmEdit
         '
         Me.btnAdd.Location = New System.Drawing.Point(327, 300)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(100, 23)
+        Me.btnAdd.Size = New System.Drawing.Size(109, 37)
         Me.btnAdd.TabIndex = 2
         Me.btnAdd.Text = "Add Word"
         Me.btnAdd.UseVisualStyleBackColor = True
@@ -86,7 +86,7 @@ Partial Class frmEdit
         Me.cmbCat.FormattingEnabled = True
         Me.cmbCat.Location = New System.Drawing.Point(327, 171)
         Me.cmbCat.Name = "cmbCat"
-        Me.cmbCat.Size = New System.Drawing.Size(121, 32)
+        Me.cmbCat.Size = New System.Drawing.Size(204, 32)
         Me.cmbCat.TabIndex = 0
         '
         'txtHint
@@ -101,9 +101,9 @@ Partial Class frmEdit
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(327, 358)
+        Me.btnClear.Location = New System.Drawing.Point(327, 357)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(100, 23)
+        Me.btnClear.Size = New System.Drawing.Size(109, 37)
         Me.btnClear.TabIndex = 4
         Me.btnClear.Text = "Clear Textboxes"
         Me.btnClear.UseVisualStyleBackColor = True
