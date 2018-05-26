@@ -86,7 +86,7 @@ Partial Class frmCategories
         Me.lblPhysics.Location = New System.Drawing.Point(631, 408)
         Me.lblPhysics.Name = "lblPhysics"
         Me.lblPhysics.Size = New System.Drawing.Size(118, 47)
-        Me.lblPhysics.TabIndex = 10
+        Me.lblPhysics.TabIndex = 3
         Me.lblPhysics.Tag = "2"
         Me.lblPhysics.Text = "Physics"
         '
@@ -97,7 +97,7 @@ Partial Class frmCategories
         Me.lblChemistry.Location = New System.Drawing.Point(314, 406)
         Me.lblChemistry.Name = "lblChemistry"
         Me.lblChemistry.Size = New System.Drawing.Size(170, 49)
-        Me.lblChemistry.TabIndex = 9
+        Me.lblChemistry.TabIndex = 2
         Me.lblChemistry.Tag = "1"
         Me.lblChemistry.Text = "Chemistry"
         '
@@ -108,7 +108,7 @@ Partial Class frmCategories
         Me.lblBiology.Location = New System.Drawing.Point(37, 406)
         Me.lblBiology.Name = "lblBiology"
         Me.lblBiology.Size = New System.Drawing.Size(122, 48)
-        Me.lblBiology.TabIndex = 8
+        Me.lblBiology.TabIndex = 1
         Me.lblBiology.Tag = "0"
         Me.lblBiology.Text = "Biology"
         '

@@ -52,7 +52,7 @@ Partial Class frmMain
         Me.lblHelp.Location = New System.Drawing.Point(292, 347)
         Me.lblHelp.Name = "lblHelp"
         Me.lblHelp.Size = New System.Drawing.Size(225, 74)
-        Me.lblHelp.TabIndex = 1
+        Me.lblHelp.TabIndex = 3
         Me.lblHelp.Text = "HELP"
         Me.lblHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -63,7 +63,7 @@ Partial Class frmMain
         Me.lblExit.Location = New System.Drawing.Point(292, 421)
         Me.lblExit.Name = "lblExit"
         Me.lblExit.Size = New System.Drawing.Size(225, 74)
-        Me.lblExit.TabIndex = 2
+        Me.lblExit.TabIndex = 4
         Me.lblExit.Text = "EXIT"
         Me.lblExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -75,7 +75,7 @@ Partial Class frmMain
         Me.lblAbout.Location = New System.Drawing.Point(292, 273)
         Me.lblAbout.Name = "lblAbout"
         Me.lblAbout.Size = New System.Drawing.Size(225, 74)
-        Me.lblAbout.TabIndex = 3
+        Me.lblAbout.TabIndex = 2
         Me.lblAbout.Text = "ABOUT"
         Me.lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -97,7 +97,7 @@ Partial Class frmMain
         Me.lblEdit.Location = New System.Drawing.Point(216, 199)
         Me.lblEdit.Name = "lblEdit"
         Me.lblEdit.Size = New System.Drawing.Size(383, 74)
-        Me.lblEdit.TabIndex = 8
+        Me.lblEdit.TabIndex = 1
         Me.lblEdit.Text = "EDIT WORDS"
         Me.lblEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '

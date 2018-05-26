@@ -8,19 +8,19 @@
 
     Public Sub musicControl()
         If musicState = True Then
-            My.Computer.Audio.Stop()
+            My.Computer.Audio.Stop()    'Stop playing the music
         Else
-            My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop)
+            My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop) 'Plays the Background music
         End If
-        musicState = Not musicState
+        musicState = Not musicState 'Sets the music state to false
     End Sub
 
     Public Sub musicPic(pic As PictureBox, Optional music As Boolean = True)
-        If music Then musicControl()
+        If music Then musicControl() 'Runs the sub-procedure musicControl
         If musicState Then
-            pic.BackgroundImage = My.Resources.mute
+            pic.BackgroundImage = My.Resources.mute 'Change the mute icon to the mute state
         Else
-            pic.BackgroundImage = My.Resources.play
+            pic.BackgroundImage = My.Resources.play 'Change the mute icon to the play state
         End If
     End Sub
 
@@ -48,7 +48,7 @@
     End Sub
 
     Private Sub picMute_Clicked(sender As Object, e As EventArgs) Handles picMute.Click
-        musicPic(sender)
+        musicPic(sender) 'Calls the Public sub-procedure musicPic with the state
     End Sub
 
     Private Sub frmMain_Shown(sender As Object, e As EventArgs) Handles Me.Shown
