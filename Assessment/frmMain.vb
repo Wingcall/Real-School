@@ -4,7 +4,7 @@
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
         loadDB()    'Initialilzes and loads XML database
-        My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop) 'Plays the Background audio
+        My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop) 'Plays the Background audio'
     End Sub
 
     Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblEdit.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
