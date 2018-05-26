@@ -78,11 +78,11 @@
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
-        Else
+        ElseIf userInfo(playerID).name = "New Player!" Then
+            Namecatching()
         End If
 
         If userInfo(playerID).name = "New Player!" Then
-            Namecatching()
         Else
             playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
             frmCategories.Show()    'Displays the Categories Form
