@@ -46,13 +46,13 @@
                 Me.closeForm()  'Close the current form
             ElseIf answer2 = "" Then 'NOOP
             Else
-                userInfo(playerID).ans(answer)
+                userInfo(playerID).ans(answer2)
             End If
         ElseIf answer = "" Then 'NOOP
         Else
             userInfo(playerID).ans(answer)
-            updateUserXML()     'Updates the User XML file
         End If
+        updateUserXML()     'Updates the User XML file
         Reset()                         'Calls sub-procedure Reset
     End Sub
 
@@ -62,7 +62,7 @@
             If res = 6 Then
                 Namecatching() 'Runs the sub-procedure Namecatching;
             Else
-                userInfo(playerID).ans("New Player!")
+                userInfo(playerID).del()
             End If
         End If
         If userInfo(playerID).name = "New Player!" Then         'Check if the slot is "New Player!"
@@ -70,8 +70,9 @@
         End If
     End Sub
 
-    Private Sub rdoPlayer1_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
-        playerID = sender.tag   'Sets the playerID global variable to equal the value of sender.tag
+    Private Sub rdoPlayer1_CheckedChanged(sender As RadioButton, e As EventArgs) Handles rdoPlayer1.CheckedChanged, rdoPlayer2.CheckedChanged, rdoPlayer3.CheckedChanged, rdoPlayer4.CheckedChanged
+        playerID = Val(sender.Tag)   'Sets the playerID global variable to equal the value of sender.tag
+        lblTag.Text = playerID
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
@@ -80,7 +81,7 @@
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
         Else
-            playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
+            'playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
             frmCategories.Show()    'Displays the Categories Form
             Me.closeForm()  'Closes the current form
         End If

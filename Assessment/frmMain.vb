@@ -47,11 +47,11 @@
         frmEdit.openForm()
     End Sub
 
-    Private Sub lblPlay_MouseHover(sender As Object, e As EventArgs) Handles lblPlay.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, lblAbout.MouseHover
+    Private Sub lblPlay_MouseHover(sender As Object, e As EventArgs) Handles lblPlay.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, lblAbout.MouseHover, lblEdit.MouseHover
 
     End Sub
 
-    Private Sub lblPlay_MouseLeave(sender As Object, e As EventArgs) Handles lblPlay.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave, lblAbout.MouseLeave
+    Private Sub lblPlay_MouseLeave(sender As Object, e As EventArgs) Handles lblPlay.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave, lblAbout.MouseLeave, lblEdit.MouseLeave
 
     End Sub
 End Class

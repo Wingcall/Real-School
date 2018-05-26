@@ -121,7 +121,7 @@ Partial Class frmMain
         '
         Me.picBanner.BackColor = System.Drawing.Color.Transparent
         Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
+        Me.picBanner.Image = Global.Assessment.My.Resources.Resources.Banner
         Me.picBanner.Location = New System.Drawing.Point(158, 12)
         Me.picBanner.Name = "picBanner"
         Me.picBanner.Size = New System.Drawing.Size(480, 50)
