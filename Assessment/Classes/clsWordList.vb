@@ -1,22 +1,22 @@
-﻿Public Class wordList
-    Public id As Int16
-    Public name As String
-    Public words(0) As word
+﻿Public Class wordList 'This is the class of the category
+    Public id As Int16 'The id of the category
+    Public name As String 'name of the category
+    Public words(0) As word 'The array of words in the cat
 
-    Public Sub New(idLocal As Int16, nameLocal As String)
-        id = idLocal
-        name = nameLocal
+    Public Sub New(idLocal As Int16, nameLocal As String) 'Set the name/id of the cat
+        id = idLocal 'set id to given
+        name = nameLocal 'set name to given
     End Sub
 
-    Public Sub addWord(word As String, hint As String)
-        words.add(New word(word, hint))
+    Public Sub addWord(word As String, hint As String) 'The word adding function
+        words.add(New word(word, hint)) 'use the custom array.add function to add a new word with the given name and hint
     End Sub
 
-    Public Sub printList()
-        For Each word As Object In words
+    Public Sub printList() 'This is a d
+        For Each word As word In words
             Dim del As String
             If word.del Then del = ", [Deleted]" Else del = ""
-            Console.WriteLine("Word: " & word.word & ", Hint: " & word.hint & del)
+            Console.WriteLine("Word: " & word.wordVal & ", Hint: " & word.hint & del)
         Next
     End Sub
 

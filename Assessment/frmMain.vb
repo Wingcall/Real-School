@@ -52,6 +52,6 @@
     End Sub
 
     Private Sub frmMain_Shown(sender As Object, e As EventArgs) Handles Me.Shown
-        musicPic(picMute, False)
+        musicPic(picMute, False) 'Make sure the mute button is set poperly every time the form is shown
     End Sub
 End Class
