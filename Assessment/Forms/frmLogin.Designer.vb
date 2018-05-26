@@ -28,7 +28,6 @@ Partial Class frmLogin
         Me.btnDelPlayer = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
-        Me.lblTag = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.rdoPlayer2 = New System.Windows.Forms.RadioButton()
         Me.rdoPlayer3 = New System.Windows.Forms.RadioButton()
@@ -36,8 +35,10 @@ Partial Class frmLogin
         Me.lblPlayer2Score = New System.Windows.Forms.Label()
         Me.lblPlayer3Score = New System.Windows.Forms.Label()
         Me.lblPlayer4Score = New System.Windows.Forms.Label()
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.picBanner = New System.Windows.Forms.PictureBox()
+        Me.lblScore = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -91,21 +92,12 @@ Partial Class frmLogin
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
         '
-        'lblTag
-        '
-        Me.lblTag.AutoSize = True
-        Me.lblTag.Location = New System.Drawing.Point(41, 539)
-        Me.lblTag.Name = "lblTag"
-        Me.lblTag.Size = New System.Drawing.Size(39, 13)
-        Me.lblTag.TabIndex = 19
-        Me.lblTag.Text = "Label1"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(157, 89)
+        Me.Label1.Location = New System.Drawing.Point(157, 77)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(467, 57)
         Me.Label1.TabIndex = 20
@@ -180,14 +172,6 @@ Partial Class frmLogin
         Me.lblPlayer4Score.Text = "Score"
         Me.lblPlayer4Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
-        '
         'picBanner
         '
         Me.picBanner.BackColor = System.Drawing.Color.Transparent
@@ -199,12 +183,44 @@ Partial Class frmLogin
         Me.picBanner.TabIndex = 27
         Me.picBanner.TabStop = False
         '
+        'lblScore
+        '
+        Me.lblScore.AutoSize = True
+        Me.lblScore.BackColor = System.Drawing.Color.Transparent
+        Me.lblScore.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.lblScore.Location = New System.Drawing.Point(491, 148)
+        Me.lblScore.Name = "lblScore"
+        Me.lblScore.Size = New System.Drawing.Size(84, 29)
+        Me.lblScore.TabIndex = 28
+        Me.lblScore.Text = "Score:"
+        '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.BackColor = System.Drawing.Color.Transparent
+        Me.lblName.Font = New System.Drawing.Font("Modern No. 20", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.lblName.Location = New System.Drawing.Point(183, 148)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(88, 29)
+        Me.lblName.TabIndex = 29
+        Me.lblName.Text = "Name:"
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.lblName)
+        Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.lblPlayer4Score)
         Me.Controls.Add(Me.lblPlayer3Score)
@@ -213,7 +229,6 @@ Partial Class frmLogin
         Me.Controls.Add(Me.rdoPlayer3)
         Me.Controls.Add(Me.rdoPlayer2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.lblTag)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnDelPlayer)
@@ -237,7 +252,6 @@ Partial Class frmLogin
     Friend WithEvents btnDelPlayer As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents btnNext As System.Windows.Forms.Button
-    Friend WithEvents lblTag As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents rdoPlayer2 As System.Windows.Forms.RadioButton
     Friend WithEvents rdoPlayer3 As System.Windows.Forms.RadioButton
@@ -246,4 +260,6 @@ Partial Class frmLogin
     Friend WithEvents lblPlayer3Score As System.Windows.Forms.Label
     Friend WithEvents lblPlayer4Score As System.Windows.Forms.Label
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
+    Friend WithEvents lblScore As System.Windows.Forms.Label
+    Friend WithEvents lblName As System.Windows.Forms.Label
 End Class
