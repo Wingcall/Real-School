@@ -23,7 +23,6 @@ Partial Class frmEdit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEdit))
-        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.lstWords = New System.Windows.Forms.ListBox()
         Me.btnDel = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
@@ -33,16 +32,9 @@ Partial Class frmEdit
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.picBanner = New System.Windows.Forms.PictureBox()
+        Me.UclHomeExit1 = New Assessment.uclHomeExit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'UclHomeExit1
-        '
-        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
-        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
-        Me.UclHomeExit1.Name = "UclHomeExit1"
-        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
-        Me.UclHomeExit1.TabIndex = 7
         '
         'lstWords
         '
@@ -56,7 +48,7 @@ Partial Class frmEdit
         '
         Me.btnDel.Location = New System.Drawing.Point(325, 207)
         Me.btnDel.Name = "btnDel"
-        Me.btnDel.Size = New System.Drawing.Size(75, 23)
+        Me.btnDel.Size = New System.Drawing.Size(86, 23)
         Me.btnDel.TabIndex = 9
         Me.btnDel.Text = "Delete Word"
         Me.btnDel.UseVisualStyleBackColor = True
@@ -65,9 +57,9 @@ Partial Class frmEdit
         '
         Me.btnAdd.Location = New System.Drawing.Point(325, 178)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.Size = New System.Drawing.Size(86, 23)
         Me.btnAdd.TabIndex = 10
-        Me.btnAdd.Text = "Add Word"
+        Me.btnAdd.Text = "Update Word"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'txtWord
@@ -95,16 +87,16 @@ Partial Class frmEdit
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(406, 178)
+        Me.btnUpdate.Location = New System.Drawing.Point(417, 178)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
         Me.btnUpdate.TabIndex = 14
-        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.Text = "New Word"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(406, 207)
+        Me.btnClear.Location = New System.Drawing.Point(417, 207)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 23)
         Me.btnClear.TabIndex = 15
@@ -121,6 +113,14 @@ Partial Class frmEdit
         Me.picBanner.Size = New System.Drawing.Size(480, 50)
         Me.picBanner.TabIndex = 16
         Me.picBanner.TabStop = False
+        '
+        'UclHomeExit1
+        '
+        Me.UclHomeExit1.BackColor = System.Drawing.Color.Transparent
+        Me.UclHomeExit1.Location = New System.Drawing.Point(3, 1)
+        Me.UclHomeExit1.Name = "UclHomeExit1"
+        Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
+        Me.UclHomeExit1.TabIndex = 7
         '
         'frmEdit
         '

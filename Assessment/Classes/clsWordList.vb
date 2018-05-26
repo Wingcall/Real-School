@@ -38,7 +38,7 @@
 
     Public Function checkWordEsxits(inputWord As String) As Boolean
         For Each word As word In words
-            If word.wordVal = inputWord And Not word.del Then
+            If word.wordVal = inputWord.ToUpper And Not word.del Then
                 Return True
                 Exit Function
             End If
@@ -49,6 +49,7 @@ End Class
 
 Public Class word
     Public wordVal As String
+    Public wordValOrig As String
     Public hint As String
     Public del As Boolean = False
     Public blank As Boolean
@@ -57,6 +58,12 @@ Public Class word
         Return wordVal.Length - wordVal.Replace("-", "").Length
     End Function
 
+    Public Sub update(nWord As String, nHint As String)
+        wordValOrig = nWord
+        wordVal = nWord.ToUpper
+        hint = nHint
+    End Sub
+
     Public Function correct(input As String) As Boolean
         Dim local As Integer = input.Length - input.Replace("-", "").Length
         Return (local = HyCount())
@@ -64,6 +71,7 @@ Public Class word
 
     Public Sub New(wordLocal As String, hintLocal As String, Optional blankLocal As Boolean = False)
         wordVal = wordLocal.ToUpper
+        wordValOrig = wordLocal
         hint = hintLocal
         blank = blankLocal
     End Sub

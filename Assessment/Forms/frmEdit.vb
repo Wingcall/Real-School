@@ -1,7 +1,7 @@
 ﻿Public Class frmEdit
     Private Sub frmEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
-        loadWordDB()
+        'loadWordDB()
 
         cmbCat.Items.Add("Select a Catigory")
 
@@ -27,6 +27,8 @@
             Exit Sub
         End If
 
+        btnAdd.Text = "Update Word"
+
         'Dim stringWord As String = lstWords.SelectedItem.ToString() 'Argthis breaks
         Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
         Dim cWord As word = cat.findWord(lstWords.SelectedItem.ToString)
@@ -48,33 +50,59 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Dim check As Boolean = (txtWord.Text.Replace(" ", "") = "" Or txtHint.Text.Replace(" ", "") = "")
-        check = check Or (cmbCat.SelectedItem.ToString = "Select a Catigory")
-        If Not check Then
-            Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
-            If Not cat.checkWordEsxits(txtWord.Text) Then
-                cat.addWord(txtWord.Text, txtHint.Text)
-            Else
+        If btnAdd.Text = "Add Word" Then
+            Dim check As Boolean = (txtWord.Text.Replace(" ", "") = "" Or txtHint.Text.Replace(" ", "") = "")
+            check = check Or (cmbCat.SelectedItem.ToString = "Select a Catigory")
+            If Not check Then
+                Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
+                If Not cat.checkWordEsxits(txtWord.Text) Then
+                    cat.addWord(txtWord.Text, txtHint.Text)
+                Else
+                    Exit Sub
+                End If
+            ElseIf cmbCat.SelectedItem.ToString = "Select a Catigory" Then
+                MsgBox("Bad!, no cat!")
+                Exit Sub
+            ElseIf txtWord.Text.Replace(" ", "") = "" Then
+                MsgBox("Bad!, no word!")
+                Exit Sub
+            ElseIf txtHint.Text.Replace(" ", "") = "" Then
+                MsgBox("Bad!, no hint!")
                 Exit Sub
             End If
-        ElseIf cmbCat.SelectedItem.ToString = "Select a Catigory" Then
-            MsgBox("Bad!, no cat!")
-            Exit Sub
-        ElseIf txtWord.Text.Replace(" ", "") = "" Then
-            MsgBox("Bad!, no word!")
-            Exit Sub
-        ElseIf txtHint.Text.Replace(" ", "") = "" Then
-            MsgBox("Bad!, no hint!")
-            Exit Sub
+            refWordList()
+            updateWordXML()
+        Else
+            Dim check As Boolean = (txtWord.Text.Replace(" ", "") = "" Or txtHint.Text.Replace(" ", "") = "")
+            check = check Or (cmbCat.SelectedItem.ToString = "Select a Catigory")
+            If Not check Then
+                Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
+                Dim word As word = cat.findWord(lstWords.SelectedItem.ToString)
+                If Not cat.checkWordEsxits(txtWord.Text) Then
+                    word.update(txtWord.Text, txtHint.Text)
+                Else
+                    MsgBox("Bad, no Dupes!")
+                    Exit Sub
+                End If
+            ElseIf cmbCat.SelectedItem.ToString = "Select a Catigory" Then
+                MsgBox("Bad!, no cat!")
+                Exit Sub
+            ElseIf txtWord.Text.Replace(" ", "") = "" Then
+                MsgBox("Bad!, no word!")
+                Exit Sub
+            ElseIf txtHint.Text.Replace(" ", "") = "" Then
+                MsgBox("Bad!, no hint!")
+                Exit Sub
+            End If
+            refWordList()
+            updateWordXML()
         End If
-        refWordList()
-        updateWordXML()
     End Sub
 
     Private Sub refWordList()
         lstWords.Items.Clear()
         For Each word As word In wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1).words
-            If Not word.del Then lstWords.Items.Add(word.wordVal)
+            If Not word.del Then lstWords.Items.Add(word.wordValOrig)
         Next
     End Sub
 
@@ -84,29 +112,6 @@
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        Dim check As Boolean = (txtWord.Text.Replace(" ", "") = "" Or txtHint.Text.Replace(" ", "") = "")
-        check = check Or (cmbCat.SelectedItem.ToString = "Select a Catigory")
-        If Not check Then
-            Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
-            Dim word As word = cat.findWord(lstWords.SelectedItem.ToString)
-            If Not cat.checkWordEsxits(txtWord.Text) Then
-                word.wordVal = txtWord.Text
-                word.hint = txtHint.Text
-            Else
-                MsgBox("Bad, no Dupes!")
-                Exit Sub
-            End If
-        ElseIf cmbCat.SelectedItem.ToString = "Select a Catigory" Then
-            MsgBox("Bad!, no cat!")
-            Exit Sub
-        ElseIf txtWord.Text.Replace(" ", "") = "" Then
-            MsgBox("Bad!, no word!")
-            Exit Sub
-        ElseIf txtHint.Text.Replace(" ", "") = "" Then
-            MsgBox("Bad!, no hint!")
-            Exit Sub
-        End If
-        refWordList()
-        updateWordXML()
+       
     End Sub
 End Class
