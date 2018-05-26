@@ -38,7 +38,7 @@
 
     Public Function checkWordEsxits(inputWord As String) As Boolean
         For Each word As word In words
-            If word.wordValOrig = inputWord And Not word.del Then
+            If word.wordVal = inputWord.ToUpper And Not word.del Then
                 Return True
                 Exit Function
             End If
