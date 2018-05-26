@@ -10,7 +10,6 @@ Module XML_DB
     Public wordLists(0) As wordList
 
     Public Sub loadWordDB()
-        ReDim wordLists(0)
         Dim doc As New XmlDocument() 'Create a var to hold the users xml file
         doc.Load(wordPath) ' load the users file
 
@@ -38,7 +37,6 @@ Module XML_DB
     End Sub
 
     Public Sub loadUserDB()
-        ReDim userInfo(0)
         Dim doc As New XmlDocument() 'Create a var to hold the users xml file
         doc.Load(userPath) ' load the users file
 
@@ -53,7 +51,7 @@ Module XML_DB
             'Console.WriteLine("id: " & id & " Name: " & name & " Score: " & score)
         Next 'Loop
 
-        'printUserInfo()
+        printUserInfo()
     End Sub
 
     Sub printUserInfo()
