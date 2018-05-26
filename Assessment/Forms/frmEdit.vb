@@ -35,7 +35,7 @@
 
     Private Sub btnDel_Click(sender As Object, e As EventArgs) Handles btnDel.Click
         If IsNothing(lstWords.SelectedItem) Or cmbCat.SelectedItem.ToString = "Select a Category" Then
-            MsgBox("Please check that a Word and Catgory have been selected!")
+            MsgBox("Please check that a Word and Category have been selected!")
             Exit Sub
         End If
 
