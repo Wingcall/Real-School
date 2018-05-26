@@ -27,10 +27,6 @@ Partial Class frmMain
         Me.lblHelp = New System.Windows.Forms.Label()
         Me.lblExit = New System.Windows.Forms.Label()
         Me.lblAbout = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.btnGame = New System.Windows.Forms.Button()
-        Me.btnEdit = New System.Windows.Forms.Button()
         Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.lblEdit = New System.Windows.Forms.Label()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,42 +77,6 @@ Partial Class frmMain
         Me.lblAbout.Text = "ABOUT"
         Me.lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(12, 431)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(105, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "go to categories"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(12, 473)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(105, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "go to login"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'btnGame
-        '
-        Me.btnGame.Location = New System.Drawing.Point(12, 513)
-        Me.btnGame.Name = "btnGame"
-        Me.btnGame.Size = New System.Drawing.Size(105, 23)
-        Me.btnGame.TabIndex = 0
-        Me.btnGame.Text = "go to game"
-        Me.btnGame.UseVisualStyleBackColor = True
-        '
-        'btnEdit
-        '
-        Me.btnEdit.Location = New System.Drawing.Point(12, 554)
-        Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(105, 23)
-        Me.btnEdit.TabIndex = 6
-        Me.btnEdit.Text = "go to edit"
-        Me.btnEdit.UseVisualStyleBackColor = True
-        '
         'picBanner
         '
         Me.picBanner.BackColor = System.Drawing.Color.Transparent
@@ -147,10 +107,6 @@ Partial Class frmMain
         Me.ClientSize = New System.Drawing.Size(784, 586)
         Me.Controls.Add(Me.lblEdit)
         Me.Controls.Add(Me.picBanner)
-        Me.Controls.Add(Me.btnEdit)
-        Me.Controls.Add(Me.btnGame)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblAbout)
         Me.Controls.Add(Me.lblExit)
         Me.Controls.Add(Me.lblHelp)
@@ -171,8 +127,6 @@ Partial Class frmMain
     Friend WithEvents lblAbout As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents btnGame As System.Windows.Forms.Button
-    Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
     Friend WithEvents lblEdit As System.Windows.Forms.Label
 End Class

@@ -1,5 +1,4 @@
 ﻿Public Class frmMain
-    'Idk
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
@@ -30,6 +29,8 @@
         sender.ForeColor = Color.Black  'On mouse leave, changes the Label(s) Forecolour to Black
     End Sub
 
+<<<<<<< HEAD
+=======
     'Below are debug buttons, to be removed in final copy.
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         frmCategories.openForm()
@@ -54,4 +55,5 @@
     Private Sub lblPlay_MouseLeave(sender As Object, e As EventArgs) Handles lblPlay.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave, lblAbout.MouseLeave, lblEdit.MouseLeave
 
     End Sub
+>>>>>>> 4fc33bc5f241bddd6f45c62a800ffd2270cc3628
 End Class
