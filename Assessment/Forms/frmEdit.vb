@@ -125,6 +125,6 @@
     End Sub
 
     Private Sub picMute_Click(sender As Object, e As EventArgs) Handles picMute.Click
-        frmMain.musicPic(sender)
+        frmMain.musicPic(sender) 'Calls the Public sub-procedure musicPic with the state
     End Sub
 End Class
