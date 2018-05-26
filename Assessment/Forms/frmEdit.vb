@@ -22,7 +22,7 @@
     End Sub
 
     Private Sub lstWords_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstWords.SelectedIndexChanged
-        If cmbCat.SelectedItem.ToString = "Select a Catigory" Then lstWords.Items.Clear() : Exit Sub
+        If cmbCat.SelectedItem.ToString = "Select a Catigory" Or IsNothing(lstWords.SelectedItem) Then lstWords.Items.Clear() : Exit Sub
 
         btnAdd.Text = "Update Word"
 
@@ -97,6 +97,7 @@
 
     Private Sub refWordList()
         lstWords.Items.Clear()
+        If IsNothing(cmbCat.SelectedItem) Then Exit Sub
         For Each word As word In wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1).words
             If Not word.del Then lstWords.Items.Add(word.wordValOrig)
         Next
@@ -109,7 +110,9 @@
         txtWord.Text = ""
         txtHint.Text = ""
         btnAdd.Text = "Add Word"
+        refWordList()
         txtWord.Focus()
+
         'End If
     End Sub
 
