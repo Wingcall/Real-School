@@ -84,7 +84,7 @@
 
         If userInfo(playerID).name = "New Player!" Then
         Else
-            playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
+            'playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
             frmCategories.Show()    'Displays the Categories Form
             Me.closeForm()  'Closes the current form
         End If
