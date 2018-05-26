@@ -24,23 +24,23 @@ Partial Class frmHelp
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHelp))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.tabGame = New System.Windows.Forms.TabPage()
-        Me.tabLogin = New System.Windows.Forms.TabPage()
-        Me.tabEdit = New System.Windows.Forms.TabPage()
-        Me.picBanner = New System.Windows.Forms.PictureBox()
-        Me.lblPlayinginfo = New System.Windows.Forms.Label()
-        Me.lblLogininfo = New System.Windows.Forms.Label()
-        Me.lblEditinfo = New System.Windows.Forms.Label()
         Me.tabMain = New System.Windows.Forms.TabPage()
         Me.lblMaininfo = New System.Windows.Forms.Label()
+        Me.tabGame = New System.Windows.Forms.TabPage()
+        Me.lblPlayinginfo = New System.Windows.Forms.Label()
+        Me.tabLogin = New System.Windows.Forms.TabPage()
+        Me.lblLogininfo = New System.Windows.Forms.Label()
+        Me.tabEdit = New System.Windows.Forms.TabPage()
+        Me.lblEditinfo = New System.Windows.Forms.Label()
+        Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.lblHelp = New System.Windows.Forms.Label()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
         Me.TabControl1.SuspendLayout()
+        Me.tabMain.SuspendLayout()
         Me.tabGame.SuspendLayout()
         Me.tabLogin.SuspendLayout()
         Me.tabEdit.SuspendLayout()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tabMain.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -54,76 +54,6 @@ Partial Class frmHelp
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(513, 358)
         Me.TabControl1.TabIndex = 8
-        '
-        'tabGame
-        '
-        Me.tabGame.Controls.Add(Me.lblPlayinginfo)
-        Me.tabGame.Location = New System.Drawing.Point(4, 22)
-        Me.tabGame.Name = "tabGame"
-        Me.tabGame.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabGame.Size = New System.Drawing.Size(505, 332)
-        Me.tabGame.TabIndex = 0
-        Me.tabGame.Text = "Playing the Game"
-        Me.tabGame.UseVisualStyleBackColor = True
-        '
-        'tabLogin
-        '
-        Me.tabLogin.Controls.Add(Me.lblLogininfo)
-        Me.tabLogin.Location = New System.Drawing.Point(4, 22)
-        Me.tabLogin.Name = "tabLogin"
-        Me.tabLogin.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabLogin.Size = New System.Drawing.Size(505, 332)
-        Me.tabLogin.TabIndex = 1
-        Me.tabLogin.Text = "Login Screen"
-        Me.tabLogin.UseVisualStyleBackColor = True
-        '
-        'tabEdit
-        '
-        Me.tabEdit.Controls.Add(Me.lblEditinfo)
-        Me.tabEdit.Location = New System.Drawing.Point(4, 22)
-        Me.tabEdit.Name = "tabEdit"
-        Me.tabEdit.Size = New System.Drawing.Size(505, 332)
-        Me.tabEdit.TabIndex = 2
-        Me.tabEdit.Text = "Editting Words"
-        Me.tabEdit.UseVisualStyleBackColor = True
-        '
-        'picBanner
-        '
-        Me.picBanner.BackColor = System.Drawing.Color.Transparent
-        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.picBanner.Image = CType(resources.GetObject("picBanner.Image"), System.Drawing.Image)
-        Me.picBanner.Location = New System.Drawing.Point(152, -2)
-        Me.picBanner.Name = "picBanner"
-        Me.picBanner.Size = New System.Drawing.Size(480, 50)
-        Me.picBanner.TabIndex = 9
-        Me.picBanner.TabStop = False
-        '
-        'lblPlayinginfo
-        '
-        Me.lblPlayinginfo.Font = New System.Drawing.Font("Corbel", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayinginfo.Location = New System.Drawing.Point(3, 3)
-        Me.lblPlayinginfo.Name = "lblPlayinginfo"
-        Me.lblPlayinginfo.Size = New System.Drawing.Size(506, 326)
-        Me.lblPlayinginfo.TabIndex = 0
-        Me.lblPlayinginfo.Text = resources.GetString("lblPlayinginfo.Text")
-        '
-        'lblLogininfo
-        '
-        Me.lblLogininfo.Font = New System.Drawing.Font("Corbel", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLogininfo.Location = New System.Drawing.Point(3, 4)
-        Me.lblLogininfo.Name = "lblLogininfo"
-        Me.lblLogininfo.Size = New System.Drawing.Size(506, 325)
-        Me.lblLogininfo.TabIndex = 1
-        Me.lblLogininfo.Text = resources.GetString("lblLogininfo.Text")
-        '
-        'lblEditinfo
-        '
-        Me.lblEditinfo.Font = New System.Drawing.Font("Corbel", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEditinfo.Location = New System.Drawing.Point(3, 3)
-        Me.lblEditinfo.Name = "lblEditinfo"
-        Me.lblEditinfo.Size = New System.Drawing.Size(499, 333)
-        Me.lblEditinfo.TabIndex = 1
-        Me.lblEditinfo.Text = resources.GetString("lblEditinfo.Text")
         '
         'tabMain
         '
@@ -144,6 +74,76 @@ Partial Class frmHelp
         Me.lblMaininfo.Size = New System.Drawing.Size(505, 297)
         Me.lblMaininfo.TabIndex = 1
         Me.lblMaininfo.Text = resources.GetString("lblMaininfo.Text")
+        '
+        'tabGame
+        '
+        Me.tabGame.Controls.Add(Me.lblPlayinginfo)
+        Me.tabGame.Location = New System.Drawing.Point(4, 22)
+        Me.tabGame.Name = "tabGame"
+        Me.tabGame.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabGame.Size = New System.Drawing.Size(505, 332)
+        Me.tabGame.TabIndex = 0
+        Me.tabGame.Text = "Playing the Game"
+        Me.tabGame.UseVisualStyleBackColor = True
+        '
+        'lblPlayinginfo
+        '
+        Me.lblPlayinginfo.Font = New System.Drawing.Font("Corbel", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayinginfo.Location = New System.Drawing.Point(3, 3)
+        Me.lblPlayinginfo.Name = "lblPlayinginfo"
+        Me.lblPlayinginfo.Size = New System.Drawing.Size(506, 326)
+        Me.lblPlayinginfo.TabIndex = 0
+        Me.lblPlayinginfo.Text = resources.GetString("lblPlayinginfo.Text")
+        '
+        'tabLogin
+        '
+        Me.tabLogin.Controls.Add(Me.lblLogininfo)
+        Me.tabLogin.Location = New System.Drawing.Point(4, 22)
+        Me.tabLogin.Name = "tabLogin"
+        Me.tabLogin.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabLogin.Size = New System.Drawing.Size(505, 332)
+        Me.tabLogin.TabIndex = 1
+        Me.tabLogin.Text = "Login Screen"
+        Me.tabLogin.UseVisualStyleBackColor = True
+        '
+        'lblLogininfo
+        '
+        Me.lblLogininfo.Font = New System.Drawing.Font("Corbel", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogininfo.Location = New System.Drawing.Point(3, 4)
+        Me.lblLogininfo.Name = "lblLogininfo"
+        Me.lblLogininfo.Size = New System.Drawing.Size(506, 325)
+        Me.lblLogininfo.TabIndex = 1
+        Me.lblLogininfo.Text = resources.GetString("lblLogininfo.Text")
+        '
+        'tabEdit
+        '
+        Me.tabEdit.Controls.Add(Me.lblEditinfo)
+        Me.tabEdit.Location = New System.Drawing.Point(4, 22)
+        Me.tabEdit.Name = "tabEdit"
+        Me.tabEdit.Size = New System.Drawing.Size(505, 332)
+        Me.tabEdit.TabIndex = 2
+        Me.tabEdit.Text = "Editting Words"
+        Me.tabEdit.UseVisualStyleBackColor = True
+        '
+        'lblEditinfo
+        '
+        Me.lblEditinfo.Font = New System.Drawing.Font("Corbel", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEditinfo.Location = New System.Drawing.Point(3, 3)
+        Me.lblEditinfo.Name = "lblEditinfo"
+        Me.lblEditinfo.Size = New System.Drawing.Size(499, 333)
+        Me.lblEditinfo.TabIndex = 1
+        Me.lblEditinfo.Text = resources.GetString("lblEditinfo.Text")
+        '
+        'picBanner
+        '
+        Me.picBanner.BackColor = System.Drawing.Color.Transparent
+        Me.picBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBanner.Image = Global.Assessment.My.Resources.Resources.Banner
+        Me.picBanner.Location = New System.Drawing.Point(152, -2)
+        Me.picBanner.Name = "picBanner"
+        Me.picBanner.Size = New System.Drawing.Size(480, 50)
+        Me.picBanner.TabIndex = 9
+        Me.picBanner.TabStop = False
         '
         'lblHelp
         '
@@ -182,11 +182,11 @@ Partial Class frmHelp
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
         Me.TabControl1.ResumeLayout(False)
+        Me.tabMain.ResumeLayout(False)
         Me.tabGame.ResumeLayout(False)
         Me.tabLogin.ResumeLayout(False)
         Me.tabEdit.ResumeLayout(False)
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tabMain.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

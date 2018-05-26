@@ -98,7 +98,6 @@ Module XML_DB
     End Sub
 
     Public Sub updateUserXML()
-        userInfo(1).del()
         Dim XML As String = "<users>"
         For Each user As playerInfo In userInfo
             XML += "<user id=" & ControlChars.Quote & user.id & ControlChars.Quote & ">"
