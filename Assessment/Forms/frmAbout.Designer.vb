@@ -31,7 +31,9 @@ Partial Class frmAbout
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.picMute = New System.Windows.Forms.PictureBox()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblCAbout
@@ -127,12 +129,24 @@ Partial Class frmAbout
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
+        'picMute
+        '
+        Me.picMute.BackColor = System.Drawing.Color.Transparent
+        Me.picMute.BackgroundImage = Global.Assessment.My.Resources.Resources.mute
+        Me.picMute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picMute.Location = New System.Drawing.Point(378, 515)
+        Me.picMute.Name = "picMute"
+        Me.picMute.Size = New System.Drawing.Size(67, 59)
+        Me.picMute.TabIndex = 15
+        Me.picMute.TabStop = False
+        '
         'frmAbout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picMute)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.lblCTitle)
@@ -146,6 +160,7 @@ Partial Class frmAbout
         Me.Name = "frmAbout"
         Me.Text = "Divisions of Science"
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -158,4 +173,5 @@ Partial Class frmAbout
     Friend WithEvents lblCTitle As System.Windows.Forms.Label
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
+    Friend WithEvents picMute As System.Windows.Forms.PictureBox
 End Class

@@ -39,7 +39,9 @@ Partial Class frmLogin
         Me.lblScore = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.picMute = New System.Windows.Forms.PictureBox()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'rdoPlayer1
@@ -213,12 +215,24 @@ Partial Class frmLogin
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
+        'picMute
+        '
+        Me.picMute.BackColor = System.Drawing.Color.Transparent
+        Me.picMute.BackgroundImage = Global.Assessment.My.Resources.Resources.mute
+        Me.picMute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picMute.Location = New System.Drawing.Point(705, 515)
+        Me.picMute.Name = "picMute"
+        Me.picMute.Size = New System.Drawing.Size(67, 59)
+        Me.picMute.TabIndex = 30
+        Me.picMute.TabStop = False
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picMute)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.picBanner)
@@ -242,6 +256,7 @@ Partial Class frmLogin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Divisions of Science"
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -262,4 +277,5 @@ Partial Class frmLogin
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
     Friend WithEvents lblScore As System.Windows.Forms.Label
     Friend WithEvents lblName As System.Windows.Forms.Label
+    Friend WithEvents picMute As System.Windows.Forms.PictureBox
 End Class

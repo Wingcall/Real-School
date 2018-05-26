@@ -255,6 +255,7 @@
     <None Include="Resources\Game theme music.mp3" />
     <None Include="Resources\Game theme music.wav" />
     <None Include="Resources\mute.png" />
+    <None Include="Resources\play.png" />
     <Content Include="XML_Files\users.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

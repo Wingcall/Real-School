@@ -66,9 +66,11 @@ Partial Class frmGame
         Me.Label3 = New System.Windows.Forms.Label()
         Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.picMute = New System.Windows.Forms.PictureBox()
         Me.pnlLetters.SuspendLayout()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHint
@@ -549,12 +551,24 @@ Partial Class frmGame
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 7
         '
+        'picMute
+        '
+        Me.picMute.BackColor = System.Drawing.Color.Transparent
+        Me.picMute.BackgroundImage = Global.Assessment.My.Resources.Resources.mute
+        Me.picMute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picMute.Location = New System.Drawing.Point(705, 515)
+        Me.picMute.Name = "picMute"
+        Me.picMute.Size = New System.Drawing.Size(67, 59)
+        Me.picMute.TabIndex = 56
+        Me.picMute.TabStop = False
+        '
         'frmGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picMute)
         Me.Controls.Add(Me.lblCat)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.picHangman)
@@ -579,6 +593,7 @@ Partial Class frmGame
         Me.pnlLetters.PerformLayout()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -625,4 +640,5 @@ Partial Class frmGame
     Friend WithEvents btnForfeit As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
+    Friend WithEvents picMute As System.Windows.Forms.PictureBox
 End Class

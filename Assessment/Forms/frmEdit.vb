@@ -1,6 +1,7 @@
 ﻿Public Class frmEdit
     Private Sub frmEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
+        frmMain.musicPic(picMute, False)
 
         cmbCat.Items.Add("Select a Catigory")
 
@@ -123,4 +124,7 @@
         End If
     End Sub
 
+    Private Sub picMute_Click(sender As Object, e As EventArgs) Handles picMute.Click
+        frmMain.musicPic(sender)
+    End Sub
 End Class

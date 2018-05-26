@@ -60,6 +60,7 @@
     Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load, btnNewGame.Click
         'loadDB()
         If sender.name = "frmGame" Then AddHandler Me.FormClosing, AddressOf formEvents.FormClosing
+        frmMain.musicPic(picMute, False)
         Me.KeyPreview = True
         btnNewGame.Enabled = False
         btnForfeit.Enabled = True
@@ -113,5 +114,9 @@
             frmGame_Load(Me, Nothing)
         Else : btnNewGame.Enabled = True
         End If
+    End Sub
+
+    Private Sub picMute_Click(sender As Object, e As EventArgs) Handles picMute.Click
+        frmMain.musicPic(sender)
     End Sub
 End Class

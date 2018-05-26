@@ -12,6 +12,7 @@
 
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
+        frmMain.musicPic(picMute, False)
         Reset()     'Calls sub-procedure Reset
     End Sub
 
@@ -95,5 +96,9 @@
 
     Private Sub rdoPlayer1_MouseLeave(sender As RadioButton, e As EventArgs) Handles rdoPlayer1.MouseLeave, rdoPlayer2.MouseLeave, rdoPlayer3.MouseLeave, rdoPlayer4.MouseLeave
         sender.ForeColor = Color.Black              'On mouse leave, changes the Label(s) Forecolour to Black
+    End Sub
+
+    Private Sub picMute_Click(sender As Object, e As EventArgs) Handles picMute.Click
+        frmMain.musicPic(sender)
     End Sub
 End Class

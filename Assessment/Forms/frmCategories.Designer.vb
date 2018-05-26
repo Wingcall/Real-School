@@ -32,10 +32,12 @@ Partial Class frmCategories
         Me.picBanner = New System.Windows.Forms.PictureBox()
         Me.lblInstruction = New System.Windows.Forms.Label()
         Me.UclHomeExit1 = New Assessment.uclHomeExit()
+        Me.picMute = New System.Windows.Forms.PictureBox()
         CType(Me.picBiology, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picChemistry, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPhysics, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picBiology
@@ -140,12 +142,24 @@ Partial Class frmCategories
         Me.UclHomeExit1.Size = New System.Drawing.Size(131, 29)
         Me.UclHomeExit1.TabIndex = 6
         '
+        'picMute
+        '
+        Me.picMute.BackColor = System.Drawing.Color.Transparent
+        Me.picMute.BackgroundImage = Global.Assessment.My.Resources.Resources.mute
+        Me.picMute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picMute.Location = New System.Drawing.Point(705, 515)
+        Me.picMute.Name = "picMute"
+        Me.picMute.Size = New System.Drawing.Size(67, 59)
+        Me.picMute.TabIndex = 22
+        Me.picMute.TabStop = False
+        '
         'frmCategories
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Assessment.My.Resources.Resources.Backgroundtest
         Me.ClientSize = New System.Drawing.Size(784, 586)
+        Me.Controls.Add(Me.picMute)
         Me.Controls.Add(Me.lblInstruction)
         Me.Controls.Add(Me.picBanner)
         Me.Controls.Add(Me.lblPhysics)
@@ -165,6 +179,7 @@ Partial Class frmCategories
         CType(Me.picChemistry, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPhysics, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMute, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -178,4 +193,5 @@ Partial Class frmCategories
     Friend WithEvents lblBiology As System.Windows.Forms.Label
     Friend WithEvents picBanner As System.Windows.Forms.PictureBox
     Friend WithEvents lblInstruction As System.Windows.Forms.Label
+    Friend WithEvents picMute As System.Windows.Forms.PictureBox
 End Class

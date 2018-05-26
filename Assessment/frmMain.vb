@@ -1,10 +1,27 @@
 ﻿Public Class frmMain
-    Dim musicstate As Boolean
+    Public musicState As Boolean = True
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
         loadDB()    'Initialilzes and loads XML database
         My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop) 'Plays the Background audio'
-        musicstate = True
+    End Sub
+
+    Public Sub musicControl()
+        If musicState = True Then
+            My.Computer.Audio.Stop()
+        Else
+            My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop)
+        End If
+        musicState = Not musicState
+    End Sub
+
+    Public Sub musicPic(pic As PictureBox, Optional music As Boolean = True)
+        If music Then musicControl()
+        If musicState Then
+            pic.BackgroundImage = My.Resources.mute
+        Else
+            pic.BackgroundImage = My.Resources.play
+        End If
     End Sub
 
     Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblEdit.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
@@ -30,13 +47,7 @@
         sender.ForeColor = Color.Black  'On mouse leave, changes the Label(s) Forecolour to Black
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        If musicstate = True Then
-            musicstate = False
-            My.Computer.Audio.Stop()
-
-        Else
-            My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop)
-        End If
+    Private Sub picMute_Clicked(sender As Object, e As EventArgs) Handles picMute.Click
+        musicPic(sender)
     End Sub
 End Class
