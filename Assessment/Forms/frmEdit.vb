@@ -39,7 +39,7 @@
             Exit Sub
         End If
 
-        Dim res As Int16 = MsgBox("Are you sure you wish to delete this word?", MsgBoxStyle.YesNo, "Divisions of Science")
+        Dim res As Int16 = MsgBox("Are you sure you wish to delete this word?", MsgBoxStyle.YesNo, "Delete Word")
         If res = MsgBoxResult.No Then Exit Sub
         Dim cat As wordList = wordLists(cmbCat.Items.IndexOf(cmbCat.SelectedItem) - 1)
         cat.findWord(lstWords.SelectedItem.ToString).delWord()
@@ -74,20 +74,20 @@
                 End If
             Else
                 'If btnAdd.Text = "Update Word" Then 
-                MsgBox("That word is already in the list!", MsgBoxStyle.Exclamation, "Divisions of Science")
+                MsgBox("That word is already in the list!", MsgBoxStyle.Exclamation, "Word Exists!")
                 Exit Sub
             End If
         ElseIf cmbCat.SelectedItem.ToString = "Select a Category" Then
-            MsgBox("You need to select a Category first!", MsgBoxStyle.Exclamation, "Divisions of Science")
+            MsgBox("You need to select a Category first!", MsgBoxStyle.Exclamation, "Missing Category!")
             Exit Sub
         ElseIf txtWord.Text.Replace(" ", "") = "" Then
-            MsgBox("You need to type in a Word first!", MsgBoxStyle.Exclamation, "Divisions of Science")
+            MsgBox("You need to type in a Word first!", MsgBoxStyle.Exclamation, "Missing Word!")
             Exit Sub
         ElseIf txtHint.Text.Replace(" ", "") = "" Then
             MsgBox("You need to type in a Hint first!", MsgBoxStyle.Exclamation, "Missing Hint!")
             Exit Sub
         ElseIf checkForLetter(txtWord.Text) Or checkForLetter(txtHint.Text) Then
-            MsgBox("You need to enter at least one word for the Hint and the Word!", MsgBoxStyle.Exclamation, "Divisions of Science")
+            MsgBox("You need to enter at least one word for the Hint and the Word!", MsgBoxStyle.Exclamation, "Error!")
             Exit Sub
         End If
         refWordList()
