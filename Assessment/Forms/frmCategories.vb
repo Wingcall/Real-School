@@ -5,8 +5,9 @@
     End Sub
 
     Private Sub picBiology_Click(sender As Object, e As EventArgs) Handles picBiology.Click, picChemistry.Click, picPhysics.Click, lblBiology.Click, lblChemistry.Click, lblPhysics.Click
-        catID = sender.tag      'Sets the Global CatID to the Tag Number
+        catID = sender.tag      'Sets the global catID to equal the tag of the label or picture
         frmGame.Show()          'Opens the Game Form
         Me.closeForm()          'Closes the current (categories) form
     End Sub
+
 End Class

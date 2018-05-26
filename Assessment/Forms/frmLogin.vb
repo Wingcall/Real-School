@@ -75,15 +75,19 @@
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        If userInfo(playerID).name = "New Player!" Then Namecatching()
-
         If (rdoPlayer1.Checked = False And rdoPlayer2.Checked = False And rdoPlayer3.Checked = False And rdoPlayer4.Checked = False) Then
             MessageBox.Show("Please select a player slot!", "Divisions of Science", MessageBoxButtons.OK)   'Displays message box to select player slot
+        Else
+        End If
+
+        If userInfo(playerID).name = "New Player!" Then
+            Namecatching()
         Else
             playerID = sender.tag   'Sets the global variable of playerID to be equal with the selected rdo button's tag
             frmCategories.Show()    'Displays the Categories Form
             Me.closeForm()  'Closes the current form
         End If
+
     End Sub
 
     Private Sub rdoPlayer1_MouseHover(sender As RadioButton, e As EventArgs) Handles rdoPlayer1.MouseHover, rdoPlayer2.MouseHover, rdoPlayer3.MouseHover, rdoPlayer4.MouseHover
