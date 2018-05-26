@@ -39,10 +39,10 @@
     Private Sub winLose(win As Boolean)
         Dim message, title As String
         If win Then
-            title = "Congratulations!"
+            title = "Divisions of Science"
             message = "Well done, " & cPlayer.name & "! You guessed the word was " & plrWord.wordVal & "." & vbNewLine & "Would you like to try again?"
         Else
-            title = "Good Try!"
+            title = "Divisions of Science"
             message = "To Bad, " & cPlayer.name & "! You didn't guess the word. :(" & vbNewLine & "Would you like to try again?"
         End If
         Dim res As MsgBoxResult = MsgBox(message, MsgBoxStyle.YesNo, title)
@@ -106,8 +106,8 @@
     End Sub
 
     Private Sub btnForfeit_Click(sender As Object, e As EventArgs) Handles btnForfeit.Click
-        Dim message = "Hey, " & cPlayer.name & ", Are you sure you wish to forfit?" & vbNewLine & "You will lose a point!"
-        Dim res As MsgBoxResult = MsgBox(message, MsgBoxStyle.YesNo, "Your Loss.")
+        Dim message = "Hey, " & cPlayer.name & ", Are you sure you wish to forfeit?" & vbNewLine & "You will lose a point!"
+        Dim res As MsgBoxResult = MsgBox(message, MsgBoxStyle.YesNo, "Divisions of Science")
         If res = MsgBoxResult.Yes Then
             btnForfeit.Enabled = False
             If userInfo(playerID).score > 0 Then userInfo(playerID).score -= 1
