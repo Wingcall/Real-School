@@ -3,7 +3,7 @@
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
         loadDB()    'Initialilzes and loads XML database
-        My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop) 'Plays the Background audio'
+        'My.Computer.Audio.Play(My.Resources.Game_theme_music, AudioPlayMode.BackgroundLoop) 'Plays the Background audio'
     End Sub
 
     Private Sub buttonHandler(sender As Object, e As EventArgs) Handles lblPlay.Click, lblEdit.Click, lblAbout.Click, lblHelp.Click, lblExit.Click
@@ -29,31 +29,4 @@
         sender.ForeColor = Color.Black  'On mouse leave, changes the Label(s) Forecolour to Black
     End Sub
 
-<<<<<<< HEAD
-=======
-    'Below are debug buttons, to be removed in final copy.
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        frmCategories.openForm()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        frmLogin.openForm()
-    End Sub
-
-    Private Sub btnGame_Click(sender As Object, e As EventArgs) Handles btnGame.Click
-        frmGame.openForm()
-    End Sub
-
-    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
-        frmEdit.openForm()
-    End Sub
-
-    Private Sub lblPlay_MouseHover(sender As Object, e As EventArgs) Handles lblPlay.MouseHover, lblHelp.MouseHover, lblExit.MouseHover, lblAbout.MouseHover, lblEdit.MouseHover
-
-    End Sub
-
-    Private Sub lblPlay_MouseLeave(sender As Object, e As EventArgs) Handles lblPlay.MouseLeave, lblHelp.MouseLeave, lblExit.MouseLeave, lblAbout.MouseLeave, lblEdit.MouseLeave
-
-    End Sub
->>>>>>> 4fc33bc5f241bddd6f45c62a800ffd2270cc3628
 End Class
