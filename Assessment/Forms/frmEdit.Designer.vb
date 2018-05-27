@@ -96,6 +96,7 @@ Partial Class frmEdit
         Me.txtHint.MaxLength = 118
         Me.txtHint.Multiline = True
         Me.txtHint.Name = "txtHint"
+        Me.txtHint.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtHint.Size = New System.Drawing.Size(401, 75)
         Me.txtHint.TabIndex = 5
         '
