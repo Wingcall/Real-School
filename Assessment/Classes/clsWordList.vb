@@ -1,4 +1,5 @@
-﻿Public Class wordList 'This is the class of the category
+﻿'Completed By Cal.W 2018
+Public Class wordList 'This is the class of the category
     Public id As Int16 'The id of the category
     Public name As String 'name of the category
     Public words(0) As word 'The array of words in the cat

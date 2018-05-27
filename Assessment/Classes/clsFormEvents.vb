@@ -1,4 +1,5 @@
-﻿Public Class formEvents
+﻿'Completed By Cal.W 2018
+Public Class formEvents
     'This is so that in 3 lines every form can have the popup box open when the user tries to close the game.
     Public Shared Sub FormClosing(sender As Object, e As FormClosingEventArgs)
         If e.CloseReason = CloseReason.UserClosing Then 'If the close came from the red cross

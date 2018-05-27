@@ -1,4 +1,5 @@
-﻿Public Class frmEdit
+﻿'Completed By Cal.W 2018
+Public Class frmEdit
     Private Sub frmEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing 'Add the close form handler
         frmMain.musicPic(picMute, False) 'Set the music icon properly

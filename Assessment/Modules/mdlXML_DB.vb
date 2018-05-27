@@ -1,4 +1,5 @@
-﻿Imports System.Xml
+﻿'Completed By Cal.W 2018
+Imports System.Xml
 Module XML_DB
     Private ReadOnly appPath As String = My.Application.Info.DirectoryPath 'Make the app path simpler
     Private ReadOnly userPath As String = appPath & "\XML_Files\users.xml" 'The path to the users file

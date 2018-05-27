@@ -1,4 +1,5 @@
-﻿Public Class frmGame
+﻿'Completed By Cal.W 2018
+Public Class frmGame
     Const maxGuesses As Integer = 7 'lock the max number of guesses
     Dim letterGuesses As String = "" 'The letter that the player has guessed
     Dim badGuesses As Integer 'Number of bad guesses

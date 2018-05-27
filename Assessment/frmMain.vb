@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 ﻿Public Class frmMain
     Public musicState As Boolean = True 'Set the state of 'musicState' globally as "True" on initlal load
+=======
+﻿'Completed By Brandon.D 2018
+Public Class frmMain
+    Public musicState As Boolean = True
+>>>>>>> 8ad1523aad9e0885907747ac56afcee7e7f98ddd
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
         loadDB()    'Initialilzes and loads XML database

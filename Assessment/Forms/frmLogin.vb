@@ -1,4 +1,5 @@
-﻿Public Class frmLogin
+﻿'Completed By Brandon.D 2018
+Public Class frmLogin
     Private Sub Reset()
         rdoPlayer1.Text = userInfo(0).name          'Sets Player 1's Name
         rdoPlayer2.Text = userInfo(1).name          'Sets Player 2's Name
