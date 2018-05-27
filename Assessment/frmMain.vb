@@ -1,5 +1,5 @@
 ﻿Public Class frmMain
-    Public musicState As Boolean = True
+    Public musicState As Boolean = True 'Set the state of 'musicState' globally as "True" on initlal load
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler
         loadDB()    'Initialilzes and loads XML database
@@ -52,6 +52,6 @@
     End Sub
 
     Private Sub frmMain_Shown(sender As Object, e As EventArgs) Handles Me.Shown
-        musicPic(picMute, False) 'Make sure the mute button is set poperly every time the form is shown
+        musicPic(picMute, False) 'Make sure the mute button is set properly every time the form is shown
     End Sub
 End Class

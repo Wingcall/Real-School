@@ -4,20 +4,44 @@
     <name>Biology</name>
     <words>
       <word>
-        <name>Bob</name>
-        <hint>Its not Bob</hint>
+        <name>Abdomen</name>
+        <hint>The region between the pelvis and the thorax.</hint>
       </word>
       <word>
-        <name>Bill</name>
-        <hint>Its not Bill</hint>
+        <name>Cell Membrane</name>
+        <hint>The double layer of lipids and proteins that surrounds a cell and separates the cytoplasm.</hint>
       </word>
       <word>
-        <name>Bill The Angel</name>
-        <hint>Its not Bill</hint>
+        <name>Photosynthesis</name>
+        <hint>A process used by plants and other organisms to convert light energy into chemical energy</hint>
       </word>
       <word>
-        <name>Sammm!:;..</name>
-        <hint>Its not Sam</hint>
+        <name>Charles Darwin</name>
+        <hint>The naturalist who created the theory of evolution.</hint>
+      </word>
+      <word>
+        <name>Gregor Mendel</name>
+        <hint>An Austrian monk who discovered the basic principles of genetic inheritance.</hint>
+      </word>
+      <word>
+        <name>Binocular Vision</name>
+        <hint>An animal who's eyes are projected forward, to which the field of view overlap, enabling the creature to judge depth.</hint>
+      </word>
+      <word>
+        <name>Fungus</name>
+        <hint>Eukaryotic heterotrophic organisms that live as saprophytes or parasites.</hint>
+      </word>
+      <word>
+        <name>Host</name>
+        <hint>An organism that can harbor or nourish another organism.</hint>
+      </word>
+      <word>
+        <name>Lysis</name>
+        <hint>The rupture and destruction of a cell, resulting in loss of cellular contents.</hint>
+      </word>
+      <word>
+        <name>Pathogen</name>
+        <hint>An organism that is capable of causing an infection, or harming a host cell.</hint>
       </word>
     </words>
   </category>
@@ -25,8 +49,48 @@
     <name>Chemistry</name>
     <words>
       <word>
-        <name>Clint</name>
-        <hint>Its not Clint</hint>
+        <name>Equilibrium</name>
+        <hint>When a reaction reaches a position where it has no tendency to change.</hint>
+      </word>
+      <word>
+        <name>Burette</name>
+        <hint>A graduated glass tube with a tap at one end, for delivering known volumes of a liquid, especially in titrations.</hint>
+      </word>
+      <word>
+        <name>Bulb-pipette</name>
+        <hint>A volumetric piece of equipment which allows extremely accurate measurement of volume of a solution.</hint>
+      </word>
+      <word>
+        <name>Marie Curie</name>
+        <hint>The famous chemist who discovered Radium and Polonium.</hint>
+      </word>
+      <word>
+        <name>Alfred Nobel</name>
+        <hint>The famous chemist who invented the explosive Dynamite.</hint>
+      </word>
+      <word>
+        <name>Bond Angle</name>
+        <hint>The angle formed between two adjacent chemical bonds within the same atom.</hint>
+      </word>
+      <word>
+        <name>Oxygen</name>
+        <hint>A colourless, odourless reactive gas, which we breathe and is found in air.</hint>
+      </word>
+      <word>
+        <name>Le Chatelier</name>
+        <hint>A principle stating that if a constraint is applied to a system in equilibrium, equilibrium will shift to counteract the effect.</hint>
+      </word>
+      <word>
+        <name>Mole Ratio</name>
+        <hint>A ratio or fraction comparing the numbers of moles of any two components involved in a chemical reaction.</hint>
+      </word>
+      <word>
+        <name>Reactant</name>
+        <hint>The starting material for a chemical reaction.</hint>
+      </word>
+      <word>
+        <name>Product</name>
+        <hint>The substance formed as a result of a chemical reaction.</hint>
       </word>
     </words>
   </category>
@@ -52,6 +116,26 @@
       <word>
         <name>Black Hole</name>
         <hint>A region of empty space.</hint>
+      </word>
+      <word>
+        <name>Dark Matter</name>
+        <hint>Matter that gives out no light and does not interact with the electromagnetic force.</hint>
+      </word>
+      <word>
+        <name>Stephen Hawking</name>
+        <hint>A famous, well-known, theoretical physicist.</hint>
+      </word>
+      <word>
+        <name>Gravity</name>
+        <hint>The natural phenomenon by which all things with mass are brought toward one another.</hint>
+      </word>
+      <word>
+        <name>Inertia</name>
+        <hint>The resistance of any physical object to any change in its position and state of motion.</hint>
+      </word>
+      <word>
+        <name>Universe</name>
+        <hint>Everything that physically exists, including the entirety of space and time, all forms of matter, energy and momentum, and the physical laws and constants that govern them.</hint>
       </word>
     </words>
   </category>
