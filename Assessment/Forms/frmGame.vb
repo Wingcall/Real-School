@@ -46,7 +46,7 @@ Public Class frmGame
             message = "To Bad, " & cPlayer.name & "! You didn't guess the word. :(" & vbNewLine & "Would you like to try again?" 'lose message
         End If
         Dim res As MsgBoxResult = MsgBox(message, MsgBoxStyle.YesNo, title) 'Ask the user to replay
-        If res = MsgBoxResult.Yes Then frmGame_Load(Me, Nothing) : Exit Sub Else btnNewGame.Enabled = True 'If the user wants to replay then reload else enable the reload button
+        If res = MsgBoxResult.Yes Then frmGame_Load(Me, Nothing, False) : Exit Sub Else btnNewGame.Enabled = True 'If the user wants to replay then reload else enable the reload button
         reset() 'reset
     End Sub
 
@@ -57,9 +57,9 @@ Public Class frmGame
         sender.ForeColor = Color.Black 'change the senders colour to black
     End Sub
 
-    Private Sub frmGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load, btnNewGame.Click
+    Private Sub frmGame_Load(sender As Object, e As EventArgs, Optional checkBool As Boolean = True) Handles MyBase.Load, btnNewGame.Click
         'loadDB()
-        If sender.name = "frmGame" Then AddHandler Me.FormClosing, AddressOf formEvents.FormClosing ' if the sender is the form then add the close handler
+        If checkBool Then AddHandler Me.FormClosing, AddressOf formEvents.FormClosing ' if the sender is the form then add the close handler
         frmMain.musicPic(picMute, False) 'set the mute button
         Me.KeyPreview = True 'Enable the form to listen to all keys input
         btnNewGame.Enabled = False 'disable new game button
@@ -80,7 +80,7 @@ Public Class frmGame
 
         pnlLetters.Enabled = True 'enable the letter pannel
         For Each Letter As Label In pnlLetters.Controls 'for each letter in the pannel
-            If sender.name = "frmGame" Then 'if we are in the init then
+            If checkBool Then 'if we are in the init then
                 AddHandler Letter.Click, AddressOf Me.lblLetterS_Click 'add letter handler
                 AddHandler Letter.MouseHover, AddressOf Me.colourChangeP 'add p colour
                 AddHandler Letter.MouseLeave, AddressOf Me.colourChangeB 'add b colour
@@ -111,7 +111,7 @@ Public Class frmGame
         If res = MsgBoxResult.Yes Then 'if they do then
             btnForfeit.Enabled = False 'disable it
             If userInfo(playerID).score > 0 Then userInfo(playerID).score -= 1 'if the score is above 0 then take a point
-            frmGame_Load(Me, Nothing) 'reload
+            frmGame_Load(Me, Nothing, False) 'reload
             'Else : btnNewGame.Enabled = True
         End If
     End Sub
