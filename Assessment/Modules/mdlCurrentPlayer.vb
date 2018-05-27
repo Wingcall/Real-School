@@ -1,5 +1,5 @@
 ﻿Module currentPlayer
-    Public playerID As Integer
-    Public catID As Integer
-    Public plrWord As word
+    Public playerID As Integer 'The player id
+    Public catID As Integer 'the cat id
+    Public plrWord As word 'set the player word
 End Module

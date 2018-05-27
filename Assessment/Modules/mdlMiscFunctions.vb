@@ -9,18 +9,13 @@
                 updateUserXML() 'If so, save the user state
             End If
 
-            RemoveHandler frmMain.FormClosing, AddressOf formEvents.FormClosing
-            frmMain.Close()
+            RemoveHandler frmMain.FormClosing, AddressOf formEvents.FormClosing 'remove the form closing handler
+            frmMain.Close() 'close the main form
         Else
-            If Not IsNothing(e) Then
-                e.Cancel = True
+            If Not IsNothing(e) Then 'if e is given then
+                e.Cancel = True 'cancel the closing
             End If
         End If
-    End Sub
-
-    Public Sub exitGame1(form As Form, Optional e As FormClosedEventArgs = Nothing)
-        RemoveHandler frmMain.FormClosing, AddressOf formEvents.FormClosing
-        frmMain.Close()
     End Sub
 
 End Module
