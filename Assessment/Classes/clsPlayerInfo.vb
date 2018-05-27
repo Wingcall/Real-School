@@ -1,4 +1,5 @@
-﻿Public Class playerInfo
+﻿'Completed By Cal.W 2018
+Public Class playerInfo
     'This is the playerinfo class. This is so that we can easly manage all the players as pre-made custom objects in the userinfo array.
     Public id As Int16 'The id of the user, a smaller (int16) int is used since the ids never go above the Int16 Limit
     Public name As String 'The name of the player

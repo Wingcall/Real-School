@@ -1,4 +1,5 @@
-﻿Public Class frmCategories
+﻿'Completed By Brandon.D 2018
+Public Class frmCategories
 
     Private Sub frmCategories_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler

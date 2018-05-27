@@ -1,4 +1,5 @@
-﻿Public Class frmMain
+﻿'Completed By Brandon.D 2018
+Public Class frmMain
     Public musicState As Boolean = True
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FormClosing, AddressOf formEvents.FormClosing     'Adds the Closing Extension/Handler

@@ -1,4 +1,5 @@
-﻿Public Class uclHomeExit
+﻿'Completed By Cal.W 2018
+Public Class uclHomeExit
 
     Private Sub lblHome_Click(sender As Object, e As EventArgs) Handles lblHome.Click 'Home label clicked
         frmMain.Show() 'Show the main form

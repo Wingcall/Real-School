@@ -1,4 +1,5 @@
-﻿Module miscFunctions
+﻿'Completed By Cal.W 2018
+Module miscFunctions
     Public Const alphabet As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 'Store the alphabet as a string. (This is a massive help later)
 
     Public Sub exitGame(form As Form, Optional e As FormClosingEventArgs = Nothing)

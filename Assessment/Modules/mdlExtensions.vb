@@ -1,4 +1,5 @@
-﻿Imports System.Runtime.CompilerServices
+﻿'Completed By Cal.W 2018
+Imports System.Runtime.CompilerServices
 'This module extends exsiting functions
 Module extensions
     'HERE BE DRAGONS
