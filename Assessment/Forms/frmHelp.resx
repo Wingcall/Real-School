@@ -127,7 +127,8 @@ This is the initial screen when you open Divisons of Science. From this menu you
 - Access this Help Screen
 - Exit the game
 
-Every time the "Home" button is pressed (which is not on this screen), the Main Menu will be displayed.</value>
+Every time the "Home" button is pressed (which is located in the top left corner next to the exit button), the Main Menu will be displayed.
+Every time the "Exit" button is pressed, you will be prompted for confirmation. Clicking Yes will end the game whilst clicking No will dismiss the messagebox. </value>
   </data>
   <data name="lblPlayinginfo.Text" xml:space="preserve">
     <value>PLAYING THE GAME
@@ -174,7 +175,7 @@ Updating a Word:
 To update the word and its properties, select the category (Biology, Chemistry or Physics).
 Find the word in that list and click on it. Then, you can change the name or the hint to suit. Once completed, press "Update". That word is now updated.
 
-
+NOTE: There is a 54 character limit for the word, and a 118 character limit for the hint.
 
 </value>
   </data>
